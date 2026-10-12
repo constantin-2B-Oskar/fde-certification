@@ -37,6 +37,15 @@
       ],
       "items": [
         {
+          "id": "d1-pre-read",
+          "kind": "preread",
+          "title": "Day 1 pre-read",
+          "summary": "Before the session: what the day looks like, the main terms (FDE, the last mile, OEE, answer first, sponsor) and the ideas to hold on to.",
+          "read": "d1-pre-read.md",
+          "href": "/resources/d1-pre-read.md",
+          "status": "available"
+        },
+        {
           "id": "d1-slides-am",
           "kind": "slides",
           "title": "What an FDE is",
@@ -109,6 +118,15 @@
           "status": "available"
         },
         {
+          "id": "d2-pre-read",
+          "kind": "preread",
+          "title": "Day 2 pre-read",
+          "summary": "Before the session: what the day looks like, the main terms (plant P&L, contribution margin, leak, project charter, baseline) and the ideas to hold on to.",
+          "read": "d2-pre-read.md",
+          "href": "/resources/d2-pre-read.md",
+          "status": "available"
+        },
+        {
           "id": "d2-slides-am",
           "kind": "slides",
           "title": "Problems worth solving",
@@ -170,6 +188,15 @@
         "RSK"
       ],
       "items": [
+        {
+          "id": "d3-pre-read",
+          "kind": "preread",
+          "title": "Day 3 pre-read",
+          "summary": "Before the session: what the day looks like, the main terms (ERP, MES, source of truth, retrieval, agents, evals, ontology) and the ideas to hold on to.",
+          "read": "d3-pre-read.md",
+          "href": "/resources/d3-pre-read.md",
+          "status": "available"
+        },
         {
           "id": "d3-slides-am",
           "kind": "slides",
@@ -243,6 +270,15 @@
       ],
       "items": [
         {
+          "id": "d4-pre-read",
+          "kind": "preread",
+          "title": "Day 4 pre-read",
+          "summary": "Before the session: what the day covers, the main terms (data quality, legacy systems, resistance, change curve, champions, sponsors) and the ideas to hold on to.",
+          "read": "d4-pre-read.md",
+          "href": "/resources/d4-pre-read.md",
+          "status": "available"
+        },
+        {
           "id": "d4-slides-am",
           "kind": "slides",
           "title": "Technical roadblocks",
@@ -281,6 +317,15 @@
         "ONT"
       ],
       "items": [
+        {
+          "id": "d5-pre-read",
+          "kind": "preread",
+          "title": "Day 5 pre-read",
+          "summary": "Before the session: how Friday runs, the main terms (steering committee, readout, 30/60/90-day plan) and how to prepare for the exam.",
+          "read": "d5-pre-read.md",
+          "href": "/resources/d5-pre-read.md",
+          "status": "available"
+        },
         {
           "id": "d5-slides-am",
           "kind": "slides",
