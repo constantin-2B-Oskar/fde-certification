@@ -45,10 +45,19 @@ Every default taken or changed, one line each. The spec is docs/SPEC.md.
 - Renan asked for cards on the Resources page; this replaces the spec's "no rows of identical cards" rule for that page only. Cards differ by state: available (ink border) or coming soon (grey).
 - The program guide is a facilitator document (its materials index says so) and its Polymex cast table reveals the consolidation rumor the Day 1 facilitator guide says not to reveal. Participants get "Your week", the same text minus the cast table, facilitation principles, materials index, design conventions and trainer-only lines. The full guide stays in `docs/curriculum/facilitator/`.
 
+## Course material, Days 2, 3 and 5 (8 October 2026)
+
+- Renan's second upload (one zip per day, Day 4 missing, plus the updated program guide) is archived untouched in `docs/curriculum/source/`. Participant files follow the Day 1 pattern: deck content and handouts to `public/resources/`, readable on the site; facilitator guides, answer keys, generators and the Day 3 holdout evals to `docs/curriculum/facilitator/`.
+- The Day 3 lab kit is served as `fde-school-day3-participant-kit.zip`, rebuilt from the `participant/` folder only. The new Day 1 kit is identical to the one already served, and the Day 1 texts differ only in file names in their comments, so Day 1 is unchanged.
+- The designed `.dc.html` decks are not served: they need a `shared/` folder (fonts, images, slide engine) that was not uploaded. The site keeps rendering decks from their Markdown content.
+- The Day 5 afternoon deck is held back ("Available after the session"): it tells what really happened in both Friday cases, which the facilitator guide keeps for the 13:30 debrief. The Day 5 case packs and handouts are published.
+- Day 4 stays "Available after the session" until its material is uploaded.
+- `docs/curriculum/**` is excluded from lint: it holds the trainers' generators as uploaded.
+
 ## Day 1 final material (12 October 2026)
 
-- Renan's final Day 1 upload (`docs/curriculum/source-files-day1-final.zip`) replaces the Day 1 decks (now 122 slides each), exercises (now five), facilitator guides and the participant lab kit (adds a `knowledge/` folder). The lab answer key and generator are unchanged.
-- The decks exported from Claude Design (`*.dc.html`) need the tool's runtime and a `../shared/` folder that was not in the upload. `scripts/deck-html.ts` turns each into one self-contained page (`public/resources/*.deck.html`): the slides as exported, scaled to the window, with arrows, click, swipe and full screen, no React and no runtime. Fonts come from Google Fonts; the logo is the site's official file.
+- Renan's final Day 1 upload (`docs/curriculum/source/day1-final.zip`) replaces the Day 1 decks (now 122 slides each), exercises (now five), facilitator guides and the participant lab kit (adds a `knowledge/` folder). The lab answer key and generator are unchanged.
+- This reverses the 8 October call not to serve the `.dc.html` decks. The decks exported from Claude Design (`*.dc.html`) need the tool's runtime and a `../shared/` folder that was not in the upload. `scripts/deck-html.ts` turns each into one self-contained page (`public/resources/*.deck.html`): the slides as exported, scaled to the window, with arrows, click, swipe and full screen, no React and no runtime. Fonts come from Google Fonts; the logo is the site's official file.
 - The photos the decks use (`factory-floor.jpg`, `gear-steam.png`, `sundial.png`) were not in the upload. They are expected in `public/resources/img/`; until then the slides show without them (dark background).
 - Slides cards: "View slides" opens the HTML deck in a new tab; "Read as text" keeps the Markdown version (readable on a phone and by screen readers).
 - Day 1 recording: the Circleback meeting link Renan gave. Viewers may need access on Circleback.

@@ -137,16 +137,24 @@ FDE Certification track at fde-certification.vercel.app, password `fdecompany`, 
 
 ## Materials index
 
-| Session | Deck | Facilitator guide | Lab or exercises | Status |
+Every session has the same set: the deck (`.dc.html`, OSS identity, opens in the browser and prints to PDF), the deck content (`Deck content.md`, the slide text the deck is built from), a facilitator guide and a participant handout. Lab kits are zips with a participant repository and a facilitator folder (answer key, generator).
+
+| Folder | Session | Deck | Facilitator guide | Handout, lab or cards |
 |---|---|---|---|---|
-| Program guide | | this file | | Ready |
-| Day 1 AM, What an FDE is | `d1-am-what-an-fde-is.deck.md` | `d1-am-what-an-fde-is.facilitator.md` | `fde-school-day1-kit.zip` (repo + answer key) | Ready |
-| Day 1 PM, Consulting skills 101 | `d1-pm-consulting-skills.deck.md` | `d1-pm-consulting-skills.facilitator.md` | `d1-pm-consulting-skills.exercises.md` | Ready |
-| Day 2 AM and PM | | | | Next batch |
-| Day 3 AM and PM (Nicolas) | | | | Next batch |
-| Day 4 AM and PM | | | | Next batch |
-| Day 5 cases and close | | | | Next batch |
+| Root | Program guide | | this file | |
+| `Day 1 - The role` | D1 AM, The job AI created (Renan) | `D1 AM - Deck - The job AI created.dc.html` | `D1 AM - Facilitator guide.md` | `D1 AM - Lab kit.zip` (Plant Pulse v0) |
+| | D1 PM, Consulting skills 101 (Renan) | `D1 PM - Deck - Consulting skills 101.dc.html` | `D1 PM - Facilitator guide.md` | `D1 PM - Exercises.md` |
+| `Day 2 - The business` | D2 AM, Problems worth solving (Renan) | `D2 AM - Deck - Problems worth solving.dc.html` | `D2 AM - Facilitator guide.md` | `D2 AM - Exercises.md` (P&L read, leak register) |
+| | D2 PM, Leading an FDE project (Renan) | `D2 PM - Deck - Leading an FDE project.dc.html` | `D2 PM - Facilitator guide.md` | `D2 PM - Exercises.md` (charter, Ferralux, validation protocol) |
+| `Day 3 - The technology` | D3 AM, Plant systems and data (Nicolas) | `D3 AM - Deck - Plant systems and data.dc.html` | `D3 AM - Facilitator guide.md` | `D3 AM - Exercises.md` (IT landscape, systems map, access plan) |
+| | D3 PM, AI fundamentals and the build lab (Nicolas) | `D3 PM - Deck - AI fundamentals and the build lab.dc.html` | `D3 PM - Facilitator guide.md` | `D3 PM - Exercises.md`, `D3 PM - Lab kit - Plant Pulse v1.zip` |
+| `Day 4 - The obstacles` | D4 AM, Technical roadblocks (Renan) | `D4 AM - Deck - Technical roadblocks.dc.html` | `D4 AM - Facilitator guide.md` | `D4 AM - Exercises.md`, `D4 AM - Lab kit - Plant Pulse v2.zip` |
+| | D4 PM, Human roadblocks (Renan) | `D4 PM - Deck - Human roadblocks.dc.html` | `D4 PM - Facilitator guide.md` | `D4 PM - Exercises.md`, `D4 PM - Role cards (trainer only).md` |
+| `Day 5 - The full motion` | D5 AM, The full motion: two real cases (Renan) | `D5 AM - Deck - The full motion.dc.html` | `D5 AM - Facilitator guide.md` (with what really happened) | `D5 AM - Case pack A - Plastics compounder.md`, `D5 AM - Case pack B - Sock manufacturer.md`, `D5 AM - Exercises.md` |
+| | D5 PM, Debrief, principles and the exam (Renan) | `D5 PM - Deck - Debrief and exam.dc.html` | `D5 PM - Facilitator guide.md` | `D5 PM - Exercises.md` (30/60/90, feedback, exam rules) |
+
+Shared assets (fonts, logos, brand photography, the deck stage) live in `shared/`. To change a deck, edit its `Deck content.md` and rebuild with `shared/tools/build-deck.js`, or edit the `.dc.html` directly.
 
 ## Conventions for Claude Design
 
-Deck files: slides are separated by a line containing three dashes. Each slide starts with a comment giving its number and type (Title, Hero, Divider, Data, Framework, Detail, Exercise). Text inside comments is design direction, never slide text. Titles are full-sentence conclusions; read in sequence, they tell the session's story. Every slide with data carries a source line. Visual identity matches the certification site: ink #141313, paper #FFFFFF, steel #5B6470, gauge #E2E5E9, marker #FFD028 for highlights, Archivo with condensed bold titles, both logos on an ink band on title slides.
+Deck content files: slides are separated by a line containing three dashes. Each slide starts with a comment giving its number and type (Title, Hero, Divider, Data, Framework, Detail, Exercise); a Divider may add `ghost: WORD` for its watermark. Text inside comments is design direction, never slide text. Titles are full-sentence conclusions; read in sequence, they tell the session's story. Every slide with data carries a source line. Visual identity follows the OSS Ventures design system: ink #0D0D0D and paper #FDFDFD, flame #FD594F as the single accent, Fjalla One uppercase titles, Inter body, Archivo labels, Geist Mono for sources and figures, sharp corners, no shadows, OSS brand photography only; the OSS logo on the title slide with "In partnership with Devoteam".
