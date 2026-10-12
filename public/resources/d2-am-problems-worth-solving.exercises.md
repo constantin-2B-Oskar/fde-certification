@@ -1,117 +1,108 @@
 # Day 2 morning: exercises
 
-FDE School, by Devoteam and OSS Ventures. Participant handout. Polymex Industries is a fictional plant; every number below is consistent with yesterday's data.
+FDE School, by Devoteam and OSS Ventures. Participant handout. Polymex Industries is a fictional group; every number in the knowledge bundle is consistent with Monday's data.
 
 ---
 
-## Exercise 1. Read the Polymex P&L in twenty minutes (20 minutes)
+## Exercise 1. Spot the waste (3 minutes, in pairs)
 
-### Plant P&L, last twelve months
+A team must store and prepare a heavy distribution unit in a workshop. Over the observed sequence, operators walk back and forth across the area, wait for the overhead crane and the telehandler to become available, move the unit several times with a forklift and the crane, and pull consumables from a large local stock. The forklift is driven by a skilled mason.
 
-| Line | €M | Notes |
-|---|---|---|
-| Revenue | 148.0 | 86,000 t; average selling price €1,721/t |
-| Materials | (89.2) | Resins, additives, pigments |
-| Direct labor | (14.6) | Of which overtime premium €0.9M |
-| Energy | (6.8) | |
-| Maintenance | (4.1) | Internal and contractors |
-| Consumables and other variable | (3.9) | Includes scrap disposal €0.15M |
-| Depreciation | (5.2) | |
-| **Plant gross margin** | **24.2** | 16.4% |
-| Logistics and freight | (4.7) | |
-| Allocated SG&A | (9.8) | Corporate allocation |
-| **Plant EBIT** | **9.7** | 6.6% |
+| Waste | Seen? What exactly? |
+|---|---|
+| Overproduction | |
+| Waiting | |
+| Transport | |
+| Over-processing | |
+| Inventory | |
+| Rework and defects | |
+| Unnecessary motion | |
+| Unused skills and ideas | |
 
-### Operational annex
-
-| KPI | Value | Context |
-|---|---|---|
-| OEE | 61% | Availability 74%, performance 88%, quality 94% |
-| Changeover time | 11.5% of scheduled hours | Changeover count doubled since January (new retail clients, small frequent orders) |
-| Unplanned downtime, logged | 9.0% of scheduled hours | |
-| Scrap rate | 4.2% of material input | Disposal cost €0.15M, included in consumables |
-| OTIF | 87% and slipping | Measured on promise date |
-| DIO | 78 days | Sector peers: about 55 days |
-| Overtime | 6.1% of hours | Concentrated on Fridays and month-end |
-| Order book | 91% of demonstrated capacity | Sales: two accounts would take +6% volume at current prices if lead times improved |
-
-### Your task
-
-1. Read with the five moves: revenue, gross margin, operational annex, anomalies, hypotheses.
-2. Write three hypotheses about where Polymex loses money. Each one carries the number that made you suspicious.
-3. For each hypothesis, write the first question you would ask the plant controller.
-
-| Hypothesis | The number behind it | First question for the controller |
-|---|---|---|
-| 1. | | |
-| 2. | | |
-| 3. | | |
+*Source: OSS Ventures, How manufacturing works, internal training.*
 
 ---
 
-## Exercise 2. Price the leaks you found yesterday (lab, 45 minutes)
+## Reference: the lean vocabulary
+
+| Term | Meaning |
+|---|---|
+| Value added | What the customer is willing to pay for |
+| The three brakes | Rigidity, waste, variability |
+| The 5M | Materials, means (machines and people), methods, milieu, messages |
+| Just-in-time | Make only what is needed, when it is needed |
+| Jidoka | Stop at the first defect; never pass it downstream |
+| Standard | A short, visual description of how the work is done, written with the people who do it |
+| SMED | Single-minute exchange of die: shorten changeovers |
+| TPM | Total productive maintenance |
+| Kaizen | Small improvements, every day |
+
+---
+
+## Exercise 2. The Polymex knowledge bundle: which plant first? (lab, 45 minutes)
 
 ### Situation
 
-Hervé has seen your Plant Pulse page. His reaction: "Interesting. What is it worth?" He wants a one-page answer before lunch, and he will forward it to Mireille, the CFO.
+Antoine Morel, fourth-generation CEO of Polymex Industries, has asked the team one question: where should we start? He wants one page by noon, and he will read it with Laurent Garnier, the COO.
 
 ### What you have
 
-- Your Day 1 numbers: the cleaned shift logs and your Plant Pulse repository.
-- The P&L and annex above.
-- These facts, collected this morning:
-
-| Fact | Value | Source |
-|---|---|---|
-| Contribution margin | €447 per tonne, 26% of price | Plant controller |
-| Ideal rate of an extrusion line | 2.30 t per hour | Shift log, `ideal_rate_tph` |
-| Planned time | 7 lines, 3 shifts of 8 hours, 365 days a year | Production calendar |
-| Inventory carrying cost | 18% a year of inventory value | Group finance policy |
-| COGS for inventory days | €123.8M | Controller |
-| SMED benchmark | 30 to 50% reduction of changeover time | OSS field benchmark, compounding plants |
-| Sellable extra volume | Two retail accounts would take +6% volume at current prices with shorter lead times | Sales director, interview; not yet in writing |
+The bundle `D2 AM - Polymex knowledge bundle.zip` (also in the cohort channel): 49 files in the Open Knowledge Format. Start with `index.md`.
 
 ### Your task
 
-1. **Fill the leak register below**, one row per leak: the five leaks from the logs (changeovers, M07, M04 at weekends, M02, shift C), plus the leaks the P&L and annex reveal.
-2. **Value each leak.** Apply the demand fork. Use €447 per tonne for sellable tonnes and avoided variable cost otherwise. Never use price or full cost.
-3. **Find the overlaps.** Which rows count the same tonne? Which line is a symptom of another?
-4. **Rank the three biggest recurring leaks.** State any cash effect separately.
-5. **Write the memo** for Hervé, one page, answer first.
+1. **Split the reading** by role (below). Fifteen minutes.
+2. **Build the group picture**: sales trend, capacity, P&L by plant, the board's constraints. Ten minutes.
+3. **Apply the five filters** to each plant and size the gains that reach the P&L. Ten minutes.
+4. **Choose** one plant and one first problem. Say why not the other three.
+5. **Write the memo** to Antoine and Laurent. Ten minutes.
+6. Add your main findings to the bundle as concepts, each with its sources, and a line in `log.md`.
 
-Roles: the Builder keeps the register in code or a spreadsheet so every number is recomputable. The Verifier recomputes your top three independently and logs the method in `VERIFY.md`. The Storyteller writes the memo. The Lead owns the ranking and the question to Hervé.
+| Role | Reads first | Delivers |
+|---|---|---|
+| Lead | `company/`; interviews 01, 02, 03, 09 | The group's constraints and the question behind the question |
+| Builder | `finance/` and `sales/` | The group picture and the plant table below |
+| Verifier | `plants/`, `operations/`; interviews 10 to 26 | Readiness and sponsor by plant; recomputes the Builder's top three numbers |
+| Storyteller | Interviews 04, 08, 19, 27, 28 | The memo, and the risk nobody in the group is naming |
 
-### Template: leak register
+### Template: the group picture
 
-| Leak and family | Evidence (number, source, period) | Physical effect a year | Valuation path | Low / base / high, € a year | Recurring or one-time | Overlaps | Confidence | First question on site, to whom |
-|---|---|---|---|---|---|---|---|---|
-| Changeovers | | | | | | | | |
-| M07 | | | | | | | | |
-| M04 at weekends | | | | | | | | |
-| M02 | | | | | | | | |
-| Shift C | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| Question | Answer, with the source file |
+|---|---|
+| Is the market growing or shrinking, by segment? | |
+| Is capacity the constraint, or demand? | |
+| What can the group not do (capex, debt, people)? | |
+| What does the CEO need in the numbers, by when? | |
 
-### Template: assumptions table
+### Template: the five filters, plant by plant
 
-| Assumption | Base | Range | Source | Who confirms |
+| Filter | Lyon | Haguenau | Évreux | Tarragona |
 |---|---|---|---|---|
-| | | | | |
+| Reaches the P&L (how?) | | | | |
+| Size, € a year, base (range) | | | | |
+| Readiness (data, lean maturity) | | | | |
+| Sponsor | | | | |
+| Future | | | | |
 
-### Template: memo to Hervé (one page)
+### Template: sizing
 
-- **Governing thought** (one sentence, with the total in euros and its condition):
-- **Leak 1**: size, range, why we believe it, the question we ask first.
-- **Leak 2**: idem.
-- **Leak 3**: idem.
-- **What we counted once, on purpose** (the double counts you avoided):
-- **What we need from you by Friday** (a decision, a document, a person):
+| Plant | Lever | Arithmetic | Low / base / high, € a year | Recurring or once | Source |
+|---|---|---|---|---|---|
+| | | | | | |
 
-### Checklist before you demo
+### Template: memo to Antoine and Laurent (one page)
 
-- Every annualized number says "annualized from Q1".
-- No tonne is valued at €1,721 or €1,608.
-- Capacity leaks are not summed beyond what the market can buy.
-- Cash and recurring effects sit in separate columns.
-- The Verifier's three numbers match yours, or you can explain the difference.
+- **Governing thought** (the plant, the first problem, the size, the condition):
+- **Why this plant** (the five filters, with numbers):
+- **Why not the other three** (one line each, with the number that decides it):
+- **What it is worth** (low, base, high; cash stated separately):
+- **What we do not know** (two assumptions, and who confirms them):
+- **What we need from you this week** (one decision):
+
+### Checklist before the readout
+
+- No freed capacity is valued at contribution unless someone will buy the output.
+- Every tonne is valued at its contribution margin, never at price or full cost.
+- Cash and yearly effects sit in separate columns.
+- No gain depends on fewer people.
+- Every number in the memo links to a file in the bundle.

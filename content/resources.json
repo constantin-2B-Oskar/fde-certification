@@ -121,7 +121,7 @@
           "id": "d2-pre-read",
           "kind": "preread",
           "title": "Day 2 pre-read",
-          "summary": "Before the session: what the day looks like, the main terms (plant P&L, contribution margin, leak, project charter, baseline) and the ideas to hold on to.",
+          "summary": "Before the session: what the day looks like, the main terms (lean, the eight wastes, contribution margin, the five filters, project charter, baseline) and the ideas to hold on to.",
           "read": "d2-pre-read.md",
           "href": "/resources/d2-pre-read.md",
           "status": "available"
@@ -130,16 +130,25 @@
           "id": "d2-slides-am",
           "kind": "slides",
           "title": "Problems worth solving",
-          "summary": "Read a plant P&L, find the account's strategic position and the bottleneck, and size a leak in euros. 36 slides.",
+          "summary": "How plants work, how lean measures them, and which gains reach the P&L; then choose where the Polymex group should start. 63 slides.",
           "read": "d2-am-problems-worth-solving.deck.md",
           "href": "/resources/d2-am-problems-worth-solving.deck.md",
+          "status": "available",
+          "deck": "d2-am-problems-worth-solving.deck.html"
+        },
+        {
+          "id": "d2-knowledge-bundle",
+          "kind": "dataset",
+          "title": "Polymex knowledge bundle",
+          "summary": "The whole Polymex group in one folder: board memo, 2025 P&Ls of the group and its four plants, capacity, capex, bank covenant, sales, the lean program and 28 interviews. Download it for the morning lab and work with it all day.",
+          "href": "/resources/fde-school-polymex-knowledge-bundle.zip",
           "status": "available"
         },
         {
           "id": "d2-exercises-am",
           "kind": "exercise",
           "title": "Morning exercises",
-          "summary": "Read the Polymex P&L in twenty minutes, then price the leaks found on Day 1 in a leak register and a one-page memo to Hervé.",
+          "summary": "Spot the waste in pairs, then the lab: read the Polymex knowledge bundle, choose which plant to start with and on which problem, and write a one-page memo to the CEO and COO.",
           "read": "d2-am-problems-worth-solving.exercises.md",
           "href": "/resources/d2-am-problems-worth-solving.exercises.md",
           "status": "available"
@@ -151,13 +160,14 @@
           "summary": "The six-phase method, impact-first scoping, governance and the gains validation protocol. 36 slides.",
           "read": "d2-pm-leading-an-fde-project.deck.md",
           "href": "/resources/d2-pm-leading-an-fde-project.deck.md",
-          "status": "available"
+          "status": "available",
+          "deck": "d2-pm-leading-an-fde-project.deck.html"
         },
         {
           "id": "d2-exercises-pm",
           "kind": "exercise",
           "title": "Afternoon exercises",
-          "summary": "Write the Polymex project charter, the Ferralux counting rules, and a validation protocol another team tests as the controller.",
+          "summary": "Write the Polymex project charter from this morning's memo and the bundle, the Ferralux counting rules, and a validation protocol another team tests as the controller.",
           "read": "d2-pm-leading-an-fde-project.exercises.md",
           "href": "/resources/d2-pm-leading-an-fde-project.exercises.md",
           "status": "available"

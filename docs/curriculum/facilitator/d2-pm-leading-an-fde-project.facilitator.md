@@ -15,7 +15,7 @@ By 17:30 every participant can:
 ## Two things not to reveal today
 
 1. **Corinne's overrides help.** Day 4. Teams will write "Corinne" as product owner; good. If one writes "replace the planner" in scope, ask who would then own the rules.
-2. **The consolidation rumor.** Day 4. If a team asks what the group measures Hervé on, say: "Write it in your RAID log as an assumption to check."
+2. **What the footprint review means for Lyon.** Day 4. The bundle says a review goes to the board in June; it does not say which site is at risk. If a team asks, say: "Write it in your RAID log as an assumption to check."
 
 ## Run sheet
 
@@ -85,7 +85,7 @@ What to challenge: targets without a date or without the controller; "improve OT
 
 ### The gains validation protocol (slides 24 to 31)
 
-**Slide 25.** The sentence of the week. Write it on the whiteboard under this morning's fork.
+**Slide 25.** The sentence of the week. Write it on the whiteboard under this morning's four paths to the P&L.
 
 **Slide 27.** Normalization is where teams fail. Make one participant say the formula aloud: normalized baseline = baseline rate × actual volume, by family. Then ask: "If retail orders keep growing, what happens to a baseline that does not normalize for the number of orders?" It flatters or punishes the project for the mix, not for the work.
 

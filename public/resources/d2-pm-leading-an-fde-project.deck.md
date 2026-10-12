@@ -16,7 +16,7 @@ Renan Devillières
 
 | Time | Block | You leave with |
 |---|---|---|
-| 13:30 | Opening | This morning's leaks, one line each |
+| 13:30 | Opening | This morning's choice of plant, one line per team |
 | 13:40 | The six-phase method | The phases, their exits, the gates |
 | 14:05 | Scope and charter | What a charter adds to the TIP one-pager |
 | 14:25 | Exercise 1 | The Polymex project charter |
@@ -81,7 +81,7 @@ Renan Devillières
 ## Find: test the tree, price the gain, then ask for a signature
 
 - Run the cheapest test that could kill the sponsor's theory first.
-- Turn the leak register into a gains case with a low, base and high case.
+- Turn the sized gains into a gains case with a low, base and high case.
 - Write the charter and get it signed before the build starts.
 - If the problem is not worth ten times the cost to fix it, stop here.
 
@@ -167,7 +167,7 @@ The FDE team owns the system, the plan and the truth about progress.
 <!-- 18 | Exercise -->
 ## Exercise 1: write the Polymex project charter
 
-1. Start from your TIP one-pager and this morning's leak register.
+1. Start from your TIP one-pager, this morning's memo and the Polymex bundle.
 2. Fill the eight sections of the charter template in the handout.
 3. Write at least one kill criterion per gate.
 4. Name a person for each of the five client roles, from the Polymex cast.

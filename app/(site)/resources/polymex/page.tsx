@@ -10,6 +10,7 @@ export const metadata: Metadata = { title: 'Polymex Plant Pulse' };
 // participant/ folder of the lab kit; the answer key and generator stay in docs/curriculum/facilitator/.
 const DIR = '/resources/polymex-plant-pulse';
 const KIT = '/resources/fde-school-day1-participant-kit.zip';
+const BUNDLE = '/resources/fde-school-polymex-knowledge-bundle.zip';
 
 const FILES = [
   { name: 'README.md', what: 'The brief: the situation at Polymex, what to build, definition of done and the demo.' },
@@ -56,6 +57,16 @@ export default function PolymexPage() {
           </li>
         ))}
       </ul>
+
+      <section className="mt-10 border-t border-ink pt-6">
+        <h2 className="display text-27">Day 2: the Polymex knowledge bundle</h2>
+        <p className="prose-width mt-2">
+          The whole Polymex group in one folder: the board memo, the 2025 P&amp;Ls of the group and its four plants, capacity,
+          capex, the bank covenant, sales, the lean program and 28 interviews. You use it in the Day 2 lab and add your
+          findings to it.
+        </p>
+        <a href={BUNDLE} download className="btn btn-secondary mt-4">Download the bundle (.zip, {size(BUNDLE)})</a>
+      </section>
 
       <section className="mt-12 border-t border-ink pt-6"><Markdown source={read('README.md')} /></section>
       <section className="mt-12 border-t border-ink pt-6"><Markdown source={read('DATA_DICTIONARY.md')} /></section>

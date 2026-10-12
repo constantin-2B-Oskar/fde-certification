@@ -1,6 +1,6 @@
 # Day 2 afternoon: exercises
 
-FDE School, by Devoteam and OSS Ventures. Participant handout. Polymex Industries and Ferralux are fictional; every Polymex number is consistent with this morning's register.
+FDE School, by Devoteam and OSS Ventures. Participant handout. Polymex Industries and Ferralux are fictional; every Polymex number is consistent with the knowledge bundle.
 
 ---
 
@@ -12,7 +12,7 @@ Hervé read your memo. He wants a project, not a report: "Write me what you will
 
 ### What you have
 
-- Your TIP one-pager from Monday and your leak register from this morning.
+- Your TIP one-pager from Monday, this morning's memo, and the Polymex knowledge bundle (`D2 AM - Polymex knowledge bundle/`).
 - The Polymex cast: Hervé (site director), Corinne (planner, 11 years), Marc (operator on M04, 23 years), Nadia (IT manager), Mireille (CFO) and her plant controller, the sales director.
 - Hervé's position: "We need a serious APS and probably a stronger planner."
 

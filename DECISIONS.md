@@ -62,3 +62,10 @@ Every default taken or changed, one line each. The spec is docs/SPEC.md.
 - The photos the decks use (`factory-floor.jpg`, `gear-steam.png`, `sundial.png`) were not in the upload. They are expected in `public/resources/img/`; until then the slides show without them (dark background).
 - Slides cards: "View slides" opens the HTML deck in a new tab; "Read as text" keeps the Markdown version (readable on a phone and by screen readers).
 - Day 1 recording: the Circleback meeting link Renan gave. Viewers may need access on Circleback.
+
+## Pre-reads and the final Day 2 material (12 October 2026)
+
+- Day 1 feedback page (`d2-day1-feedback.md`), first card of Day 2, with Renan's three points and actions.
+- A pre-read per day (`dN-pre-read.md`, kind "Pre-read"), first card of each day (second on Day 2, after the feedback). Written from participant material only (decks, handouts, Your week, glossary), never from `docs/`. Day 4's is built from the week overview and glossary until its decks arrive; its change curve uses the Day 1 deck's stages, not the glossary's, so participants see one version.
+- Renan's final Day 2 upload (`docs/curriculum/source/day2-final.zip`): new morning deck (63 slides: types of manufacturing, lean, maturity, problems worth solving, then a lab on the whole Polymex group), afternoon deck lightly edited, both decks viewable as slides, new exercises and facilitator guides, and the Day 2 pre-read rewritten to match.
+- The Polymex knowledge bundle is participant material (the facilitator guide has teams download it at 10:45). Served as `fde-school-polymex-knowledge-bundle.zip`, from a Day 2 card and from the Polymex page. Its two "things not to reveal" concern the trainer's reading of it, not its content.

@@ -84,7 +84,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
                       )}
                       {available && it.href && (
                         <a href={it.href} {...(local ? { download: true } : { target: '_blank', rel: 'noopener noreferrer' })} className={`link ${it.read || it.page ? '' : 'font-semibold'}`}>
-                          {it.href.endsWith('.zip') ? 'Download the kit' : local ? 'Download' : it.kind === 'video' ? 'Watch the recording' : 'Open'}
+                          {it.href.endsWith('.zip') ? 'Download the .zip' : local ? 'Download' : it.kind === 'video' ? 'Watch the recording' : 'Open'}
                         </a>
                       )}
                     </div>
