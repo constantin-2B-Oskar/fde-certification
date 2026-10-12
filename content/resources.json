@@ -50,6 +50,7 @@
           "kind": "dataset",
           "title": "Lab kit: Polymex Plant Pulse",
           "summary": "The morning lab: brief, rules for Claude Code, 90 days of shift logs and the data dictionary. Clone it and ship a dashboard.",
+          "page": "/resources/polymex",
           "href": "/resources/fde-school-day1-participant-kit.zip",
           "status": "available"
         },
