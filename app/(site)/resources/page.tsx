@@ -32,6 +32,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
     <div>
       <h1 className="display text-44">Course material</h1>
       <p className="prose-width mt-3">The five days of the FDE School, in order. Read the material here or download it; more appears after each session.</p>
+      <p className="prose-width mt-2">The Polymex example you work on all week (brief, data and rules for Claude Code) has <Link href="/resources/polymex" className="link font-semibold">its own download page</Link>.</p>
 
       <nav aria-label="Filter by track" className="mt-6 flex flex-wrap gap-2">
         {FILTERS.map((f) => (
@@ -63,7 +64,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
             )}
             <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {s.items.filter((it) => fits(it.tracks ?? s.tracks)).map((it) => {
-                const available = it.status === 'available' && Boolean(it.deck || it.read || it.href);
+                const available = it.status === 'available' && Boolean(it.deck || it.read || it.page || it.href);
                 const local = it.href?.startsWith('/');
                 return (
                   <li key={it.id} className={`flex flex-col border p-5 ${available ? 'border-ink' : 'border-gauge bg-gauge/30'}`}>
@@ -78,8 +79,11 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
                       {available && it.read && (
                         <Link href={`/resources/read/${it.read}`} className={`link ${it.deck ? '' : 'font-semibold'}`}>{it.deck ? 'Read as text' : it.kind === 'slides' ? 'View slides' : 'Read'}</Link>
                       )}
+                      {available && it.page && (
+                        <Link href={it.page} className="link font-semibold">Open the Polymex page</Link>
+                      )}
                       {available && it.href && (
-                        <a href={it.href} {...(local ? { download: true } : { target: '_blank', rel: 'noopener noreferrer' })} className={`link ${it.read ? '' : 'font-semibold'}`}>
+                        <a href={it.href} {...(local ? { download: true } : { target: '_blank', rel: 'noopener noreferrer' })} className={`link ${it.read || it.page ? '' : 'font-semibold'}`}>
                           {it.href.endsWith('.zip') ? 'Download the kit' : local ? 'Download' : it.kind === 'video' ? 'Watch the recording' : 'Open'}
                         </a>
                       )}

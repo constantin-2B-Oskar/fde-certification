@@ -1,8 +1,8 @@
 import data from '@/content/resources.json';
 
 export type ResourceKind = 'slides' | 'video' | 'reading' | 'template' | 'dataset' | 'exercise';
-/** `deck`: the slides as an HTML file in public/resources/, opened as is; `read`: a Markdown file in public/resources/ shown on the site; `href`: the file to download or open. */
-export type ResourceItem = { id: string; kind: ResourceKind; title: string; summary?: string; deck?: string; read?: string; href: string | null; status: 'available' | 'coming_soon'; duration?: string; tracks?: string[] };
+/** `deck`: the slides as an HTML file in public/resources/, opened as is; `read`: a Markdown file in public/resources/ shown on the site; `page`: a dedicated page on the site; `href`: the file to download or open. */
+export type ResourceItem = { id: string; kind: ResourceKind; title: string; summary?: string; deck?: string; read?: string; page?: string; href: string | null; status: 'available' | 'coming_soon'; duration?: string; tracks?: string[] };
 export type Session = { id: string; title: string; summary: string; tracks: string[]; domains: string[]; items: ResourceItem[] };
 export type Reading = { id: string; title: string; by: string; href: string; domains: string[]; tracks: string[] };
 
