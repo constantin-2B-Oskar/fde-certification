@@ -127,6 +127,15 @@
           "status": "available"
         },
         {
+          "id": "d2-total-view",
+          "kind": "slides",
+          "title": "The total view of an FDE project",
+          "summary": "The ten minutes that open Day 2: the five phases of an FDE engagement, the FDE's role in each, and where each day of the week and each Polymex lab fits. 5 slides.",
+          "deck": "d2-total-view-of-an-fde-project.pdf",
+          "href": "/resources/d2-total-view-of-an-fde-project.pdf",
+          "status": "available"
+        },
+        {
           "id": "d2-slides-am",
           "kind": "slides",
           "title": "Problems worth solving",
