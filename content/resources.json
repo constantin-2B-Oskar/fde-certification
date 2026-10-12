@@ -40,7 +40,8 @@
           "id": "d1-slides-am",
           "kind": "slides",
           "title": "What an FDE is",
-          "summary": "The job AI created: why deployment, not models, is where industrial AI fails, and what an FDE is accountable for. 50 slides.",
+          "summary": "The job AI created: why deployment, not models, is where industrial AI fails, and what an FDE is accountable for. 122 slides.",
+          "deck": "d1-am-what-an-fde-is.deck.html",
           "read": "d1-am-what-an-fde-is.deck.md",
           "href": "/resources/d1-am-what-an-fde-is.deck.md",
           "status": "available"
@@ -57,7 +58,8 @@
           "id": "d1-slides-pm",
           "kind": "slides",
           "title": "Consulting skills 101",
-          "summary": "Think like a partner, speak like one: structure the problem, structure the message, navigate the organization. 50 slides.",
+          "summary": "Think like a partner, speak like one: structure the problem, structure the message, navigate the organization. 122 slides.",
+          "deck": "d1-pm-consulting-skills.deck.html",
           "read": "d1-pm-consulting-skills.deck.md",
           "href": "/resources/d1-pm-consulting-skills.deck.md",
           "status": "available"
@@ -66,7 +68,7 @@
           "id": "d1-exercises",
           "kind": "exercise",
           "title": "Afternoon exercises",
-          "summary": "Three exercises on Polymex: turn Hervé's complaint into a testable problem, write an answer-first memo, map the plant and brief Hervé live.",
+          "summary": "Five exercises on Polymex: turn Hervé's complaint into a testable problem, write an answer-first memo, adapt one message to four plant roles, design the target system, then brief Hervé live.",
           "read": "d1-pm-consulting-skills.exercises.md",
           "href": "/resources/d1-pm-consulting-skills.exercises.md",
           "status": "available"
@@ -75,8 +77,9 @@
           "id": "d1-recording",
           "kind": "video",
           "title": "Session recording",
-          "href": null,
-          "status": "coming_soon"
+          "summary": "The Day 1 session on Circleback, with its transcript.",
+          "href": "https://circleback.ai/meetings/5rTdu1yN7UaWHj8WEWyzw?tab=transcript&t=0m0s",
+          "status": "available"
         }
       ]
     },

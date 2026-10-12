@@ -4,7 +4,7 @@ FDE School, by Devoteam and OSS Ventures. Participant handout. Polymex Industrie
 
 ---
 
-## Exercise 1. From Hervé's complaint to a problem worth testing (45 minutes)
+## Exercise 1. From Hervé's complaint to a problem worth testing (35 minutes)
 
 ### The email
 
@@ -55,7 +55,7 @@ FDE School, by Devoteam and OSS Ventures. Participant handout. Polymex Industrie
 
 ---
 
-## Exercise 2. Answer first: a memo and a storyline for Hervé (45 minutes)
+## Exercise 2. Answer first: a memo and a storyline for Hervé (30 minutes)
 
 ### Fact base
 
@@ -106,7 +106,61 @@ Read the six titles aloud in order. If they do not tell the whole story, rewrite
 
 ---
 
-## Exercise 3. Map the plant, pre-wire Friday, brief Hervé live (10 minutes of preparation, then live briefings)
+## Exercise 3. One message, four plant roles (10 minutes, in pairs)
+
+Four people at another plant, a metal stamping site. For each: write which preferences you see (E or I, S or N, T or F, J or P) and the evidence; then write the first two sentences you would say to them about your Exercise 2 recommendation, adapted to Polymex as if they were there.
+
+| Person | What you observed in your first week |
+|---|---|
+| Lucas, plant controller | Opened your memo at the appendix. Asked for the raw rows behind two numbers. Speaks little in meetings, then sends a precise email the next morning. Every meeting with him starts and ends on time. |
+| Amélie, quality manager | Thinks out loud at the morning production meeting. First question about your findings: "Which customers would see this?" Worried that operators who log defects will be blamed. Prefers to talk at the line, in front of the defect. |
+| Karim, maintenance manager | Said almost nothing in the first meeting. Two days later he brought a printed failure log for one line, with three corrections to your numbers, and asked how a sensor would be powered. Does not commit until he has checked. |
+| Sophie, site director | Arrived with a printed agenda. Wants a plan with dates; was annoyed when a deadline moved. Decides in the meeting. |
+
+| Person | Preferences you see, and the evidence | Your first two sentences |
+|---|---|---|
+| Lucas | | |
+| Amélie | | |
+| Karim | | |
+| Sophie | | |
+
+Remember: these are hypotheses to test, never labels.
+
+---
+
+## Drill. The first five concepts of the Polymex bundle (6 minutes)
+
+In your Plant Pulse repository, open `knowledge/`: `index.md`, `log.md` and `metrics/oee.md` are already there. Write the concepts below, one markdown file each, in the Open Knowledge Format: a YAML header with at least `type`, `title`, `description` and `sources`, then the body.
+
+| File | type | What it must contain |
+|---|---|---|
+| `people/herve.md` | person | Role, what he asked, link to his email. No judgments. |
+| `findings/extrusion-is-the-constraint.md` | finding | The evidence, with links to the data and to `VERIFY.md` |
+| `metrics/oee.md` | metric | Already written: check it against your code |
+| `sources/emails/2026-05-04-herve.md` | email | The original text of Hervé's email |
+| `decisions/<date>-<topic>.md` | decision | Who decided, when, on what evidence |
+
+Template:
+
+```markdown
+---
+type: finding
+title: Extrusion is the constraint
+description: Mixing is blocked and packing starved while extrusion is always busy
+sources:
+  - ../../data/stage_daily.csv
+  - ../../VERIFY.md
+status: active
+---
+## Evidence
+...
+```
+
+Rules: one fact in one place; every number links to its source; nothing you would not show the person concerned. Append one dated line to `log.md`. From tomorrow, every lab adds to this bundle.
+
+---
+
+## Exercise 4. Design the Polymex target system (12 minutes)
 
 ### Cast sheet
 
@@ -119,12 +173,29 @@ Read the six titles aloud in order. If they do not tell the whole story, rewrite
 | Mireille | CFO | Group EBIT, cash | Will join Friday's steering. Not yet briefed. |
 | The group COO | Hervé's boss | Group OTIF, the 95% target | Expects Hervé's recommendation after Friday. |
 | The sales director | Owns key accounts, including the two retail clients | Revenue, customer satisfaction | Some customers are known on the floor as "priority". |
+| Sylvie | Scheduling clerk, 6 years, reports to Corinne | Plan in the ERP on time | Re-keys Corinne's daily changes into the ERP, about 25 hours a week. |
+| The production manager | Runs the three shifts, reports to Hervé | Output, crews | Shift leaders report to him. Quiet in meetings; his teams do what he asks. |
+| Shift leaders A, B, C | Run each shift, report to the production manager | Their shift's output | Receive the plan every morning. |
+
 
 ### Your task
 
-1. Place each person on the map below.
-2. Write the pre-wiring plan for Friday's steering committee.
-3. Prepare a two-minute, answer-first briefing of your Exercise 2 recommendation for Hervé.
+1. Write the behaviour that must change, in one sentence.
+2. Fill the target system below.
+3. Place each person on the influence and stance map, and on the curve of change.
+4. Mark what the system does to each person's work.
+5. Circle the gaps.
+
+### Template: target system
+
+| Person | Role in the change (sponsor, agent, target, advocate) | Their sustaining sponsor | What the system does to their work (removes, changes, adds, nothing) | Where on the curve of change | Gap or risk |
+|---|---|---|---|---|---|
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
 
 ### Template: influence and stance map
 
@@ -133,19 +204,34 @@ Read the six titles aloud in order. If they do not tell the whole story, rewrite
 | High influence | | | |
 | Low influence | | | |
 
-### Template: pre-wiring plan
+---
 
-| Order | Who | When | What we need from them | What we offer them | Risk if we skip them |
-|---|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+## Exercise 5. Sequence the Sylvie message, then brief Hervé live (10 minutes of preparation)
+
+### Situation
+
+When Plant Pulse v1 is live and IT approves a write-back, Corinne's daily changes will flow into the ERP without retyping. That removes most of Sylvie's 25 hours a week of re-keying. Hervé has not decided what Sylvie will do instead. Nobody has told Sylvie or Corinne. The works council meets on the first Tuesday of each month.
+
+### Your task
+
+1. Fill the communication plan.
+2. Write the first three sentences Corinne will say to Sylvie.
+3. Prepare a two-minute, answer-first briefing for Hervé: your Exercise 2 recommendation, and the sequence you need him to approve.
+
+### Template: communication plan
+
+| Step | Who | What they hear | From whom | When | Channel | Reaction we expect | Follow-up |
+|---|---|---|---|---|---|---|---|
+| 1 | | | | | | | |
+| 2 | | | | | | | |
+| 3 | | | | | | | |
+| 4 | | | | | | | |
+| 5 | | | | | | | |
+| 6 | | | | | | | |
 
 ### Briefing structure (two minutes)
 
 1. The answer, in one sentence.
 2. The two numbers that prove it.
 3. The options you see, and the one you recommend.
-4. The decision you need from Hervé this week.
+4. The decision you need from Hervé this week, including the sequence for Sylvie.

@@ -25,7 +25,10 @@ export default async function ReadResource({ params }: { params: Promise<{ file:
           <p className="text-15 text-steel">{KIND_LABEL[item.kind]}</p>
           <h1 className="display text-44">{item.title}</h1>
         </div>
-        {item.href && <a href={item.href} download className="btn btn-secondary">Download the Markdown file</a>}
+        <div className="flex flex-wrap gap-3">
+          {item.deck && <a href={`/resources/${item.deck}`} target="_blank" rel="noopener" className="btn">View slides</a>}
+          {item.href && <a href={item.href} download className="btn btn-secondary">Download the Markdown file</a>}
+        </div>
       </div>
       <div className="mt-8">{isDeck ? <Deck source={source} /> : <Markdown source={source} />}</div>
     </div>

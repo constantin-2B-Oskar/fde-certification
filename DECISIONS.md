@@ -44,3 +44,11 @@ Every default taken or changed, one line each. The spec is docs/SPEC.md.
 - The Day 1 lab kit is served as `fde-school-day1-participant-kit.zip`, rebuilt from the `participant/` folder only.
 - Renan asked for cards on the Resources page; this replaces the spec's "no rows of identical cards" rule for that page only. Cards differ by state: available (ink border) or coming soon (grey).
 - The program guide is a facilitator document (its materials index says so) and its Polymex cast table reveals the consolidation rumor the Day 1 facilitator guide says not to reveal. Participants get "Your week", the same text minus the cast table, facilitation principles, materials index, design conventions and trainer-only lines. The full guide stays in `docs/curriculum/facilitator/`.
+
+## Day 1 final material (12 October 2026)
+
+- Renan's final Day 1 upload (`docs/curriculum/source-files-day1-final.zip`) replaces the Day 1 decks (now 122 slides each), exercises (now five), facilitator guides and the participant lab kit (adds a `knowledge/` folder). The lab answer key and generator are unchanged.
+- The decks exported from Claude Design (`*.dc.html`) need the tool's runtime and a `../shared/` folder that was not in the upload. `scripts/deck-html.ts` turns each into one self-contained page (`public/resources/*.deck.html`): the slides as exported, scaled to the window, with arrows, click, swipe and full screen, no React and no runtime. Fonts come from Google Fonts; the logo is the site's official file.
+- The photos the decks use (`factory-floor.jpg`, `gear-steam.png`, `sundial.png`) were not in the upload. They are expected in `public/resources/img/`; until then the slides show without them (dark background).
+- Slides cards: "View slides" opens the HTML deck in a new tab; "Read as text" keeps the Markdown version (readable on a phone and by screen readers).
+- Day 1 recording: the Circleback meeting link Renan gave. Viewers may need access on Circleback.

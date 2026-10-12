@@ -63,7 +63,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
             )}
             <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {s.items.filter((it) => fits(it.tracks ?? s.tracks)).map((it) => {
-                const available = it.status === 'available' && Boolean(it.read || it.href);
+                const available = it.status === 'available' && Boolean(it.deck || it.read || it.href);
                 const local = it.href?.startsWith('/');
                 return (
                   <li key={it.id} className={`flex flex-col border p-5 ${available ? 'border-ink' : 'border-gauge bg-gauge/30'}`}>
@@ -72,12 +72,15 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
                     <p className="mt-2 flex-1 text-15 text-steel">{it.summary ?? ''}</p>
                     <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-15">
                       {!available && <span className="text-steel">Available after the session</span>}
+                      {available && it.deck && (
+                        <a href={`/resources/${it.deck}`} target="_blank" rel="noopener" className="link font-semibold">View slides</a>
+                      )}
                       {available && it.read && (
-                        <Link href={`/resources/read/${it.read}`} className="link font-semibold">{it.kind === 'slides' ? 'View slides' : 'Read'}</Link>
+                        <Link href={`/resources/read/${it.read}`} className={`link ${it.deck ? '' : 'font-semibold'}`}>{it.deck ? 'Read as text' : it.kind === 'slides' ? 'View slides' : 'Read'}</Link>
                       )}
                       {available && it.href && (
                         <a href={it.href} {...(local ? { download: true } : { target: '_blank', rel: 'noopener noreferrer' })} className={`link ${it.read ? '' : 'font-semibold'}`}>
-                          {it.href.endsWith('.zip') ? 'Download the kit' : local ? 'Download' : 'Open'}
+                          {it.href.endsWith('.zip') ? 'Download the kit' : local ? 'Download' : it.kind === 'video' ? 'Watch the recording' : 'Open'}
                         </a>
                       )}
                     </div>
