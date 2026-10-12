@@ -1,6 +1,6 @@
 import data from '@/content/resources.json';
 
-export type ResourceKind = 'slides' | 'video' | 'reading' | 'template' | 'dataset' | 'exercise';
+export type ResourceKind = 'preread' | 'slides' | 'video' | 'reading' | 'template' | 'dataset' | 'exercise';
 /** `deck`: the slides as an HTML file in public/resources/, opened as is; `read`: a Markdown file in public/resources/ shown on the site; `page`: a dedicated page on the site; `href`: the file to download or open. */
 export type ResourceItem = { id: string; kind: ResourceKind; title: string; summary?: string; deck?: string; read?: string; page?: string; href: string | null; status: 'available' | 'coming_soon'; duration?: string; tracks?: string[] };
 export type Session = { id: string; title: string; summary: string; tracks: string[]; domains: string[]; items: ResourceItem[] };
@@ -10,7 +10,7 @@ export const SESSIONS = data.sessions as Session[];
 export const FURTHER_READING = data.furtherReading as Reading[];
 
 export const KIND_LABEL: Record<ResourceKind, string> = {
-  slides: 'Slides', video: 'Video', reading: 'Reading', template: 'Template', dataset: 'Lab kit', exercise: 'Exercises',
+  preread: 'Pre-read', slides: 'Slides', video: 'Video', reading: 'Reading', template: 'Template', dataset: 'Lab kit', exercise: 'Exercises',
 };
 
 /** Sessions that cover a domain, for "where to focus" on the result page. */
