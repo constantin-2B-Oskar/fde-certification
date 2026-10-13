@@ -61,4 +61,4 @@ Day 1 set out the role and how to read people. Day 2 covered finding a problem w
 
 ## If you have 10 more minutes
 
-On the Resources page, open the Day 1 afternoon deck, "Consulting skills 101", and read the part on the curve of change. Then skim the Day 3 morning deck, "Plant systems and data", in particular the section on the source of truth.
+On the Resources page, open the Day 1 afternoon deck, "Consulting skills 101", and read the part on the curve of change. Then skim the Day 3 morning deck, "From the stated process to the target architecture", in particular the part on the ontology and which system owns each fact.

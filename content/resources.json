@@ -193,7 +193,7 @@
     {
       "id": "day-3",
       "title": "Day 3: The technology",
-      "summary": "IT and infrastructure fundamentals (ERP, MES, data, integrations), then AI fundamentals: what is possible and what is not, how models work, why the ontology matters, and a build lab.",
+      "summary": "Planning at the Lyon plant, from the procedure to a running system: map the true process with data, choose one component per step (language model, decision model, rules engine, solver, a person), define what good looks like, then build the system on a platform and run it with the planner.",
       "tracks": [
         "exco",
         "manager",
@@ -208,61 +208,107 @@
       ],
       "items": [
         {
+          "id": "d3-day2-feedback",
+          "kind": "reading",
+          "title": "Day 2 main feedback",
+          "summary": "The three points you raised on Day 2, and our answers: the intensity, pictures in the slides, and the paperboard figures.",
+          "read": "d3-day2-feedback.md",
+          "href": "/resources/d3-day2-feedback.md",
+          "status": "available"
+        },
+        {
           "id": "d3-pre-read",
           "kind": "preread",
           "title": "Day 3 pre-read",
-          "summary": "Before the session: what the day looks like, the main terms (ERP, MES, source of truth, retrieval, agents, evals, ontology) and the ideas to hold on to.",
+          "summary": "Before the session: what the day looks like, the main terms (language and decision models, agents, ontology, rules engine, solver, the true process, human gates, five whys, entitlement) and the ideas to hold on to.",
           "read": "d3-pre-read.md",
           "href": "/resources/d3-pre-read.md",
           "status": "available"
         },
         {
+          "id": "d3-slides-llm",
+          "kind": "slides",
+          "title": "LLMs and agentic systems in 30 minutes",
+          "summary": "What a language model is, what an agent really is, and what you build with them: which component for which step, and where people stay. 21 slides.",
+          "deck": "d3-llms-and-agentic-systems.deck.html",
+          "read": "d3-llms-and-agentic-systems.deck.md",
+          "href": "/resources/d3-llms-and-agentic-systems.deck.md",
+          "status": "available"
+        },
+        {
           "id": "d3-slides-am",
           "kind": "slides",
-          "title": "Plant systems and data",
-          "summary": "The systems a plant runs on, ISA-95, integration, one source of truth per data object, and security. 26 slides.",
-          "read": "d3-am-plant-systems-and-data.deck.md",
-          "href": "/resources/d3-am-plant-systems-and-data.deck.md",
+          "title": "From the stated process to the target architecture",
+          "summary": "What an AI system is really made of, the two maps (the current value stream and the future process), and how to define what good looks like. 43 slides; the six that answer the exercises are added after the session.",
+          "deck": "d3-am-stated-process-to-target-architecture.deck.html",
+          "read": "d3-am-stated-process-to-target-architecture.deck.md",
+          "href": "/resources/d3-am-stated-process-to-target-architecture.deck.md",
+          "status": "available"
+        },
+        {
+          "id": "d3-lab-am",
+          "kind": "dataset",
+          "title": "Lab kit: Lyon planning process",
+          "summary": "The morning lab: the planning procedure, eight process-walk interviews, a day shadowing Corinne, four weeks of plan changes, the rules people apply, the platform catalogue and the templates. Open it in Claude Code.",
+          "href": "/resources/fde-school-day3-am-lyon-planning-kit.zip",
           "status": "available"
         },
         {
           "id": "d3-exercises-am",
           "kind": "exercise",
           "title": "Morning exercises",
-          "summary": "The Polymex IT landscape: draw the systems and data-flow map, then write the access plan and the request to Nadia.",
-          "read": "d3-am-plant-systems-and-data.exercises.md",
-          "href": "/resources/d3-am-plant-systems-and-data.exercises.md",
+          "summary": "Map the stated and the true planning process at Lyon, design the target architecture and the ontology, then write a five-line scorecard of what good looks like.",
+          "read": "d3-am-stated-process-to-target-architecture.exercises.md",
+          "href": "/resources/d3-am-stated-process-to-target-architecture.exercises.md",
           "status": "available"
         },
         {
           "id": "d3-slides-pm",
           "kind": "slides",
-          "title": "AI fundamentals and the build lab",
-          "summary": "From tokens to agents: retrieval, tools, evals and the ontology, then the build lab. 27 slides.",
-          "read": "d3-pm-ai-fundamentals.deck.md",
-          "href": "/resources/d3-pm-ai-fundamentals.deck.md",
-          "status": "available"
-        },
-        {
-          "id": "d3-exercises-pm",
-          "kind": "exercise",
-          "title": "Afternoon worksheets",
-          "summary": "The lab in one page, the rules found without the code, five eval questions of your own and the paragraph for Hervé.",
-          "read": "d3-pm-ai-fundamentals.exercises.md",
-          "href": "/resources/d3-pm-ai-fundamentals.exercises.md",
+          "title": "The platform and the first loop",
+          "summary": "The six layers around every model call, permissions, the core platform, then deployment, mini-apps, the improvement loop and five whys. 33 slides; the two that give the lab's results are added after the session.",
+          "deck": "d3-pm-platform-and-first-loop.deck.html",
+          "read": "d3-pm-platform-and-first-loop.deck.md",
+          "href": "/resources/d3-pm-platform-and-first-loop.deck.md",
           "status": "available"
         },
         {
           "id": "d3-lab",
           "kind": "dataset",
-          "title": "Lab kit: Plant Pulse v1",
-          "summary": "The schedule checker: week 19's plan, the changeover rules, Corinne's interview, Jean-Pierre's notebooks and an eval set.",
-          "href": "/resources/fde-school-day3-participant-kit.zip",
+          "title": "Lab kit: Lyon planning v1",
+          "summary": "The afternoon lab: the platform tools (rules engine, long and fast solvers, harness), week 20's orders, 110 rules, Monday's events and inbox, and the app you run with Corinne. Node.js 20, nothing to install.",
+          "href": "/resources/fde-school-day3-pm-lyon-planning-v1-kit.zip",
           "status": "available",
           "tracks": [
             "manager",
             "fde"
           ]
+        },
+        {
+          "id": "d3-rule-register",
+          "kind": "reading",
+          "title": "Rule register: Lyon planning",
+          "summary": "The 110 rules from the rules workshop of 6 May, by category, each with its source, owner and status. Read it before Exercise 4.",
+          "read": "d3-pm-rule-register.md",
+          "href": "/resources/d3-pm-rule-register.md",
+          "status": "available"
+        },
+        {
+          "id": "d3-exercises-pm",
+          "kind": "exercise",
+          "title": "Afternoon exercises",
+          "summary": "Wire the platform tools into your architecture (permissions, the long and the short loop, tests), then run the first full version with Corinne and find the rules you are missing.",
+          "read": "d3-pm-platform-and-first-loop.exercises.md",
+          "href": "/resources/d3-pm-platform-and-first-loop.exercises.md",
+          "status": "available"
+        },
+        {
+          "id": "d3-lyon-planner",
+          "kind": "dataset",
+          "title": "Lyon Planner app",
+          "summary": "The planning system, running: ontology, rules, planning, data sources, feedback and eval on week 20. One instance per team, opened from every laptop. Node.js 18, nothing to install.",
+          "href": "/resources/fde-school-lyon-planner-app.zip",
+          "status": "available"
         },
         {
           "id": "d3-recording",

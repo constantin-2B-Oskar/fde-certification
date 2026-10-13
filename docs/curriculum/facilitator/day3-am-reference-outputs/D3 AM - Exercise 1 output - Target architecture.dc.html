@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Exercise 1 output · The target architecture</title>
+<link rel="stylesheet" href="../_ds/oss-ventures-design-system-019dd9d1-f78f-71a2-a3ec-0595d0ceef0e/colors_and_type.css">
+<script src="../_ds/oss-ventures-design-system-019dd9d1-f78f-71a2-a3ec-0595d0ceef0e/_ds_bundle.js"></script>
+<style>html,body{margin:0;background:#E9E9E9}a{color:#0D0D0D}a:hover{color:#FD594F}</style>
+</helmet>
+<div style="width:1920px;margin:0 auto;background:#FDFDFD;color:#0D0D0D;font-family:Inter,'Helvetica Neue',sans-serif;padding:80px 96px 72px;box-sizing:border-box;display:flex;flex-direction:column;gap:52px">
+
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:60px">
+    <div style="display:flex;flex-direction:column;gap:22px;max-width:1240px">
+      <div style="display:flex;align-items:center;gap:14px"><span style="width:14px;height:14px;background:#FD594F"></span><span style="font-family:Archivo,Inter,sans-serif;font-weight:300;font-size:20px;text-transform:uppercase;letter-spacing:0.16em;color:#44464A">FDE School · Day 3 · Exercise 1 · Reference output 4 of 4</span></div>
+      <div style="font-family:'Fjalla One',sans-serif;font-size:104px;line-height:0.98;text-transform:uppercase">The target architecture: a workflow that decides with solvers, reads with models</div>
+      <div style="font-size:24px;line-height:1.45;color:#313233;max-width:1160px">Where every fact comes from, what is captured from people's heads and where it lives, which modules the platform gives out of the box, what is built for Lyon, and what has to change in the plant's own systems.</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;min-width:360px">
+      <span style="font-family:Archivo,Inter,sans-serif;font-size:15px;text-transform:uppercase;letter-spacing:0.14em;color:#5E6064">Legend</span>
+      <div style="display:flex;align-items:center;gap:12px;font-size:18px"><span style="width:44px;height:24px;background:#0D0D0D"></span>Platform, out of the box</div>
+      <div style="display:flex;align-items:center;gap:12px;font-size:18px"><span style="width:44px;height:24px;border:2px solid #0D0D0D;background:#fff;box-sizing:border-box"></span>Built ad hoc for Lyon</div>
+      <div style="display:flex;align-items:center;gap:12px;font-size:18px"><span style="width:44px;height:24px;border:2px dashed #FD594F;background:#fff;box-sizing:border-box"></span>Change to an existing system</div>
+      <div style="display:flex;align-items:center;gap:12px;font-size:18px"><span style="width:44px;height:24px;background:#F3F3F3"></span>Existing system, unchanged</div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,0.95fr) 28px minmax(0,1fr) 28px minmax(0,1.1fr) 28px minmax(0,1.1fr);align-items:stretch">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase;padding-bottom:8px;border-bottom:2px solid #0D0D0D">Existing systems</span>
+      <div style="background:#F3F3F3;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">SAP ECC</span><span style="font-size:15px;color:#313233;line-height:1.35">Orders, due dates, products, stock</span></div>
+      <div style="border:2px dashed #FD594F;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">SAP process orders</span><span style="font-size:15px;color:#313233;line-height:1.35">Receive the published plan</span></div>
+      <div style="background:#F3F3F3;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">LineLog</span><span style="font-size:15px;color:#313233;line-height:1.35">What ran, stops, comments</span></div>
+      <div style="border:2px dashed #FD594F;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Lab database</span><span style="font-size:15px;color:#313233;line-height:1.35">Add the order id next to the batch</span></div>
+      <div style="border:2px dashed #FD594F;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">MaintPro</span><span style="font-size:15px;color:#313233;line-height:1.35">Every window entered, not said</span></div>
+      <div style="border:2px dashed #FD594F;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Planning mailbox</span><span style="font-size:15px;color:#313233;line-height:1.35">New shared box, replaces Stéphane's</span></div>
+      <div style="background:#F3F3F3;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">HR and logistics</span><span style="font-size:15px;color:#313233;line-height:1.35">Holidays, carrier lead times</span></div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;font-family:'Fjalla One',sans-serif;font-size:28px;color:#888A8C">→</div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase;padding-bottom:8px;border-bottom:2px solid #0D0D0D">Connectors</span>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">SAP reader</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Reporting user, read-only</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">SAP write-back</span><span style="font-size:15px;color:#313233;line-height:1.35">With group IT. Off until Nadia says on</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">File reader</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">LineLog CSV at 06:00</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Lab mapping</span><span style="font-size:15px;color:#313233;line-height:1.35">Nightly Access copy, batch to order</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">REST reader</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">MaintPro token, read-only</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Mailbox reader</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Shared box only</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Ontology mapping</span><span style="font-size:15px;color:#313233;line-height:1.35">Polymex fields to order, line, rule, event</span></div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;font-family:'Fjalla One',sans-serif;font-size:28px;color:#888A8C">→</div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase;padding-bottom:8px;border-bottom:2px solid #0D0D0D">Store, one owner per fact</span>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Plant state</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Orders, lines, what is running. Owner: SAP, LineLog</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Rule register</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">110 rules, each with source and owner</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Event log</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Proposed, confirmed, applied, rejected</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Plans</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Draft and published, every version kept</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Overrides and execution</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Every disagreement, with its why</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Audit trail</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Every call, decision and write</span></div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;font-family:'Fjalla One',sans-serif;font-size:28px;color:#888A8C">→</div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase;padding-bottom:8px;border-bottom:2px solid #0D0D0D">Decision layer</span>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Decision model, Jev</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Which event type, which order: a choice from a list, with a probability</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Small fast LLM</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Fields of the event into a schema</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Rules engine</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">13 rule types, deterministic, cites rule ids</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Long solver</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">All lines, the week, once a day</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Fast solver</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">One event, 48 hours, the freeze kept</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:18px">Frontier LLM</span><span style="font-size:15px;color:#C6C9CC;line-height:1.35">Explains changes, drafts rules and customer answers</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Lyon configuration</span><span style="font-size:15px;color:#313233;line-height:1.35">Objective weights, freeze, horizons, thresholds, prompts</span></div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;font-family:'Fjalla One',sans-serif;font-size:28px;color:#888A8C">→</div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase;padding-bottom:8px;border-bottom:2px solid #0D0D0D">Orchestrator and mini-apps</span>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Orchestrator</span><span style="font-size:15px;color:#313233;line-height:1.35">Daily run, on event, what-if, publish. A fixed workflow, written for Lyon</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Plan review</span><span style="font-size:15px;color:#313233;line-height:1.35">Corinne: publish, override with a reason</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Event desk</span><span style="font-size:15px;color:#313233;line-height:1.35">Sylvie: confirm, correct, reject</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">What-if</span><span style="font-size:15px;color:#313233;line-height:1.35">Stéphane: a date within the hour</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Rules capture</span><span style="font-size:15px;color:#313233;line-height:1.35">Five whys, statement, type, source, owner</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Execution capture and night guidance</span><span style="font-size:15px;color:#313233;line-height:1.35">Kevin and the shift leaders</span></div>
+      <div style="border:2px solid #0D0D0D;padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#fff"><span style="font-weight:600;font-size:18px">Scorecard</span><span style="font-size:15px;color:#313233;line-height:1.35">Hervé, Julien</span></div>
+    </div>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:28px;background:#0D0D0D;color:#FDFDFD;padding:20px 28px">
+    <span style="font-family:'Fjalla One',sans-serif;font-size:28px;text-transform:uppercase;white-space:nowrap">Under everything: the harness</span>
+    <span style="font-size:19px;line-height:1.4;color:#C6C9CC">Out of the box. Permissions per person, agent and service; human gates on publish and rule validation; Nadia's kill switch; secrets in the environment; redaction before any prompt; one model gateway on an EU endpoint; the audit trail; evals on every rule and every model role.</span>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <span style="font-family:'Fjalla One',sans-serif;font-size:34px;text-transform:uppercase;padding-bottom:12px;border-bottom:1px solid #0D0D0D">Data from existing systems</span>
+    <div style="display:grid;grid-template-columns:minmax(0,0.8fr) minmax(0,1.3fr) minmax(0,1fr) minmax(0,0.7fr) 90px minmax(0,0.6fr) minmax(0,1.1fr);gap:10px 18px;font-size:17px;line-height:1.4">
+      <span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">System</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Data used</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Connector</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Refresh</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Way</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Owner</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Change needed</span>
+      <span style="font-weight:600">SAP ECC, SD and PP</span><span>Open orders, customer, product, tonnes, promise date, stock, product master</span><span>SAP reader, out of the box</span><span>Every 15 min</span><span>Read</span><span>Group IT</span><span>None. Reporting user exists</span>
+      <span style="font-weight:600">SAP process orders</span><span>The published plan: line, sequence, start, end</span><span>Write-back, ad hoc with group IT</span><span>At every publish</span><span>Write</span><span>Nadia</span><span style="color:#0D0D0D"><span style="display:inline-block;width:9px;height:9px;background:#FD594F;margin-right:8px"></span>Interface, test plan, runbook; from June</span>
+      <span style="font-weight:600">LineLog</span><span>Actual starts and ends, stops, changeovers, comments</span><span>File reader, out of the box</span><span>CSV at 06:00; hourly later</span><span>Read</span><span>Nadia</span><span><span style="display:inline-block;width:9px;height:9px;background:#FD594F;margin-right:8px"></span>Hourly export, asked of the vendor</span>
+      <span style="font-weight:600">Lab database</span><span>Holds and releases, test times</span><span>Lab mapping, ad hoc</span><span>Nightly, live later</span><span>Read</span><span>Amina</span><span><span style="display:inline-block;width:9px;height:9px;background:#FD594F;margin-right:8px"></span>An order id field next to the batch number</span>
+      <span style="font-weight:600">MaintPro</span><span>Preventive windows, breakdown work orders, estimates</span><span>REST reader, out of the box</span><span>Every 15 min</span><span>Read</span><span>Patrick</span><span><span style="display:inline-block;width:9px;height:9px;background:#FD594F;margin-right:8px"></span>Every window entered, including the ones said at 8:30</span>
+      <span style="font-weight:600">Planning mailbox</span><span>Customer changes, rush orders, cancellations</span><span>Mailbox reader, out of the box</span><span>Live</span><span>Read</span><span>Stéphane</span><span><span style="display:inline-block;width:9px;height:9px;background:#FD594F;margin-right:8px"></span>New shared box; customers and sales write there</span>
+      <span style="font-weight:600">HR, logistics</span><span>Holiday staffing, carrier lead times</span><span>File reader</span><span>Monthly</span><span>Read</span><span>Didier, Stéphane</span><span>None; becomes rules R67 to R71, R86 to R92</span>
+      <span style="font-weight:600">Corinne's workbook</span><span>Nothing, after the shadow weeks</span><span>Read in shadow mode only</span><span>Until go-live</span><span>Read</span><span>Corinne</span><span><span style="display:inline-block;width:9px;height:9px;background:#FD594F;margin-right:8px"></span>Retired; its rules moved to the register</span>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <span style="font-family:'Fjalla One',sans-serif;font-size:34px;text-transform:uppercase;padding-bottom:12px;border-bottom:1px solid #0D0D0D">In people's heads today, captured by an ad hoc app</span>
+    <div style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,0.9fr) minmax(0,0.9fr) minmax(0,0.9fr) minmax(0,0.6fr) minmax(0,0.9fr);gap:10px 18px;font-size:17px;line-height:1.4">
+      <span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Knowledge or algorithm</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Whose head, or paper</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Captured by</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Lives in</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Owner</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Volume</span>
+      <span style="font-weight:600">Changeover times by product, line and direction; forbidden transitions; windows</span><span>Corinne; Jean-Pierre's notebooks; the whiteboard</span><span>Rules capture, five whys</span><span>Rule register: changeover, window, forbidden</span><span>Corinne, Patrick</span><span>41 rules</span>
+      <span style="font-weight:600">Which line can run what, and for which customer</span><span>Patrick; Amina's PPAP, UL and BRC files</span><span>Rules capture, with the document attached</span><span>Rule register: capability, qualification</span><span>Amina, Patrick</span><span>13 rules, more to find</span>
+      <span style="font-weight:600">Priorities and trade-offs between customers</span><span>Corinne, Hervé</span><span>Rules capture; override reasons</span><span>Rule register: priority; override log</span><span>Hervé</span><span>1 rule; overrides weekly</span>
+      <span style="font-weight:600">Machine behaviour that is in no system: M04 at the weekend, M07 micro-stops</span><span>Marc, Patrick, Bruno</span><span>Execution capture, then five whys</span><span>Rule register: run rate; execution log</span><span>Patrick</span><span>7 rate rules</span>
+      <span style="font-weight:600">The swap to make when a line stops at night</span><span>Kevin</span><span>Execution capture, two taps</span><span>Execution log; night guidance learns from it</span><span>Didier</span><span>About 5 a week</span>
+      <span style="font-weight:600">Every change to the plan, who asked, why</span><span>Sylvie's notebook; Stéphane's mailbox</span><span>Event desk</span><span>Event log</span><span>Sylvie</span><span>8.6 per weekday</span>
+      <span style="font-weight:600">Why the planner disagrees with the plan</span><span>Corinne</span><span>Override with a reason, then five whys</span><span>Override log, linked to rules</span><span>Corinne</span><span>Falls week after week</span>
+      <span style="font-weight:600">Holds, re-runs, release times by product</span><span>Amina, the lab PC</span><span>Event desk for holds; rules capture for times</span><span>Event log; rule register: release</span><span>Amina</span><span>2 to 4 a week</span>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+    <div style="background:#0D0D0D;color:#FDFDFD;padding:24px 26px;display:flex;flex-direction:column;gap:14px">
+      <span style="font-family:'Fjalla One',sans-serif;font-size:30px;text-transform:uppercase">Out of the box, the platform</span>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:18px;line-height:1.4;color:#E4E4E4">
+        <span>Rules engine and its 13 rule types</span><span>Long solver and fast solver</span><span>Plan evaluation and roll-forward</span><span>Harness: permissions, gates, kill switch, audit, secrets, redaction</span><span>Model gateway and tool schemas; Jev and LLM roles</span><span>Connectors: SAP reader, file, REST, mailbox</span><span>Store and versioning</span><span>Evals and tests per rule type</span>
+      </div>
+    </div>
+    <div style="border:2px solid #0D0D0D;padding:24px 26px;display:flex;flex-direction:column;gap:14px;background:#fff">
+      <span style="font-family:'Fjalla One',sans-serif;font-size:30px;text-transform:uppercase">Ad hoc, built for Lyon</span>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:18px;line-height:1.4">
+        <span>The rule register itself: 110 rules, and the ones still to find</span><span>Ontology mapping: Polymex fields to orders, lines, events</span><span>Orchestrator: when each loop runs, horizons, freeze, objective weights</span><span>Permissions for Lyon's people and agents</span><span>Mini-apps: plan review, event desk, what-if, rules capture, execution capture, night guidance, scorecard</span><span>Lab mapping, batch to order</span><span>SAP write-back, with group IT</span><span>Prompts and choice lists for Jev and the LLM roles, and their evals</span><span>The runbook</span>
+      </div>
+    </div>
+    <div style="border:2px dashed #FD594F;padding:24px 26px;display:flex;flex-direction:column;gap:14px;background:#fff">
+      <span style="font-family:'Fjalla One',sans-serif;font-size:30px;text-transform:uppercase">Changes to existing systems</span>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:18px;line-height:1.4">
+        <span><b style="font-weight:600">SAP.</b> Accept process orders from the interface; the 60-minute routing retired as a planning input</span><span><b style="font-weight:600">Lab database.</b> An order id next to the batch</span><span><b style="font-weight:600">MaintPro.</b> Every window entered at the source</span><span><b style="font-weight:600">LineLog.</b> Hourly export; swap reasons as codes, not only free text</span><span><b style="font-weight:600">Mail.</b> One shared planning mailbox</span><span><b style="font-weight:600">Workbook.</b> Retired after the shadow weeks</span><span><b style="font-weight:600">Procedure PRO-PLN-004.</b> Rewritten: two loops, the event desk, the gates</span>
+      </div>
+    </div>
+  </div>
+
+  
+flex-direction:column;gap:16px">
+    <span style="font-family:'Fjalla One',sans-serif;font-size:34px;text-transform:uppercase;padding-bottom:12px;border-bottom:1px solid #0D0D0D">How the system takes each decision</span>
+    <div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr) minmax(0,1.1fr) minmax(0,1fr) minmax(0,0.9fr);gap:10px 18px;font-size:17px;line-height:1.4">
+      <span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Decision</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Component</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Output</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Checked by</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">A person decides</span>
+      <span style="font-weight:600">What kind of change is this message, for which order?</span><span>Jev, decision model</span><span>One of 8 event types, one of the open orders, each with a probability</span><span>Code: the order exists; threshold 0.9</span><span>Sylvie, below the threshold and for every customer event</span>
+      <span style="font-weight:600">Which quantity, date, line?</span><span>Small fast LLM</span><span>The fields of <span style="font-family:'Geist Mono',monospace">submit_event</span>, with the words that support them</span><span>Code: types, ranges, product exists</span><span>Sylvie confirms</span>
+      <span style="font-weight:600">Can this line run this order, how long is this changeover?</span><span>Rules engine</span><span>Yes or no, minutes, with the rule id</span><span>One test per rule</span><span>Never: it is a fact with an owner</span>
+      <span style="font-weight:600">Which sequence on which line, for the week?</span><span>Long solver</span><span>A draft plan, its violations, its cost</span><span>Plan evaluation, the same as for a human plan</span><span>Corinne publishes</span>
+      <span style="font-weight:600">What to move after an event?</span><span>Fast solver</span><span>A repair and the list of moves</span><span>Freeze kept; moves penalized</span><span>Corinne approves</span>
+      <span style="font-weight:600">Can we promise this date?</span><span>Fast solver, as a what-if</span><span>A date, the orders it would move</span><span>Nothing saved</span><span>Stéphane commits</span>
+      <span style="font-weight:600">Codra or Brisol first on Thursday?</span><span>Priority rule R09 sets the default</span><span>A proposal</span><span></span><span>Corinne, when it matters</span>
+      <span style="font-weight:600">Is this disagreement a new rule?</span><span>Frontier LLM drafts from the five whys</span><span>A proposed rule: type, parameters, source</span><span>Code: the type exists, parameters valid</span><span>Corinne validates, or refuses</span>
+      <span style="font-weight:600">What changed, and why?</span><span>Frontier LLM over the solver's moves</span><span>Five lines, order and rule ids cited</span><span>Only facts given; eval set</span><span>Kevin reads it</span>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <span style="font-family:'Fjalla One',sans-serif;font-size:34px;text-transform:uppercase;padding-bottom:12px;border-bottom:1px solid #0D0D0D">Which kind of model architecture, and why</span>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px">
+      <div style="background:#F3F3F3;padding:20px 22px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase">One autonomous agent</span><span style="font-size:17px;line-height:1.4;color:#313233">The model chooses each step and calls the solvers when it wants. Every step it chooses must be evaluated; a wrong step stops a line. Not for the plan.</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Rejected</span></div>
+      <div style="background:#F3F3F3;padding:20px 22px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase">A swarm of agents</span><span style="font-size:17px;line-height:1.4;color:#313233">A reader, a planner, a critic in conversation. Errors compound across hand-offs and nobody can tell Julien which agent decided. Overhead for a problem whose steps are known.</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Rejected for the loops</span></div>
+      <div style="background:#0D0D0D;color:#FDFDFD;padding:20px 22px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase">A workflow with models inside</span><span style="font-size:17px;line-height:1.4;color:#E4E4E4">The orchestrator fixes the steps. Jev picks among known options, a small LLM fills schemas, solvers decide, a frontier LLM explains. Every output is typed and checked; every decision has an owner.</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#FD594F">The target</span></div>
+      <div style="background:#F3F3F3;padding:20px 22px;display:flex;flex-direction:column;gap:10px"><span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase">Agents, offline only</span><span style="font-size:17px;line-height:1.4;color:#313233">Where the steps cannot be known in advance and nothing reaches the floor: mining rules from the notebooks and interviews, the weekly review of deviations. They propose; Corinne validates.</span><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Kept, read-only</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#0D0D0D;border:1px solid #0D0D0D;margin-top:8px">
+      <div style="background:#FDFDFD;padding:16px 18px;display:flex;flex-direction:column;gap:6px"><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Choose among options</span><span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase">Jev</span><span style="font-size:16px;line-height:1.4;color:#313233">Typed choice with a calibrated probability; cannot answer outside the list</span></div>
+      <div style="background:#FDFDFD;padding:16px 18px;display:flex;flex-direction:column;gap:6px"><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Read into a schema</span><span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase">Small fast LLM</span><span style="font-size:16px;line-height:1.4;color:#313233">Haiku class; structured output through one tool</span></div>
+      <div style="background:#FDFDFD;padding:16px 18px;display:flex;flex-direction:column;gap:6px"><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Explain and draft</span><span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase">Frontier LLM</span><span style="font-size:16px;line-height:1.4;color:#313233">Sonnet class; only from facts the code gives it</span></div>
+      <div style="background:#FDFDFD;padding:16px 18px;display:flex;flex-direction:column;gap:6px"><span style="font-family:Archivo,Inter,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;color:#5E6064">Sequence and check</span><span style="font-family:'Fjalla One',sans-serif;font-size:24px;text-transform:uppercase">No model</span><span style="font-size:16px;line-height:1.4;color:#313233">Solvers and the rules engine; deterministic, tested</span></div>
+    </div>
+  </div>
+
+  <div style="display:flex;justify-content:space-between;gap:40px;border-top:1px solid #0D0D0D;padding-top:18px;font-family:'Geist Mono',monospace;font-size:16px;color:#5E6064">
+    <span>Built from: the target process (output 3); data/systems-inventory.md; D3 PM lab kit (platform/TOOLS.md, rule register, config/permissions.json). Model classes to confirm with the organizers; EU endpoint per Nadia.</span>
+    <span>Next: the ontology</span>
+  </div>
+</div></x-dc>
+</body>
+</html>

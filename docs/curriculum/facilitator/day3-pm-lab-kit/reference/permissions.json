@@ -1,0 +1,113 @@
+{
+ "_read_me": "Reference permissions (facilitator).",
+ "_catalog": {
+  "actions": [
+   "read",
+   "write",
+   "call"
+  ],
+  "resources": [
+   "plan:draft",
+   "plan:published",
+   "event:proposed",
+   "event:confirmed",
+   "rule:proposed",
+   "rule:validated",
+   "execution",
+   "whatif",
+   "sap:process_orders",
+   "llm:event_reader",
+   "llm:explainer",
+   "tool:submit_event",
+   "tool:write_explanation",
+   "audit"
+  ]
+ },
+ "kill_switch": {
+  "engaged": false,
+  "owner": "Nadia"
+ },
+ "gates": {
+  "publish": {
+   "approvers": [
+    "human:corinne"
+   ]
+  },
+  "rule_activation": {
+   "approvers": [
+    "human:corinne"
+   ]
+  }
+ },
+ "actors": {
+  "human:corinne": {
+   "grants": [
+    "read:*",
+    "write:plan:draft",
+    "write:plan:published",
+    "write:event:proposed",
+    "write:event:confirmed",
+    "write:rule:proposed",
+    "write:rule:validated",
+    "write:execution"
+   ]
+  },
+  "human:sylvie": {
+   "grants": [
+    "read:*",
+    "write:event:proposed",
+    "write:event:confirmed",
+    "write:rule:proposed",
+    "write:execution"
+   ]
+  },
+  "human:stephane": {
+   "grants": [
+    "read:*",
+    "write:event:proposed"
+   ]
+  },
+  "human:kevin": {
+   "grants": [
+    "read:*",
+    "write:event:proposed",
+    "write:rule:proposed",
+    "write:execution"
+   ]
+  },
+  "human:nadia": {
+   "grants": [
+    "read:*"
+   ]
+  },
+  "agent:event-reader": {
+   "grants": [
+    "call:llm:event_reader",
+    "call:tool:submit_event",
+    "write:event:proposed"
+   ]
+  },
+  "agent:explainer": {
+   "grants": [
+    "call:llm:explainer",
+    "call:tool:write_explanation"
+   ]
+  },
+  "service:long-solver": {
+   "grants": [
+    "write:plan:draft"
+   ]
+  },
+  "service:fast-solver": {
+   "grants": [
+    "write:plan:draft"
+   ]
+  },
+  "service:sap-writeback": {
+   "enabled": false,
+   "grants": [
+    "write:sap:process_orders"
+   ]
+  }
+ }
+}

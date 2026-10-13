@@ -33,7 +33,7 @@ And each participant has sat the FDE Certification exam (240 questions, 120 minu
 |---|---|---|---|---|
 | 1. The role | What an FDE is, setup sprint, ship something tiny | Consulting skills 101: structure the problem, structure the message, navigate the organization | Plant Pulse v0: a deployed dashboard from 90 days of shift logs | Renan |
 | 2. The business | Problems worth solving: P&L, account strategy, the bottleneck, sizing in euros | Leading an FDE project: the six-phase method, scoping, governance, the gains validation protocol | Price the leaks found on Day 1; write the project charter and the validation protocol | Renan |
-| 3. The technology | IT and infrastructure: plant systems, ISA-95, integration, source of truth, security | AI fundamentals and build lab: tokens to agents, retrieval, tools, evals, ontology | Plant Pulse v1: a grounded assistant that checks schedule feasibility against the changeover rules | Nicolas |
+| 3. The technology | From the stated process to the target architecture: what an AI system is made of, the true process, what good looks like | The platform and the first loop: permissions, the core platform, deployment, the improvement loop, five whys | Lyon planning v1: the target architecture, then a planning system built on the platform and run with the planner | Nicolas |
 | 4. The obstacles | Technical roadblocks: dirty data, legacy, integration dead ends | Human roadblocks: change curve, champions, co-authorship, telling a sponsor he is wrong | Plant Pulse v2: an idempotent pipeline on dirty exports; role-plays with the Polymex cast | Renan |
 | 5. The full motion | Two real engagements, disguised, run in parallel by teams | Debrief of what really happened, operating principles, first-deployment plan, FDE Certification exam | The toolkit built Monday to Thursday, applied to real case data | Renan |
 
@@ -60,7 +60,7 @@ The thread across the week:
 |---|---|
 | 1 | Plant Pulse v0 deployed on Vercel; a one-page memo and storyline for Hervé; a stakeholder map |
 | 2 | The three biggest leaks priced in euros; a project charter; a validation protocol a controller could run |
-| 3 | A systems and data-flow map with an access plan; Plant Pulse v1 with a grounded assistant and an eval set |
+| 3 | The true planning process at Lyon and the target architecture; a five-line scorecard; Lyon planning v1 running, with new rules validated by the planner |
 | 4 | Plant Pulse v2 on an idempotent pipeline with data-quality checks; a naive-deployment failure memo; role-play debriefs |
 | 5 | Case readouts and a personal 30/60/90 plan |
 

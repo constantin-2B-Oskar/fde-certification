@@ -6,71 +6,71 @@
 
 | Time | Block | You leave with |
 |---|---|---|
-| 9:00 | Stand-up | Yesterday's charter, one line per team |
-| 9:10 | The systems of a plant, then source of truth | ISA-95 levels, the families of systems, which system wins for each data object |
-| 10:00 | Exercise 1 | The Polymex systems and data-flow map |
-| 10:45 | Integration and security | Integration patterns, the IT/OT boundary, secrets |
-| 11:05 | Exercise 2, then demos | The access plan and the request to Nadia, the IT manager |
-| 13:30 | From tokens to agents | What a model does, and what it cannot do |
-| 14:00 | Grounding and evals | Where the model gets its facts, and how you know it works |
-| 14:40 | Lab: Plant Pulse v1 | A checker, a grounded assistant, an eval harness |
-| 16:30 | Demos with holdout questions | Feedback, and the questions you did not see |
-| 17:15 | Close | Three things to keep |
+| 9:00 | Stand-up | Yesterday's lesson, today's goal, one blocker |
+| 9:10 | What an AI system is really made of | Ontology, kinds of models, tactics, decision models, and when to use what |
+| 10:00 | Exercise 1: the stated process and the true process | The as-is map and the target architecture for planning at Lyon |
+| 11:10 | Defining what good looks like | Measures that matter, baselines, targets, gains in euros |
+| 11:30 | Exercise 2: what good looks like | A five-line scorecard for planning at Lyon |
+| 13:30 | Interacting with your platform | What surrounds the model, and which tools you never write |
+| 14:00 | Exercise 3: put the platform tools into your architecture | A planning system that runs, with permissions and tests |
+| 15:20 | From the first build to deployment | Mini-apps, the first user, the improvement loop, five whys |
+| 15:50 | Exercise 4: run the first full version with Corinne | New rules, found and validated with the planner, live |
+| 16:55 | Demos, then close | Three minutes per team, on your app |
 
-Nicolas runs the day. The morning covers where plant data lives and how to get access to it safely. The afternoon covers how AI models work and how to make them right about one plant, then a 90-minute build lab. From today, group work uses one laptop per team, so the team works together for real.
+Nicolas runs the day. The problem is planning at the Lyon plant: the procedure says the plan is weekly and frozen, and Corinne, the planner, says she rewrites it every day. In the morning you map how planning really works, from interviews and data, and design the target system before anyone builds it. In the afternoon you build that system from the tools of a platform, then run it with Corinne, played by the trainer. Group work uses one laptop per team.
+
+If language models and agents are new to you, start with the 30-minute deck "LLMs and agentic systems in 30 minutes" on the Resources page: it covers the basics the day builds on.
 
 ## Main terms
 
-**ISA-95**: A standard way to describe a plant's systems in five levels, from sensors and machine controllers at the bottom (levels 0 to 2) to manufacturing operations such as the MES (level 3) and business planning such as the ERP (level 4).
+**Language model (LLM)**: A model that writes text one small piece (a token) at a time, from everything in its context. Its output always sounds right; it is right only when its context and its tools make it so.
 
-**ERP**: Enterprise resource planning, the core business system for orders, stock and costs. At Polymex it holds one 60-minute changeover for every product, which is not what happens on the floor.
+**Decision model**: A model that picks one answer from options you define, with a probability, for example "is this email a date change, a quantity change or a rush order?". It cannot answer outside your options.
 
-**MES or shift logger**: The system that records what really happened on the line: output, scrap, stops and changeovers. At Polymex, operators type this into a shift logger at the end of each shift.
+**Tool**: A function in your own code that a model can ask to run. The model only asks; the code runs it and checks the result.
 
-**SCADA and historian**: SCADA is the operator's screens and alarms. The historian stores machine signals, such as melt temperature, second by second.
+**Agent**: A model that chooses its own next step in a loop: plan, act, observe. Most real agentic systems are a few model calls inside a lot of tools and ordinary code.
 
-**Source of truth**: The system that wins for a given piece of data. Name one per data object, or two systems will argue in front of the CFO.
+**Ontology**: The objects a plant reasons with (order, product, family, line, rule, event, person), how they link, and the rules that bind them, named once. It is the shared vocabulary of the people, the code and the model, and it says which system owns each fact.
 
-**Tacit knowledge**: Rules and workarounds that live in heads and spreadsheets, such as Corinne's changeover rules at Polymex. About 40% of the data an industrial agent needs is in no system at all.
+**Expert system, or rules engine**: Code that applies known rules the same way every time. Each rule has an id, a source, an owner and a status, so a planner or a controller can read it. Nobody can audit a prompt with forty rules inside.
 
-**Ontology**: A map of the types of things the plant reasons with (product family, machine, changeover rule, order) and how they relate. Real items, such as machine M01, are the instances. Gaps in it show where a deployment will fail.
+**Solver**: Mathematical optimization. It finds the best sequence among many combinations under hard rules, and proves it is feasible. A language model is a poor sequencer.
 
-**Access ladder**: Five ways to get data, from the least to the most invasive: a manual export, a nightly file drop, read-only access, a live stream, and writing back with a human approving. You earn each rung with a result.
+**Stated process and true process**: The stated process is what the procedure says. The true process is what people really do, found from interviews and computed from data. The procedure is a hypothesis; the change log is the evidence.
 
-**IT/OT boundary**: The separation between office IT and the network that runs the machines (operational technology). It exists for safety: your software never changes a machine setting.
+**Value stream map of information**: A map of every step where a plan is created, changed, copied or used, with its inputs and outputs, who or what decides (a person is an algorithm too), its delay, and how often it loops.
 
-**Language model (LLM)**: A model that writes text by predicting the next small piece, called a token. Its output always sounds plausible, but it is only true if the information it was given makes it so.
+**Human gate**: A step where a named person must decide, such as publishing a plan or validating a rule. Put a person where a decision needs an owner, not where the code is weak.
 
-**Context**: Everything the model sees for one answer: instructions, documents, the conversation and tool results. What is not in its training or its context does not exist for the model.
+**Permissions**: Who may do what: an identity for every person, agent and service, the least each one needs, human gates, a kill switch. An instruction hidden in an email is stopped by these layers, not by a better prompt.
 
-**Retrieval**: Fetching relevant documents into the model's context. It works well for manuals and interview notes, poorly for tables and exceptions.
+**Platform**: The tools that surround every model call and that you compose instead of rewriting on site: solvers, rules engine, permissions, audit, connectors, model gateway.
 
-**Tools**: Functions in your own code that the model can call, for example to look up a changeover time. The model chooses the tool; the code owns the facts.
+**Five whys**: Asking why, without suggesting the answer, until the answer is a fact about the plant that will still hold next week and has an owner. Every disagreement with the planner ends as a rule, a data fix, or a decision that it is not a rule.
 
-**Agent**: A model that decides its own next step in a loop: plan, act, observe. Most plant use cases need fixed steps with a model inside.
+**Outcome, driver, adoption, guardrail**: The three levels of a scorecard, plus what must not get worse. Outcome is what the customer sees; driver is what moves it and you control; adoption is whether people use the system.
 
-**Rules file**: A structured list of the plant's real rules, each with an id, a source and the name of the expert who validated it. It is co-owned with the expert, or it dies with the project.
-
-**Evals**: A list of questions with expected answers, run on every change, including questions the assistant should refuse ("not in the data"). A holdout is a set you never tune on.
+**Baseline, best demonstrated, entitlement, target**: Where the plant is today, its best recent week, what a perfect plan would give on the same orders, and the number you commit to, with a date and an owner, in between.
 
 ## The ideas to hold on to
 
-- The data you need is spread across several systems, a few spreadsheets and people's heads, and your architecture needs a place for the part that is in heads.
-- Name one source of truth per data object, written down and agreed.
-- Climb the access ladder one rung at a time, earn each rung with a result, and show IT who will own the system after you leave.
-- Code owns the facts and the arithmetic; the model chooses tools and explains.
-- Evals with refusals and a holdout, run on every change, are what turn a demo into a system.
+- An AI system is mostly code, rules and people. The model is the smallest part.
+- Map the true process with data before you design anything. The procedure is a hypothesis.
+- Choose one component per step by its nature: language to a model, known rules to a rules engine, combinations to a solver, trade-offs to a named person.
+- Good is what the client would notice, not what the system does. At most five measures, each with a number, a date and an owner.
+- Compose the platform; your code is the architecture and the plant. And every disagreement with the planner is data.
 
 ## Where this day fits in the week
 
-Day 1 set out the FDE role and gave you Plant Pulse v0, a dashboard on Polymex shift logs. Day 2 priced the biggest leaks in euros and produced a project charter. Day 3 adds a map of where the data lives, a plan to access it, and Plant Pulse v1, an assistant that checks a schedule against the real changeover rules. Day 4 tests it on dirty exports and with the people who must adopt it. Day 5 applies the toolkit to two real, disguised engagements.
+Day 1 set out the FDE role and gave you Plant Pulse, a dashboard on Polymex shift logs. Day 2 chose where to start in the Polymex group and wrote the project charter. Day 3 designs and builds the first planning system for Lyon, and runs it with the planner. Day 4 tests it against dirty data, legacy systems and the people whose work it changes. Day 5 applies the toolkit to two real, disguised engagements.
 
 ## Questions to think about before the session
 
-1. In a plant or business you know, which number do finance and operators each trust, and do they come from the same system?
-2. Where does an important rule in your own work live: in a system, a spreadsheet, or one person's head? What happens when that person is away?
-3. When you used an AI tool for work, how did you check its answer, and would that check hold up for a decision that costs money?
+1. In a process you know, how different is what the procedure says from what people really do? How would you prove it with data?
+2. Which decision in your work would you never hand to a machine, and why: because it needs an owner, or because the machine is not good enough yet?
+3. When an expert overrides a system, how do you tell a real rule from a one-off preference?
 
 ## If you have 10 more minutes
 
-See the Day 3 decks on the Resources page: "Plant systems and data" for the morning and "AI fundamentals and the build lab" for the afternoon.
+See the Day 3 material on the Resources page: "LLMs and agentic systems in 30 minutes", then the morning deck, "From the stated process to the target architecture".

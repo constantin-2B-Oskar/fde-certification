@@ -1,18 +1,28 @@
 // Turns a deck exported from Claude Design (`*.dc.html`) into one self-contained HTML file in public/resources/.
 // The export needs the design tool's runtime (support.js, React from a CDN) and a `../shared/` folder; the slides
 // themselves are plain HTML with inline styles, so this keeps them and adds a small viewer instead.
-// Usage: npx tsx scripts/deck-html.ts "<source>.dc.html" public/resources/<name>.deck.html
+// Usage: npx tsx scripts/deck-html.ts "<source>.dc.html" public/resources/<name>.deck.html [--hold 26-30,41]
+// --hold replaces the listed slides with a "shown in the room" slide: the answers to an exercise, published after the session.
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const [src, out] = process.argv.slice(2);
-if (!src || !out) throw new Error('Usage: tsx scripts/deck-html.ts <source.dc.html> <output.html>');
+const [src, out, flag, holdList] = process.argv.slice(2);
+if (!src || !out) throw new Error('Usage: tsx scripts/deck-html.ts <source.dc.html> <output.html> [--hold 26-30,41]');
+const held = new Set<number>();
+if (flag === '--hold') {
+  for (const part of (holdList ?? '').split(',')) {
+    const [a, b = a] = part.split('-').map(Number);
+    for (let n = a; n <= b; n++) held.add(n);
+  }
+}
 const html = readFileSync(src, 'utf8');
 
 const title = /<title>([\s\S]*?)<\/title>/.exec(html)?.[1] ?? 'Slides';
 // The tool's own CSS, minus the @font-face rules that point to ../shared/fonts (Google Fonts serves the same families).
 const style = (/<helmet>[\s\S]*?<style>([\s\S]*?)<\/style>/.exec(html)?.[1] ?? '').replace(/@font-face\{[^}]*\}\s*/g, '');
-const sections = html.match(/<section[\s\S]*?<\/section>/g) ?? [];
-if (sections.length === 0) throw new Error(`No slides found in ${src}`);
+const found = html.match(/<section[\s\S]*?<\/section>/g) ?? [];
+if (found.length === 0) throw new Error(`No slides found in ${src}`);
+const heldSlide = (n: number) => `<section data-label="${n} Held back" style="background:#0D0D0D;color:#FDFDFD;font-family:Inter,'Helvetica Neue',sans-serif;padding:72px 120px;display:flex;flex-direction:column;justify-content:center;gap:32px"><div style="font-family:Archivo,Inter,sans-serif;font-weight:300;text-transform:uppercase;letter-spacing:0.16em;font-size:24px;color:#888A8C">Slide ${n}</div><div style="font-family:'Fjalla One',sans-serif;text-transform:uppercase;font-size:88px;line-height:1;max-width:1500px">Shown in the room, after the exercise</div><div style="font-size:32px;line-height:1.4;color:#C6C9CC;max-width:1400px">This slide gives the answer to an exercise. It is added here after the session.</div></section>`;
+const sections = found.map((s, k) => (held.has(k + 1) ? heldSlide(k + 1) : s));
 
 // Logo: the site's official file. Photos: /resources/img/, where they go once supplied (a missing one is hidden).
 const slides = sections.join('\n')
