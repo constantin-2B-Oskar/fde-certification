@@ -1,6 +1,6 @@
 # Day 1: main feedback, and what changes
 
-Thank you for your feedback on Day 1. Here are the three points that came up most, and what we are changing for the rest of the week.
+Thank you for your feedback on Day 1. Here are the four points that came up most, and what we are changing for the rest of the week.
 
 ## 1. Seeing the whole picture of an FDE project
 
@@ -19,3 +19,9 @@ Thank you for your feedback on Day 1. Here are the three points that came up mos
 **What we heard:** there is a lot of material, and a lot of information to process in the moment. This came especially from the more introverted and reflective members of the group.
 
 **What changes:** each day now has a pre-read, for those who want to see the material beforehand. It starts with Day 1, now Day 2, and Day 3 is already available. We will keep doing this for the next sessions.
+
+## 4. A stack built for startups, not for large companies
+
+**What we heard:** the tools we used on Day 1 (Claude Code and the rest of the stack) suit a startup. In a large company, security rules, IT policies and data access often make them hard or impossible to use.
+
+**What changes:** Day 4, on the obstacles, has a full section on this: cybersecurity, how to deal with data issues, and what to do when a company does not let you use the right stack.

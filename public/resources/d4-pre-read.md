@@ -11,7 +11,7 @@ Day 4 is about what stops a working system from becoming a used system.
 | Morning: technical roadblocks | Ways to handle dirty data, legacy systems and integration dead ends, and a Plant Pulse that runs reliably on messy exports |
 | Afternoon: human roadblocks | Ways to read resistance, use the change curve, work with champions and sponsors, and tell a sponsor they are wrong, practiced in role-plays |
 
-The detailed agenda comes with the session's slides. As on Days 3 and 5, each team works on one laptop, so the team builds together for real, a change made after Day 1 feedback.
+After Day 1 feedback, the day also has a full section on working inside a large company: cybersecurity, how to deal with data issues, and what to do when the company does not let you use the right stack. The detailed agenda comes with the session's slides. As on Days 3 and 5, each team works on one laptop, so the team builds together for real, a change made after Day 1 feedback.
 
 ## Main terms
 
