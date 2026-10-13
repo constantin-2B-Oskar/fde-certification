@@ -19,6 +19,15 @@
           "read": "fde-school-your-week.md",
           "href": "/resources/fde-school-your-week.md",
           "status": "available"
+        },
+        {
+          "id": "working-with-claude",
+          "kind": "reading",
+          "title": "Working with Claude: a one-pager",
+          "summary": "How to prompt and use Claude for maximum efficiency: the five rules, a prompt template, a prompt that works for each session, and five ways to waste a session.",
+          "read": "fde-school-working-with-claude.md",
+          "href": "/resources/fde-school-working-with-claude.md",
+          "status": "available"
         }
       ]
     },
@@ -211,7 +220,7 @@
           "id": "d3-day2-feedback",
           "kind": "reading",
           "title": "Day 2 main feedback",
-          "summary": "The three points you raised on Day 2, and our answers: the intensity, pictures in the slides, and the paperboard figures.",
+          "summary": "The four points you raised on Day 2, and our answers: the intensity, pictures in the slides, the paperboard figures, and a one-pager on how to prompt Claude.",
           "read": "d3-day2-feedback.md",
           "href": "/resources/d3-day2-feedback.md",
           "status": "available"
