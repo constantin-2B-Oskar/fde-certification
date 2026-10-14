@@ -194,8 +194,9 @@
           "id": "d2-recording",
           "kind": "video",
           "title": "Session recording",
-          "href": null,
-          "status": "coming_soon"
+          "summary": "The Day 2 session on Circleback, with its transcript.",
+          "href": "https://circleback.ai/meetings/ZJ3DBEXVHORSvVvrCu22c?tab=transcript&t=1m2s",
+          "status": "available"
         }
       ]
     },
