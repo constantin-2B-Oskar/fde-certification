@@ -273,6 +273,15 @@
           "status": "available"
         },
         {
+          "id": "d3-am-what-good-looks-like",
+          "kind": "reading",
+          "title": "Exercise 2 output: what good looks like",
+          "summary": "The reference scorecard for Lyon planning: five measures with baseline, best week, target, owner and guardrail, the gain in euros, and the one chart to show Hervé first.",
+          "deck": "d3-am-exercise-2-what-good-looks-like.html",
+          "status": "available",
+          "href": null
+        },
+        {
           "id": "d3-slides-pm",
           "kind": "slides",
           "title": "The platform and the first loop",

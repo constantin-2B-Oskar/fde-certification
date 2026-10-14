@@ -74,7 +74,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
                     <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-15">
                       {!available && <span className="text-steel">Available after the session</span>}
                       {available && it.deck && (
-                        <a href={`/resources/${it.deck}`} target="_blank" rel="noopener" className="link font-semibold">View slides</a>
+                        <a href={`/resources/${it.deck}`} target="_blank" rel="noopener" className="link font-semibold">{it.kind === 'slides' ? 'View slides' : 'Open'}</a>
                       )}
                       {available && it.read && (
                         <Link href={`/resources/read/${it.read}`} className={`link ${it.deck ? '' : 'font-semibold'}`}>{it.deck ? 'Read as text' : it.kind === 'slides' ? 'View slides' : 'Read'}</Link>
