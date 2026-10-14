@@ -325,7 +325,7 @@
           "id": "d3-lyon-planner",
           "kind": "dataset",
           "title": "Lyon Planner app",
-          "summary": "The planning system, running: ontology, rules, planning, data sources, feedback and eval on week 20. One instance per team, opened from every laptop. Node.js 18, nothing to install.",
+          "summary": "The planning system, running: ontology, rules, planning, data sources, feedback, an editable scorecard and the architecture, on week 20. One instance per team, opened from every laptop. Node.js 18, nothing to install.",
           "href": "/resources/fde-school-lyon-planner-app.zip",
           "status": "available"
         },
