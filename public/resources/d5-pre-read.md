@@ -55,7 +55,7 @@ In the morning, your team works on one of two real engagements, disguised. The t
 
 ## Where this day fits in the week
 
-Days 1 to 4 each gave you one part of the job. Day 1 covered the role and how to structure a problem and a message. Day 2 covered sizing in euros, the six-phase method and the gains validation protocol. Day 3 covered plant systems, data and AI. Day 4 covered the technical and human roadblocks. On Day 5 they converge: you use every tool you built this week on real case data, against the clock, and then you plan your own first deployment.
+Days 1 to 4 each gave you one part of the job. Day 1 covered the role and how to structure a problem and a message. Day 2 covered sizing in euros, the six-phase method and the gains validation protocol. Day 3 covered plant systems, data and AI. Day 4 covered what goes wrong on a project, technical and human, and how to scale to other plants. On Day 5 they converge: you use every tool you built this week on real case data, against the clock, and then you plan your own first deployment.
 
 ## Questions to think about before the session
 

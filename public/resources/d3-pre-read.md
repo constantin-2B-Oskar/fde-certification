@@ -63,7 +63,7 @@ If language models and agents are new to you, start with the 30-minute deck "LLM
 
 ## Where this day fits in the week
 
-Day 1 set out the FDE role and gave you Plant Pulse, a dashboard on Polymex shift logs. Day 2 chose where to start in the Polymex group and wrote the project charter. Day 3 designs and builds the first planning system for Lyon, and runs it with the planner. Day 4 tests it against dirty data, legacy systems and the people whose work it changes. Day 5 applies the toolkit to two real, disguised engagements.
+Day 1 set out the FDE role and gave you Plant Pulse, a dashboard on Polymex shift logs. Day 2 chose where to start in the Polymex group and wrote the project charter. Day 3 designs and builds the first planning system for Lyon, and runs it with the planner. Day 4 puts it through what usually goes wrong, technical and human, and takes it to the group's other plants. Day 5 applies the toolkit to two real, disguised engagements.
 
 ## Questions to think about before the session
 

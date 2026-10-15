@@ -341,7 +341,7 @@
     {
       "id": "day-4",
       "title": "Day 4: The obstacles",
-      "summary": "Technical roadblocks (data quality, legacy systems, integration dead ends) and human roadblocks (resistance, the change curve, champions, sponsors).",
+      "summary": "A half day, in the afternoon. Everything that goes wrong on an FDE project, technical and people, and your first 48 hours in eight real situations. Then scaling from Lyon to the group's three other plants: humility, owners, incentives, local culture, and IT from day one.",
       "tracks": [
         "manager",
         "fde"
@@ -372,18 +372,23 @@
           "status": "available"
         },
         {
-          "id": "d4-slides-am",
-          "kind": "slides",
-          "title": "Technical roadblocks",
-          "href": null,
-          "status": "coming_soon"
-        },
-        {
           "id": "d4-slides-pm",
           "kind": "slides",
-          "title": "Human roadblocks and the change curve",
-          "href": null,
-          "status": "coming_soon"
+          "title": "What goes wrong, and how it scales",
+          "summary": "The two families of obstacles, technical and people, the known moves for each, the first 48 hours, then five principles for scaling to a new plant. 30 slides; the one that sums up Exercise 1 is added after the session.",
+          "deck": "d4-pm-obstacles-and-scaling.deck.html",
+          "read": "d4-pm-obstacles-and-scaling.deck.md",
+          "href": "/resources/d4-pm-obstacles-and-scaling.deck.md",
+          "status": "available"
+        },
+        {
+          "id": "d4-exercises-pm",
+          "kind": "exercise",
+          "title": "Exercises",
+          "summary": "Eight situation cards: what you do in the next 48 hours when a sponsor goes silent, the data was wrong or people refuse the tool. Then a scale plan from Lyon to Haguenau, Évreux and Tarragona, on one poster.",
+          "read": "d4-pm-obstacles-and-scaling.exercises.md",
+          "href": "/resources/d4-pm-obstacles-and-scaling.exercises.md",
+          "status": "available"
         },
         {
           "id": "d4-recording",

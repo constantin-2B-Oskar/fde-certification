@@ -4,61 +4,56 @@
 
 ## What to expect
 
-Day 4 is about what stops a working system from becoming a used system.
+Day 4 is a half day, from 13:30 to 17:30. It is about what stops a working system from being used, and what changes when you take it from one plant to four.
 
-| Block | You leave with |
-|---|---|
-| Morning: technical roadblocks | Ways to handle dirty data, legacy systems and integration dead ends, and a Plant Pulse that runs reliably on messy exports |
-| Afternoon: human roadblocks | Ways to read resistance, use the change curve, work with champions and sponsors, and tell a sponsor they are wrong, practiced in role-plays |
+| Time | Block | You leave with |
+|---|---|---|
+| 13:30 | Theory 1: what goes wrong | The two families of obstacles, technical and people, the known move for each, and a pattern for the first 48 hours |
+| 14:05 | Exercise 1: eight situation cards | Your next 48 hours in two real situations: who you see first, your first sentence, what you will not do, what is agreed at hour 48 |
+| 15:40 | Theory 2: scaling | Five principles for taking a system to a new plant |
+| 16:10 | Exercise 2: the scale plan | A poster that takes the Lyon system to Polymex's three other plants |
+| 17:15 | Close | One thing you would do differently on a real site |
 
-After Day 1 feedback, the day also has a full section on working inside a large company: cybersecurity, how to deal with data issues, and what to do when the company does not let you use the right stack. The detailed agenda comes with the session's slides. As on Days 3 and 5, each team works on one laptop, so the team builds together for real, a change made after Day 1 feedback.
+Break from 15:30 to 15:40. As on Days 3 and 5, each team works on one laptop. For Exercise 2, keep the Day 2 knowledge bundle open: you will need the plant files and the group IT director's interview.
 
 ## Main terms
 
-**Data quality**: How far the data matches what really happened on the floor. A downtime log where many stops are coded "other" is poor-quality data, even if every field is filled in.
+**Technical dead end**: An obstacle in the systems, not the people: a six-week security review, a system with no API, data that does not exist, two systems that disagree, an app nobody will own. Each has a known move; the mistake is improvising around the rules.
 
-**Missing and duplicate data**: Gaps and repeats in a data set. A forgotten changeover leaves a hole; an export loaded twice counts every stop twice.
+**Security review**: The check group IT runs before any new cloud service touches company data. At Polymex it takes six weeks, and the data must stay in the EU, so you start it on day one and work on exports while it runs.
 
-**Legacy system**: An old system the plant still depends on, often hard to change or connect to. An old scheduling tool that only exports to a spreadsheet is a typical case.
+**Source of truth**: The system that wins when two sources disagree, decided with its owner, object by object. If the ERP and the planner's spreadsheet disagree on line speeds, you need to know in advance which one counts.
 
-**Integration**: Connecting your system to the plant's systems so data flows without someone copying it by hand. Reading orders from the ERP each night instead of asking a planner to email a file is an integration.
+**Resistance**: The pushback people show when a change touches their work. It is information: behind every stance ("we have always done it this way") there is a fear, often for the job or of being blamed.
 
-**Interface or API**: The agreed way one system lets another read or write its data. If the MES offers none, you are left with manual exports: an integration dead end.
+**Sponsor**: The senior person who owns the outcome. A sponsor owes thirty minutes a week, a blocker cleared within a week, and public support. A sponsor who does not act is a contract problem, taken back to whoever sold the project.
 
-**System of record**: The system that officially owns a piece of data; every other source is a copy. Keep the ERP as the system of record for orders and add a thin layer on top, rather than building a second order list.
+**The first 48 hours**: The same pattern whatever goes wrong: talk to the person within four hours, tell the sponsor yourself within a day, write down who owns what, and agree one next step with a name and a date.
 
-**Source of truth**: The system that wins when two sources disagree, decided object by object. If the ERP and the planner's spreadsheet show different line speeds, you need to know in advance which one counts.
+**Scaling**: Taking a system that works on one site to others. A second plant is a new client, and it has already heard about you.
 
-**Idempotent pipeline**: A data pipeline that gives the same result however many times it runs on the same input. If someone re-runs last night's load by mistake, the downtime totals do not double.
+**Reuse the core, rebuild the edge**: The ontology, the platform, the solvers and the scorecard are reused on every site. The local rules, the data connectors, the thresholds and the rituals are rebuilt with the people who own them.
 
-**Resistance**: The pushback people show when a change touches their work. An operator who says "it will never work here" is often protecting something real, such as their skill or their workload.
-
-**Change curve**: The path people go through when their work changes: shock and denial, frustration and a low point, experiment, then decision and integration. Performance dips before it rises, so plan for the dip when a new planning tool goes live.
-
-**Champion**: An internal operational person with a formal role, legitimacy and a direct line to the software teams, who carries the tools after the project team leaves. A respected shift lead who uses the tool daily is a good example.
-
-**Sponsor**: The senior person who owns the outcome and can make decisions the project needs. A plant director who arrives with a culprit already in mind is still your sponsor, and you have to move them with evidence.
-
-**Works council**: The body of employee representatives that must be consulted on changes affecting staff. In France it is consulted before any tool that could monitor individual workers, so never put a name on a chart.
+**Incentives**: What each person wins from the change, in their own terms. If someone wins nothing, expect nothing from them.
 
 ## The ideas to hold on to
 
-- Most industrial AI deployments stall on data and people, not on the model.
-- Expect plant data to be dirty, and build checks into the pipeline rather than cleaning it once by hand.
-- Decide one source of truth per data object before you build, or two systems will argue in front of the CFO.
-- People go through stages when their work changes, and they need different help at each stage.
-- A tool survives only if someone inside the plant owns it after you leave.
+- The model is rarely what kills the project. A missing yes usually is.
+- When the data turns out wrong, say it first, with the corrected number. Trust lost by a correction comes back; trust lost by a cover-up does not.
+- The FDE does not decide roles. What someone's job becomes belongs to HR and their manager; never promise what you do not own.
+- What worked on one site is only a hypothesis on the next one. Start again from its true process.
+- Plan every site with IT and cybersecurity from day one: the data stays on the client's servers, and you bring the software to the data.
 
 ## Where this day fits in the week
 
-Day 1 set out the role and how to read people. Day 2 covered finding a problem worth solving and running the project. Day 3 gave you the plant systems and AI tools. Day 4 tests all of that against what usually goes wrong: data that does not behave and people who do not follow. Day 5 asks you to run the full motion on two real cases, where both kinds of obstacle meet.
+Day 1 set out the role and how to read people. Day 2 chose where to start in the Polymex group and how to run the project. Day 3 built and ran the first planning system at Lyon. Day 4 puts that system through what usually goes wrong, then takes it to Haguenau, Évreux and Tarragona. Day 5 asks you to run the full motion on two real cases, where all of this meets.
 
 ## Questions to think about before the session
 
 1. Think of a project you worked on that stalled. Was the real blocker technical, human, or both, and when did you first see it?
-2. Think of a person who resisted a change you were part of. What were they protecting, and what would have helped them move?
-3. In your own work, which data do people trust least, and who quietly fixes it by hand before it gets used?
+2. Think of a person who resisted a change you were part of. What were they afraid of, and what would have helped them move?
+3. Think of something that worked well in one team or site and failed when it was copied to another. What was different there?
 
 ## If you have 10 more minutes
 
-On the Resources page, open the Day 1 afternoon deck, "Consulting skills 101", and read the part on the curve of change. Then skim the Day 3 morning deck, "From the stated process to the target architecture", in particular the part on the ontology and which system owns each fact.
+On the Resources page, open the Day 2 knowledge bundle and skim the files on Haguenau, Évreux and Tarragona, and the interview with the group IT director. Ask yourself which of the three plants needs Lyon's planning system least.
