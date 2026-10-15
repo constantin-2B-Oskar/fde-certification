@@ -109,7 +109,7 @@
     "explanation": "Match model size to task difficulty and volume. Small models handle narrow, frequent steps well when evals prove it; keep large models for the steps that need them.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -660,7 +660,7 @@
     "explanation": "Open weights give control and residency, at the price of running, patching and upgrading the model yourselves. Free weights are not a free system.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -679,7 +679,7 @@
     "explanation": "At low volume, hosting and maintaining your own model costs more effort than it saves. Residency, version control and weight access are arguments for open weights, not for the API.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -698,7 +698,7 @@
     "explanation": "Leaderboards measure general tasks, not your extraction. Task-specific evals, weighed with cost and latency, tell you whether a switch helps.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -717,7 +717,7 @@
     "explanation": "An eval set is only as good as its coverage of real inputs. Clean examples hide the scanned, partial and unusual invoices where production fails.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -736,7 +736,7 @@
     "explanation": "Reasoning effort is a cost and latency lever. When evals show no accuracy loss, the extra thinking buys nothing for that step.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -755,7 +755,7 @@
     "explanation": "Caching reuses the processing of an identical prefix, so repeated long context stops being paid for in full on every call.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -774,7 +774,7 @@
     "explanation": "When nobody needs the answer immediately, batching trades turnaround time for lower cost per item.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -792,6 +792,177 @@
     "answer": "b",
     "explanation": "Providers have outages and rate limits. Retries handle short glitches; a fallback model or provider keeps the service running through a real outage.",
     "source": "Day 4, technical roadblocks",
+    "keepOrder": false,
+    "status": "retired",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-010",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "Your scheduling tool is live, but planners still rebuild the plan in their spreadsheet. A colleague proposes switching to a stronger model. What do you check first?",
+    "options": {
+      "a": "How the strongest available models score on public planning benchmarks",
+      "b": "Why planners rebuild it: missing rules, wrong data or an unchanged workflow",
+      "c": "Whether a longer, more detailed prompt would make the plans more convincing to planners",
+      "d": "Whether the vendor can supply a larger model trained on industrial data"
+    },
+    "answer": "b",
+    "explanation": "Industrial AI fails in the last mile: data, workflow and people. The model is rarely the problem; planners rebuilding the plan point to missing rules, wrong data or a routine that never changed.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-011",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "Alex wants a frontier model, at high reasoning effort, to sequence 96 orders on 7 lines under 110 changeover rules. What do you propose?",
+    "options": {
+      "a": "A solver sequences under the rules; the model explains the result",
+      "b": "A reasoning model with all 110 rules written into its prompt",
+      "c": "A swarm of agents, one per line, that negotiate a shared sequence together",
+      "d": "A small fast model, called once per order to pick its slot"
+    },
+    "answer": "a",
+    "explanation": "Choosing among many combinations under hard rules is a solver's job: it finds the best sequence and proves it feasible. A language model is a poor sequencer and a good interface: it explains the solver's result.",
+    "source": "Day 3, LLMs and agentic systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-012",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "Plant emails must be sorted into five event types: date change, quantity change, rush order, cancellation, other. Which component fits this step?",
+    "options": {
+      "a": "A frontier model that writes its answer in free text, then code parses it",
+      "b": "Regular expressions tuned on the keywords of last month's emails",
+      "c": "A decision model: one type with a probability; a person below a threshold",
+      "d": "The rules engine, with one rule for each keyword that may appear"
+    },
+    "answer": "c",
+    "explanation": "Picking one option from a known list is a decision model's job: it cannot answer outside your options and gives a probability, so low-confidence readings go to a person. Free text parsed afterwards is fragile.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-013",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "Your event reader's prompt now holds 40 plant rules. The controller asks which rule moved an order last Tuesday. What should change?",
+    "options": {
+      "a": "Ask the model to list, after each answer, the rules it says it applied",
+      "b": "Move the rules into a rules engine, each with an id, source and owner",
+      "c": "Fine-tune the model on the 40 rules so that they no longer need a prompt",
+      "d": "Keep the prompt, but store every version of it in Git"
+    },
+    "answer": "b",
+    "explanation": "Known, stable rules belong in an expert system that applies them the same way every time and cites the rule id. A controller can read a rule register; nobody can audit a prompt with forty rules inside.",
+    "source": "Day 3, LLMs and agentic systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-014",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "For a few plant events a day, a team designs five agents that plan, negotiate and hand work to each other. One workflow with two model calls passes the same tests. What do you ship?",
+    "options": {
+      "a": "The workflow: build the least autonomy that solves the problem",
+      "b": "The agents: more autonomy will handle cases the tests do not cover",
+      "c": "The agents, with a sixth one that checks the others before release",
+      "d": "Each design in production for a month, then keep the better one"
+    },
+    "answer": "a",
+    "explanation": "Errors compound at every hand-off and nobody can say which agent decided. If one workflow with a few model calls does the job, the swarm is overhead; autonomy is added only when the problem needs it.",
+    "source": "Day 3, LLMs and agentic systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-015",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "Sam proposes that the planner check every changeover-minute sum the system computes, 'in case the code is wrong'. What do you answer?",
+    "options": {
+      "a": "Agreed: a person should check every number before it reaches the plan",
+      "b": "Have the language model recheck each sum before the planner sees it",
+      "c": "Have the planner check one sum in ten, chosen at random each day",
+      "d": "Test the code; keep the planner for decisions that need an owner"
+    },
+    "answer": "d",
+    "explanation": "Put a person where a decision needs an owner, such as publishing a plan or a trade-off between customers, not where code is weak. Adding minutes is the machine's job; tests prove it, and a human there adds cost and error.",
+    "source": "Day 3, LLMs and agentic systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-016",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "The explainer tells the night shift that today's plan adds 340 changeover minutes. Your Verifier finds 310: the model added the twelve durations itself. What is the fix?",
+    "options": {
+      "a": "Ask the model to show its working step by step before answering",
+      "b": "Move the explainer to a reasoning model, which is better at arithmetic",
+      "c": "Code computes the total; the model explains the number it is given",
+      "d": "Add a line to the prompt saying the arithmetic must be exact"
+    },
+    "answer": "c",
+    "explanation": "Arithmetic slips are a known failure: a model predicts tokens, it does not calculate. Code owns the facts and the model explains them; a reasoning model makes slips rarer but does not turn the sum into a computed fact.",
+    "source": "Day 3, LLMs and agentic systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-017",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "Group IT rules that no plant data may leave the EU. A teammate concludes the event reader cannot use a language model at all. What do you answer?",
+    "options": {
+      "a": "Right: drop the model and have a person read every email",
+      "b": "Use any public model, since order emails are not sensitive data",
+      "c": "Ask IT for an exception, since the model provider is trustworthy",
+      "d": "Self-host an open-weight model in the EU, and carry its upkeep"
+    },
+    "answer": "d",
+    "explanation": "Open-weight models can run where the data must stay: on site or in the EU. The trade-off is control against the hosting and maintenance burden that your team or the client's IT then carries.",
+    "source": "Doctrine, Generative AI: what it is and what it changes",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "GAI-3-018",
+    "domain": "GAI",
+    "tier": 3,
+    "stem": "The event reader runs a frontier model on 2,000 emails a day. On your eval set of real plant emails, a small fast model scores the same. What do you do?",
+    "options": {
+      "a": "Route this step to the small model; keep the eval as its release check",
+      "b": "Keep the frontier model, since a larger model is always the safer choice",
+      "c": "Check the small model's rank on a public leaderboard before deciding",
+      "d": "Move every step of the system, including the explainer, to the small model"
+    },
+    "answer": "a",
+    "explanation": "Match the model to the step: extraction at volume suits a small fast model once task-specific evals prove it. Leaderboards say nothing about your emails, and the explainer may still need a larger model.",
+    "source": "Day 3, LLMs and agentic systems",
     "keepOrder": false,
     "status": "draft",
     "author": "claude",

@@ -109,7 +109,7 @@
     "explanation": "3,000 freed hours × €100 = €300K gross, minus €100K of software = €200K net. €300K forgets the cost to achieve; €700K values the remaining hours; €1M forgets the 30%.",
     "source": "Day 2, validated gains",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -128,7 +128,7 @@
     "explanation": "Cash release counts once as cash, and recurringly only as carrying cost. Presenting the one-time figure as annual savings destroys credibility with finance.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -736,7 +736,7 @@
     "explanation": "Contribution margin applies only to sellable hours, capped by the backlog: 500 × €200 = €100K. €400K values all 2,000 hours as if they could be sold.",
     "source": "Day 2, validated gains",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -755,7 +755,7 @@
     "explanation": "When freed hours cannot be sold, they are worth avoided variable cost: 1,000 × €40 = €40K. Full cost and contribution margin overstate the gain.",
     "source": "Day 2, validated gains",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -774,7 +774,7 @@
     "explanation": "Freed capacity is worth contribution margin only when it becomes sellable output. Off the bottleneck, plant output does not rise, so at most variable cost is avoided.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -793,7 +793,7 @@
     "explanation": "Valuing freed hours at full cost is a classic error: overheads stay. Value at contribution margin when sellable, otherwise at avoided variable cost.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -812,7 +812,7 @@
     "explanation": "Contribution margin is capped by the order backlog. Hours that can no longer be sold are worth avoided variable cost, so the case must be revalued.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -831,7 +831,7 @@
     "explanation": "Base, low and high cases name the driving assumption, and a strong case survives its own low case. A wide upside proves nothing about robustness.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -850,7 +850,7 @@
     "explanation": "Each scenario names its driving assumption, so finance can judge which belief the result rests on and test it.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -869,7 +869,7 @@
     "explanation": "A strong case survives its own low case. A loss in the low case means the result hangs on one assumption; hiding or averaging it misleads finance.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -888,7 +888,7 @@
     "explanation": "Low and high cases flex the driving assumption and name it. A flat percentage on the total hides what the result actually depends on.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -907,7 +907,7 @@
     "explanation": "When two independent estimates land within 20 to 30% of each other, present the number. A 10% gap is well inside that range.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -926,7 +926,7 @@
     "explanation": "Triangulated estimates should agree within 20 to 30%. A threefold gap means one method is wrong; averaging just hides the error.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -945,7 +945,7 @@
     "explanation": "Triangulation rebuilds the number independently, for example top-down from the P&L against bottom-up hours × rates. Scenarios test assumptions, not the method.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -964,7 +964,7 @@
     "explanation": "Triangulation needs a second, independent route to the number. Two methods sharing the same key input repeat its error rather than test it.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -983,7 +983,7 @@
     "explanation": "The ramp yields €100K in two months; the remaining €200K takes two more at €100K, so payback is 4 months. Ignoring the ramp gives 3.",
     "source": "Day 2, validated gains",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1002,7 +1002,7 @@
     "explanation": "Payback is one-time cost ÷ monthly net run-rate, including the ramp. Assuming full run-rate from day one flatters it.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1021,7 +1021,7 @@
     "explanation": "Payback uses the net run-rate: €90K − €30K = €60K a month, so €360K ÷ €60K = 6 months. Four months forgets the running cost.",
     "source": "Day 2, validated gains",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1040,7 +1040,7 @@
     "explanation": "Pilot machines are rarely representative. Results from the best-run line need adjusting for the conditions of the other lines before they size a rollout.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1059,7 +1059,7 @@
     "explanation": "Pilot selection bias: pilots go where data is clean and teams are willing, so they are rarely representative of the machines a rollout reaches.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1078,7 +1078,7 @@
     "explanation": "Pilot machines are rarely representative, so a pilot that sizes a rollout should include typical machines. Best-case or worst-case picks both bias the number.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1097,7 +1097,7 @@
     "explanation": "Material lost as scrap is part of cost of goods sold, so less scrap lowers it and raises gross margin. Inventory sits on the balance sheet, not the P&L.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1116,7 +1116,7 @@
     "explanation": "Receivables are working capital. Collecting sooner releases cash once; only the financing cost saved recurs.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1135,7 +1135,7 @@
     "explanation": "Fewer running hours cut variable costs such as energy and consumables. Depreciation, salaries and rent are fixed and stay unless a structural decision is taken.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1154,7 +1154,7 @@
     "explanation": "Gross margin is revenue minus cost of goods sold. EBITDA further deducts operating overheads, before interest, taxes, depreciation and amortization.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1173,7 +1173,7 @@
     "explanation": "Contribution margin is price minus variable cost: what each extra unit adds to cover fixed costs and profit. Deducting overheads gives a full-cost margin instead.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1192,7 +1192,7 @@
     "explanation": "Baseline rate 2 MWh per tonne × 10,000 tonnes = 20,000 MWh normalized; 20,000 − 18,000 = 2,000 MWh. 7,000 counts the volume drop as a gain.",
     "source": "Day 2, validated gains",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1211,7 +1211,7 @@
     "explanation": "Normalized baseline = baseline rate × actual volume, per product family. One plant-wide rate turns a mix shift into a false gain or a false loss.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1230,7 +1230,7 @@
     "explanation": "Normalized baseline: 1,000 × €10 + 500 × €20 = €20,000, against €18,000 actual, a €2,000 gain. €4,500 wrongly uses a €15 average rate.",
     "source": "Day 2, validated gains",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1249,7 +1249,7 @@
     "explanation": "The baseline covers a frozen, named perimeter agreed with finance. A family without a baseline rate stays outside the claim until the controller agrees one.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1268,7 +1268,7 @@
     "explanation": "Normalize: cost should be compared with baseline rate × actual volume, per family. Here cost grew less than volume, which can reveal a real gain.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1287,7 +1287,7 @@
     "explanation": "Counting rules separate recurring from one-time gains. A one-off rebate counts once; presenting it as annual savings overstates the case.",
     "source": "Day 2, validated gains",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1305,6 +1305,633 @@
     "answer": "b",
     "explanation": "Direct labor is usually at most about a quarter of the value. A labor-heavy case has probably missed working capital, speed to revenue, quality or deferred capex.",
     "source": "Day 2, validated gains",
+    "keepOrder": false,
+    "status": "retired",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-034",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your scheduler frees 1,500 bottleneck hours a year in a sold-out plant. Sales confirms orders for 600 of them. How do you value the other 900?",
+    "options": {
+      "a": "At contribution margin, since the plant is sold out today",
+      "b": "At the plant's full cost per hour, since the capacity is real",
+      "c": "At avoided variable cost, unless management takes a structural decision",
+      "d": "At contribution margin, discounted by half for uncertainty"
+    },
+    "answer": "c",
+    "explanation": "Contribution margin applies only to hours that sales can fill, capped by the order backlog. Hours beyond it are worth avoided variable cost, or a structural move such as closing a shift, which management decides.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-035",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "A plant runs at 64% of capacity. Your tool frees 2,000 hours on one line. The plant manager asks what they are worth. What is the honest answer?",
+    "options": {
+      "a": "Their contribution margin, since output could now rise",
+      "b": "Only the overtime, energy or outsourcing they avoid, or a shift closed",
+      "c": "Their full cost per hour, since fixed costs now spread over fewer running hours",
+      "d": "Nothing at all, because freed hours never reach the P&L"
+    },
+    "answer": "b",
+    "explanation": "With spare capacity and flat demand, nobody buys the extra output. Freed hours are worth the variable cost they avoid, or a structural decision management takes. Zero is too strong: avoided overtime is real money.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-036",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Late deliveries are costing the plant orders, and your tool lifts on-time delivery. What must you have before counting the contribution of orders kept?",
+    "options": {
+      "a": "A customer survey showing satisfaction is rising",
+      "b": "On-time delivery held above 95% for a full quarter, as measured by the plant",
+      "c": "The plant manager's estimate of the volume at risk",
+      "d": "Sales naming the orders at risk, backed by contracts or emails"
+    },
+    "answer": "d",
+    "explanation": "Revenue protection carries the heaviest burden of proof: finance counts it only when sales names the orders, with contractual or written evidence. A better service level alone proves no euro was kept.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-037",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Sales says two accounts would take 6% more volume with shorter lead times, but nothing is in writing. How should your gains case treat that volume?",
+    "options": {
+      "a": "Outside the base case, as an assumption sales must confirm by a date",
+      "b": "In the base case, since the sales director said it out loud",
+      "c": "As validated revenue, from the day lead times start to fall",
+      "d": "Left out entirely, and not mentioned to the sponsor at all"
+    },
+    "answer": "a",
+    "explanation": "An unconfirmed sale is an assumption: log it with an owner and a date, and keep it out of the base case until sales confirms it. Hiding it loses a real upside; counting it now overstates the case.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-038",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your low and high cases are simply the base case minus and plus 10%. The CFO is not convinced. Why?",
+    "options": {
+      "a": "The range should be wider, about 25%, to look prudent",
+      "b": "Each case should move one named assumption, not a fixed margin",
+      "c": "The high case should already include the rollout to other sites",
+      "d": "A CFO wants one number, so ranges only create confusion"
+    },
+    "answer": "b",
+    "explanation": "Low, base and high cases are each driven by a named assumption, such as volume sales can place or the gain on typical machines. A symmetric margin shows no understanding of what moves the result.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-039",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your cost-out case still pays if the pilot gain halves. Your capacity case turns negative if demand softens. Which do you lead with at the steering committee?",
+    "options": {
+      "a": "The capacity case, since its base case is the larger one",
+      "b": "The sum of the two, presented as one program figure",
+      "c": "Neither, until both have run for a full year on site",
+      "d": "The cost-out case, since it survives its own low case"
+    },
+    "answer": "d",
+    "explanation": "A strong case survives its own low case. The capacity case depends on demand that may not come, so it is a condition to state, not the headline. Waiting a year forfeits a case that already holds.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-040",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Planners say yield on the problem families is 'about 20% lower', but nobody measures it. Your sizing rests on that gap. What do you do?",
+    "options": {
+      "a": "Use 20% in the base case, since the planners know the floor",
+      "b": "Drop the yield effect and size only the changeover hours",
+      "c": "Measure it early, and until then treat it as a named range",
+      "d": "Use the ERP's standard rates, which the controller trusts"
+    },
+    "answer": "c",
+    "explanation": "An estimate nobody has measured is an assumption: carry it as a range, name it as a driver, and plan how to measure it. Saying what you do not know, and how you will find out, is what a steering committee expects.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-041",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Bottom-up, hours freed × contribution gives €1.2M a year. Top-down, the share of the P&L line the lever can touch gives €1.0M. What next?",
+    "options": {
+      "a": "Present it, showing both paths and the gap between them",
+      "b": "Average the two and present €1.1M as the single figure",
+      "c": "Keep working on both paths until the two agree within about 5%",
+      "d": "Present the bottom-up figure, as it is more detailed"
+    },
+    "answer": "a",
+    "explanation": "Two independent paths within 20 to 30% of each other support the order of magnitude, so present it and show both. Chasing a 5% match wastes time; averaging hides the method.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-042",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your case is hours saved × contribution per hour. Which second estimate is a real triangulation?",
+    "options": {
+      "a": "The same hours saved, recomputed with the controller's own hourly rates",
+      "b": "The pilot result on three machines, scaled to the whole site",
+      "c": "A vendor benchmark of gains at plants of a similar size",
+      "d": "Top-down: the share of the affected P&L line the lever can move"
+    },
+    "answer": "d",
+    "explanation": "Triangulation builds the number a second, independent way. Reusing the same hours with other rates repeats the first path's main assumption, so agreement would prove little.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-043",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "One-time cost €200K. Net gains run at €25K a month for the first four months, then €50K a month. What is the payback?",
+    "options": {
+      "a": "4 months",
+      "b": "5 months",
+      "c": "6 months",
+      "d": "8 months"
+    },
+    "answer": "c",
+    "explanation": "Four ramp months return €100K; the remaining €100K takes two months at €50K, so 6 months. Dividing by the full run-rate gives 4 and ignores the ramp.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": true,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-044",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "In month four, gains run at €40K a month. The sponsor wants to tell the board 'about €480K this year'. What do you advise?",
+    "options": {
+      "a": "Fine, as long as finance signed the month-four figure",
+      "b": "Fine, since annualizing a monthly run-rate is common reporting practice",
+      "c": "Report €480K now and correct it at the year-end close",
+      "d": "Call €480K a run-rate, and report what is realized separately"
+    },
+    "answer": "d",
+    "explanation": "€40K × 12 is a run-rate, not this year's gain: the months before go-live and the ramp earned less. Run-rate and realized are always stated separately, even when the monthly figure is signed.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-045",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your net gain deducts the software and your team's fees. The controller says the figure is still not net. What did you most likely leave out?",
+    "options": {
+      "a": "The depreciation of the machines that the new tool now schedules",
+      "b": "The time the client's own people spend on the project",
+      "c": "The revenue lost while the system was being deployed",
+      "d": "The vendor's margin built into the software price"
+    },
+    "answer": "b",
+    "explanation": "The cost to achieve covers software, the deployment and the client's time: planners, IT and the controller. Depreciation of existing machines does not change with the project.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-046",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your pilot ran on the three machines with the best data and the keenest crew. The rollout covers 14 machines. How do you size the rollout?",
+    "options": {
+      "a": "Scale the pilot gain to all 14 machines, exactly as measured",
+      "b": "Discount the pilot gain and make it the low case's driver",
+      "c": "Repeat the pilot on the same three machines to confirm it first",
+      "d": "Replace the pilot result with a vendor's average gain"
+    },
+    "answer": "b",
+    "explanation": "Pilot machines are chosen for clean data and keen teams, so they are rarely representative. Discount the gain for typical machines and name it as the assumption that drives the range.",
+    "source": "Doctrine, value, ROI, validated gains and capture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-047",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your case shows €1M of stock reduction plus €200K a year of carrying cost saved, summed as €1.2M a year. What is wrong?",
+    "options": {
+      "a": "Carrying cost should not count, since stock is not on the P&L",
+      "b": "Stock reduction should be spread over five years as savings",
+      "c": "The cash comes once; only the carrying cost recurs each year",
+      "d": "Nothing, if the controller agrees the carrying-cost rate"
+    },
+    "answer": "c",
+    "explanation": "Inventory releases cash once, in the year stock goes down, and saves carrying cost every year after. Adding the two into one annual figure counts the same euros twice.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-048",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your case values fewer changeover hours at contribution margin, and separately adds the overtime those changeovers used to cause. What will the controller say?",
+    "options": {
+      "a": "The overtime is a symptom of the changeovers: count it once",
+      "b": "The overtime belongs in the case, as a cost-out line",
+      "c": "The changeover hours should be valued at full cost instead",
+      "d": "The two lines stand, as long as each one is normalized for volume and mix"
+    },
+    "answer": "a",
+    "explanation": "Overtime is usually a symptom of changeovers and late plans. Counting both the freed hours and the overtime they caused adds the same euro twice; choose one valuation through the demand fork.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-049",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Price €1,700 a tonne, variable cost €1,300, full cost €1,600. A sold-out line makes 1,000 more tonnes that sales has placed. What are they worth?",
+    "options": {
+      "a": "€100K",
+      "b": "€400K",
+      "c": "€1.6M",
+      "d": "€1.7M"
+    },
+    "answer": "b",
+    "explanation": "A tonne is worth its contribution margin: €1,700 − €1,300 = €400 × 1,000 = €400K. Price minus full cost gives €100K and wrongly charges fixed costs that do not move with volume.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": true,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-050",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "At a plant with flat demand, the manager says higher OEE will cut cost per tonne and so lift EBIT. What is your view?",
+    "options": {
+      "a": "Right: a lower cost per tonne always reaches EBIT within the same year",
+      "b": "Right, provided the OEE gain is measured on the bottleneck line",
+      "c": "A paper gain only, unless the extra output sells or cash costs fall",
+      "d": "Wrong: OEE has no link with cost, only with delivery"
+    },
+    "answer": "c",
+    "explanation": "Depreciation and salaried staff do not move when machines run longer. Spreading them over more unsold tonnes lowers unit cost on paper without changing EBIT; money comes from sales or avoided variable cost.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-051",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your baseline period includes a week when a line was down for planned maintenance. What should the validation protocol say?",
+    "options": {
+      "a": "Nothing: such weeks average out over the baseline period",
+      "b": "The rule for such weeks, written before any result is known",
+      "c": "That the FDE team decides each such week case by case",
+      "d": "That such weeks are dropped whenever they happen to lower the gain"
+    },
+    "answer": "b",
+    "explanation": "The controller must run the protocol without you, including what to do with abnormal weeks. A rule fixed in advance stops anyone choosing exclusions after seeing the result.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-052",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Mix moved toward a family that costs twice as much per tonne. Plant-wide cost per tonne rose 5%, and the plant manager says the tool failed. What do you do?",
+    "options": {
+      "a": "Accept it: cost per tonne is the metric the plant reports",
+      "b": "Recompute the baseline as each family's rate × actual volume",
+      "c": "Remove the expensive family from the perimeter after the fact",
+      "d": "Compare against the best month of the baseline year, when the mix was similar"
+    },
+    "answer": "b",
+    "explanation": "A plant-wide rate hides shifts between families with different rates. The normalized baseline is baseline rate × actual volume, per family; changing the perimeter afterwards breaks baseline discipline.",
+    "source": "Doctrine, value, ROI, validated gains and capture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-053",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your pipeline gives cleaner output data than the ERP export finance uses today. Which should the baseline use?",
+    "options": {
+      "a": "Your pipeline, since its data quality is higher",
+      "b": "An average of the two sources, so that neither side can dispute it",
+      "c": "The system finance already trusts, with its gaps written down",
+      "d": "Whichever source shows the more conservative baseline"
+    },
+    "answer": "c",
+    "explanation": "The baseline uses the system finance already trusts, owned by the client, with its known gaps documented in the protocol. A gain built on your own pipeline is one the controller cannot compute without you.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-054",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Another team's Verifier, playing the controller, cannot tell from your protocol which file to open or who sends it. What does that show?",
+    "options": {
+      "a": "The protocol is not finished: it must run without you",
+      "b": "The Verifier needs a short briefing from your team first",
+      "c": "The file name belongs in the steering deck, not the protocol",
+      "d": "The detail can wait until the first monthly review"
+    },
+    "answer": "a",
+    "explanation": "A gain exists when the client's controller computes it without you. If the protocol does not say which file, from whom, it fails the controller test; a briefing only hides the gap.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-055",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your protocol says the gain becomes official 'once results are consistently good'. What should the sign-off trigger say instead?",
+    "options": {
+      "a": "That the sponsor approves each monthly figure in writing",
+      "b": "A confidence interval computed from your team's model",
+      "c": "A fixed date after which the gain is assumed to hold",
+      "d": "A value, and how long it must hold, such as three months"
+    },
+    "answer": "d",
+    "explanation": "The sign-off trigger is a value and a duration agreed in week one, so the controller knows exactly which number, held how long, makes it official. Sponsor approval is not finance validation.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-056",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "The group controller says: 'I have never seen a scheduling gain I could find in my numbers.' What is your first move?",
+    "options": {
+      "a": "Show the gains other clients reached with similar tools",
+      "b": "Ask the sponsor to overrule the controller on the gain",
+      "c": "Send weekly reports from the tool, so that the gain becomes visible to finance",
+      "d": "Build the baseline and formula with the controller, from their data"
+    },
+    "answer": "d",
+    "explanation": "The controller's doubt is the requirement: co-build the baseline, formula and sign-off rule in week one, from the data finance trusts. Reports from your own tool are exactly what was never found in the numbers.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-057",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your scheduling project pushes on-time delivery. Which measure is a guardrail on its scorecard?",
+    "options": {
+      "a": "Plans published from the system each week",
+      "b": "Scrap and changeovers per shift",
+      "c": "Answer time to a customer's change request",
+      "d": "Quoted lead time on new orders"
+    },
+    "answer": "b",
+    "explanation": "A guardrail is what must not get worse while you push the outcome: on-time delivery bought with extra changeovers is paid in scrap. Plans published is adoption; answer time is a driver; lead time is an outcome.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-058",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "The team proposes 'parser accuracy above 98%' as the project's headline success measure. What is wrong with it?",
+    "options": {
+      "a": "It describes the system, not what the plant or customer notices",
+      "b": "98% is too low a bar for a parser running in production",
+      "c": "It should be computed by the controller, not by the team",
+      "d": "Accuracy should be measured on a sample, not on every message"
+    },
+    "answer": "a",
+    "explanation": "Good is defined by what the client would notice. Parser accuracy belongs in the eval set; the headline measure is an outcome such as on-time delivery or quoted lead time.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-059",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Baseline on-time delivery is 84%; the best week last quarter was 91%; the solver says a perfect plan gives 97%. Where should the target sit?",
+    "options": {
+      "a": "At 86%, two points above the baseline, to be safe",
+      "b": "At 91%, since the best week proves it can be done",
+      "c": "Between 91% and 97%, with a date and an owner",
+      "d": "At 97%, since the solver proves it is reachable"
+    },
+    "answer": "c",
+    "explanation": "The target sits between best demonstrated and entitlement, with a number, a date and an owner. Entitlement assumes a perfect plan; two points over baseline may be lost in weekly noise.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-060",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Weekly on-time delivery moves about two points with nothing changing. The draft charter promises one point of improvement. What do you change?",
+    "options": {
+      "a": "Nothing: one point a week adds up over a year",
+      "b": "Measure monthly instead, so that the weekly noise disappears from view",
+      "c": "Aim higher, or measure something closer to the cause",
+      "d": "Ask the controller to smooth the weekly figures"
+    },
+    "answer": "c",
+    "explanation": "A gain smaller than the weekly noise cannot be seen, so nobody can sign it. Size the target above the noise, or pick a driver measure closer to the cause that moves visibly.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-061",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Week 6: you find the scrap baseline counts regrind twice, so the gain shown to the CFO is a third too high. Steering is on Friday. What do you do?",
+    "options": {
+      "a": "Tell the sponsor and controller within a day, with the corrected figure",
+      "b": "Correct it quietly in the next monthly report",
+      "c": "Wait for Friday and present the correction to the whole committee",
+      "d": "Keep the figure, since the trend in scrap is still right"
+    },
+    "answer": "a",
+    "explanation": "Announce the error first, with the corrected number and what it changes. Trust lost by a correction comes back; trust lost by a cover-up does not. Waiting for Friday lets the CFO hear it in a meeting.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-062",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "You bring the planning system to a second plant running at 64% of capacity. Its planner shows no interest. What is the likely reason?",
+    "options": {
+      "a": "She has not yet seen the gains measured at the first plant",
+      "b": "She needs more training on the system before she adopts it",
+      "c": "She wins little from a better plan when lines are half empty",
+      "d": "Her plant manager has not yet made use of the system mandatory for her"
+    },
+    "answer": "c",
+    "explanation": "Each actor must be able to say what they win. In a plant short of orders a better plan moves little, so the first plant's product may be the wrong first product there; start from that plant's own problem.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-063",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "The group COO wants one gain figure for the four-plant rollout, computed by your central team. What do you propose?",
+    "options": {
+      "a": "One figure, computed centrally with a shared group method",
+      "b": "The first plant's gain, multiplied by the number of plants",
+      "c": "A group figure from the ERP, signed by the group CFO alone",
+      "d": "Gains each plant's controller measures, then added up"
+    },
+    "answer": "d",
+    "explanation": "What counts as a gain belongs to the controller, and each plant has its own baseline and perimeter. The COO gets gains a controller can measure plant by plant; a central figure is the team's model again.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-064",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "Your kickoff document for the client's executive committee has a target, scope and roles. What must it also set for each gate?",
+    "options": {
+      "a": "A measurable condition that stops the project, agreed now",
+      "b": "A budget reserve to extend the phase if it runs late",
+      "c": "The list of features the team will deliver by the end of that phase",
+      "d": "The user satisfaction score the phase should reach"
+    },
+    "answer": "a",
+    "explanation": "Kill criteria are written on day one, one per gate, while nobody is attached to the solution yet. About 30% of initiatives fail; a stop at a gate keeps the account, a zombie project loses it.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-065",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "At week 4, the backtest shows changeovers explain a fifth of the delivery loss; the charter's kill criterion said a third. The sponsor wants to go on. What do you do?",
+    "options": {
+      "a": "Extend the phase by four more weeks, to gather more data on the losses",
+      "b": "Lower the threshold, since a fifth is still material",
+      "c": "Continue, and raise it at the next steering committee",
+      "d": "Take the stop to the steering committee, written up as a result"
+    },
+    "answer": "d",
+    "explanation": "The kill criterion was agreed before anyone was attached, so it holds. A kill is a result: write it up and send it to the controller like a gain. Moving the threshold after the fact empties the charter.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "VAL-3-066",
+    "domain": "VAL",
+    "tier": 3,
+    "stem": "A use case would save €150K a year; capturing it costs €100K a year in software and people. The sponsor likes it. What do you advise?",
+    "options": {
+      "a": "Look elsewhere: it is not worth ten times its cost",
+      "b": "Go ahead, but only after a pilot on the best line",
+      "c": "Go ahead, since the net gain is positive from year one",
+      "d": "Go ahead if the vendor cuts the software price"
+    },
+    "answer": "a",
+    "explanation": "A problem worth solving is worth at least ten times what it costs to capture. A thin positive margin disappears with the first delay or the low case, and leaves no room for the change it demands.",
+    "source": "Day 2, problems worth solving",
     "keepOrder": false,
     "status": "draft",
     "author": "claude",

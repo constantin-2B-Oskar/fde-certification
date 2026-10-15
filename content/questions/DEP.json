@@ -71,7 +71,7 @@
     "explanation": "Ask for a real, recent instance. Descriptions of how things should work reproduce the official process; the last real case reveals workarounds and hidden rules.",
     "source": "Day 2, problems worth solving",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -470,7 +470,7 @@
     "explanation": "A complaint is not a problem statement. Framing turns it into something testable: which metric, on which perimeter, measured against which baseline.",
     "source": "Day 2, problems worth solving",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -489,7 +489,7 @@
     "explanation": "It names a metric, a perimeter and a baseline, so success or failure can be measured. The others describe a wish, not a testable problem.",
     "source": "Day 2, problems worth solving",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -508,7 +508,7 @@
     "explanation": "A 15% cut means nothing without its starting point. Metric and perimeter are there; the baseline is what makes the claim testable.",
     "source": "Day 2, problems worth solving",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -527,7 +527,7 @@
     "explanation": "The perimeter must be one where the metric and its baseline can actually be measured. A group-wide claim built on estimates cannot be tested.",
     "source": "Day 2, problems worth solving",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -546,7 +546,7 @@
     "explanation": "The metric must measure the business outcome the complaint is about. Logins, satisfaction and features measure activity around the tool, not whether the problem shrank.",
     "source": "Day 2, problems worth solving",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -565,7 +565,7 @@
     "explanation": "Operators know the real sequence, the workarounds and the exceptions. Managers describe the official process, and interviewing only them reproduces it.",
     "source": "Day 1, consulting skills",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -584,7 +584,7 @@
     "explanation": "Personal spreadsheets often hold the hidden rules the official systems lack. Seeing one used on a real case reveals what the model must encode.",
     "source": "Day 1, consulting skills",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -603,7 +603,7 @@
     "explanation": "Exceptions are where hidden rules live. Walking through the last real case turns a passing remark into a rule the model can encode.",
     "source": "Day 1, consulting skills",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -622,7 +622,7 @@
     "explanation": "The design must fit how the work is actually done. Workarounds signal rules or constraints the official process misses; verify them on real cases.",
     "source": "Day 1, consulting skills",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -641,7 +641,7 @@
     "explanation": "The memo predicts concretely what breaks, who reacts and by when. Vague statements about resistance or risk give the steering committee nothing to act on.",
     "source": "Day 2, leading an FDE project",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -660,7 +660,7 @@
     "explanation": "The memo exists so the steering committee can decide on mitigations in advance. Hiding it to avoid alarm defeats its purpose and breaks the no-surprises rule.",
     "source": "Day 2, leading an FDE project",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -679,7 +679,7 @@
     "explanation": "Its value is prediction: written before go-live, it lets the team fix what would break. At kickoff too little is known; after go-live it becomes a post-mortem.",
     "source": "Day 2, leading an FDE project",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -698,7 +698,7 @@
     "explanation": "A predicted failure is only useful if someone acts on it. Agreeing a mitigation and an owner with the people concerned turns the forecast into prevention.",
     "source": "Day 2, leading an FDE project",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -717,7 +717,7 @@
     "explanation": "The memo is not pessimism but prevention. Failures named in advance can be mitigated; the same failures discovered after go-live cost the project its credibility.",
     "source": "Day 2, leading an FDE project",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -736,7 +736,7 @@
     "explanation": "Use AI tools freely for speed, but trust comes from checking outputs against source data. Asking the same tool to check itself is not independent verification.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -755,7 +755,7 @@
     "explanation": "AI tools speed up the work; the discipline lies in verification. A ban gives up the speed, while trusting unchecked output gives up the client's trust.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -774,7 +774,7 @@
     "explanation": "Fluent output is not verified output. Checking each cause against the source logs is what lets the FDE stand behind the findings in front of the committee.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -793,7 +793,7 @@
     "explanation": "Verification means checking against source data, including the unusual cases where extraction fails. A tool's own score or a rerun is not an independent check.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -812,7 +812,7 @@
     "explanation": "AI tools are welcome for speed; credibility comes from outputs that survive a check against source data. One wrong figure found by the client costs more than the time saved.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -831,7 +831,7 @@
     "explanation": "The handover bar includes a trained internal owner. A ticket queue can log incidents but cannot judge the plans, adjust the rules or keep the routine alive.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -850,7 +850,7 @@
     "explanation": "The handover bar requires the new routine to hold without the FDE. Usage that falls when the FDE leaves shows the routine has not yet taken root.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -869,7 +869,7 @@
     "explanation": "Production discipline includes monitoring. Without it, a silent failure is found by its consequences, here a week of bad plans, instead of by an alert.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -888,7 +888,7 @@
     "explanation": "A runbook lets the internal owner recover from known failures without the FDE. Source code and a phone number keep the client dependent on its builder.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -907,7 +907,7 @@
     "explanation": "The bar is the routine holding without the FDE, so test exactly that. Sign-offs, elapsed time and confidence surveys do not show what happens when the FDE is gone.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -926,7 +926,7 @@
     "explanation": "Safety rules come first on any site. No discovery goal, however urgent, justifies going onto the floor before the induction.",
     "source": "Day 1, consulting skills",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -945,7 +945,7 @@
     "explanation": "Shifts often work differently, each with its own workarounds. Respecting shift patterns means going to each shift at a time that does not disrupt production.",
     "source": "Day 1, consulting skills",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -964,7 +964,7 @@
     "explanation": "Respect for operators' time means production comes first. Watching the changeover, with their agreement, is often worth more than the interview itself.",
     "source": "Day 1, consulting skills",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -983,7 +983,7 @@
     "explanation": "Operators' expertise often holds rules the data lacks. Checking the case with them respects that expertise and may reveal a missing constraint before a die is damaged.",
     "source": "Day 1, consulting skills",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1001,6 +1001,576 @@
     "answer": "a",
     "explanation": "Safety rules come first, whoever offers the shortcut. An FDE who breaks them endangers people and loses the floor's respect at once.",
     "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "retired",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-031",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Your monthly report to the account lead lists hours on site, lines of code shipped and slides delivered. What should it report instead?",
+    "options": {
+      "a": "Requirements gathered, documents written and workshops run with the client team",
+      "b": "Hours billed against budget, with a forecast of the hours left to the end",
+      "c": "Time to first value, named weekly users and the gain signed by finance",
+      "d": "Features shipped per sprint and open bugs, sorted by their severity"
+    },
+    "answer": "c",
+    "explanation": "An FDE is measured on what reaches the client's P&L: time to a decision taken with the system, weekly adoption by named users, and a gain finance signs. Hours, code and slides appear nowhere in the P&L.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-032",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "To understand why one line drifts at weekends, Sam proposes a chart of output per operator for the weekend crew. What do you do instead?",
+    "options": {
+      "a": "Analyse by machine and shift, with no operator names on any chart",
+      "b": "Run the chart, but only share it with the site director and HR",
+      "c": "Run the chart for one month, then delete it once the cause is found",
+      "d": "Ask the weekend crew to vote on whether the chart may be produced"
+    },
+    "answer": "a",
+    "explanation": "An FDE never collects data in a way that reads as monitoring people. Data watches machines, not operators; in France the works council is consulted before any tool that could monitor employees.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-033",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "The sponsor is sure the night shift causes the scrap increase. Your first data points elsewhere. How should your hypothesis tree treat his theory?",
+    "options": {
+      "a": "Leave it out, since the first data already points to another cause",
+      "b": "Make it the root of the tree, since he is the one funding the work",
+      "c": "Park it in an appendix, to be discussed once the results are in",
+      "d": "Include it as one branch, with a prior and a test like the others"
+    },
+    "answer": "d",
+    "explanation": "Neither accept nor dismiss the sponsor's culprit: write it in as one testable branch. If the data clears it, that test is what lets you move him without humiliating him.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-034",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "A plant manager says 'maintenance takes forever' and asks you to compare CMMS vendors. What do you do before looking at any vendor?",
+    "options": {
+      "a": "Collect the technicians' wish list of features for the new tool",
+      "b": "Name the observable symptom and the gap as a number with its source",
+      "c": "Estimate the budget the plant can spend on a new system this year",
+      "d": "Benchmark the plant's maintenance costs against all of its sister sites"
+    },
+    "answer": "b",
+    "explanation": "Climb the rungs: complaint, observable symptom, quantified gap, candidate causes. Deployments that jump from the complaint to a tool often find the real cause elsewhere, such as technicians waiting for parts.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-035",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "A site director asks for an OTIF analysis by month end. You learn that a corporate review of his site is in three weeks. Why does this matter for framing?",
+    "options": {
+      "a": "It only changes the deadline, not the problem you are framing",
+      "b": "It means the hypothesis tree can be skipped to save some time",
+      "c": "It shapes what solved means to him and what he must show upward",
+      "d": "It is a political detail the analysis should keep well away from"
+    },
+    "answer": "c",
+    "explanation": "Ask the question behind the question: who hurts, why now, what solved looks like to the sponsor. The same words mean a different problem three weeks before a corporate review.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-036",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "You want to learn how far a planner trusts the ERP's changeover times. Which question is most likely to give you a useful answer?",
+    "options": {
+      "a": "Don't you think the ERP's changeover times are often unreliable?",
+      "b": "Is the changeover data in the ERP right, in your own opinion?",
+      "c": "Why did you stop trusting the changeover times in the ERP?",
+      "d": "If those times were wrong, where would you look first to check?"
+    },
+    "answer": "d",
+    "explanation": "Open questions about a concrete case surface the real rules. A yes-or-no question gets a yes, a leading one returns your own idea, and 'why did you' sounds like an audit.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-037",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "The procedure says the plan is frozen each week; the planner says she rewrites it every day. How do you establish what really happens?",
+    "options": {
+      "a": "Count the plan changes in the change log and compare with interviews",
+      "b": "Follow the procedure, since quality approved it and it is the reference",
+      "c": "Follow the planner, since she is the one running the plan every day",
+      "d": "Ask the site director to decide which of the two accounts is correct"
+    },
+    "answer": "a",
+    "explanation": "The procedure is a hypothesis; the change log is the evidence. Map the true process from interviews and compute its loops from data, rather than trusting either account alone.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-038",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "You need to find who really holds the scheduling rules at a new site. Which question to operators and shift leaders finds them fastest?",
+    "options": {
+      "a": "Who is in charge of scheduling according to the org chart?",
+      "b": "Who do you call when something goes wrong during the night?",
+      "c": "Which department owns the written scheduling procedure here?",
+      "d": "Who signed off the latest version of the planning process?"
+    },
+    "answer": "b",
+    "explanation": "The informal network is the real map: the same two or three names come back when you ask who people call when the system fails. The expert the floor trusts is often missing from the org chart.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-039",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "You have two minutes with a site director to explain why on-time delivery fell. How do you open?",
+    "options": {
+      "a": "With the data sources and the method, so that he trusts the findings",
+      "b": "With the history of the problem since January, in date order",
+      "c": "With the answer and its size, then the decision you need from him",
+      "d": "With the three hypotheses you tested, then your final conclusion"
+    },
+    "answer": "c",
+    "explanation": "Executives triage in seconds: put the governing thought first, the answer and its so-what, then ask for one decision. Method and history belong underneath, for when he asks why.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-040",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "The controller's baseline will make next week's steering committee see a smaller gain than the sponsor expects. What should happen before the meeting?",
+    "options": {
+      "a": "Send the new numbers to all committee members by email the evening before",
+      "b": "Present it in the meeting itself, so that everyone hears it at once",
+      "c": "Keep the baseline off the agenda until finance has fully closed it",
+      "d": "Meet the sponsor and the controller one to one, and adjust with them"
+    },
+    "answer": "d",
+    "explanation": "Pre-wire: nobody should hear anything important for the first time in a meeting. Show each key person what concerns them in private, so the meeting becomes a formality.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-041",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "In a hallway chat, the controller agreed the formula for the baseline. The decision lives only in your notebook. What does the course expect?",
+    "options": {
+      "a": "A recap the same day, filed in the bundle as a decision with its source",
+      "b": "Nothing more, since the controller keeps the official spreadsheet",
+      "c": "A line in the next monthly steering pack, so that it is on record",
+      "d": "A message in the team chat so that the other FDEs are aware of it"
+    },
+    "answer": "a",
+    "explanation": "If it is not in the bundle, it did not happen. Decisions are concepts: who decided, when, on what evidence, written the same day so that four people tell the CFO the same number.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-042",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Your v1 is used daily by the named planners, but an FDE still restarts a job by hand most mornings. Which exit criterion is still open?",
+    "options": {
+      "a": "Build: named users rely on v1 on the floor every single day",
+      "b": "Find: the charter is signed by the sponsor before the build",
+      "c": "Deploy: it runs two weeks without the FDE touching it",
+      "d": "Expand: the next charter is signed for a new problem or site"
+    },
+    "answer": "c",
+    "explanation": "Daily use by named users is the build exit, and it is met. Deployed means monitored, documented, owned by a named person in IT, and running two weeks without the FDE touching it.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-043",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "In week 3, the sales director asks you to add a quoting tool to the scheduling project, for the same planners. What do you do?",
+    "options": {
+      "a": "Add it quietly, since it helps the same users and costs little time",
+      "b": "Refuse it outright, since it is not on the signed scope-in list",
+      "c": "Start it in parallel, and report it to the sponsor once the scheduler has shipped",
+      "d": "Take it to the steering committee and the decision log as a scope change"
+    },
+    "answer": "d",
+    "explanation": "Every scope change goes through the steering committee and the decision log. Perimeter creep is how gains get laughed out of the room at month six; a flat refusal ignores a possibly valid request.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-044",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "At your kickoff, the executive committee asks what would make you stop at week 4. Which answer meets the standard the course sets?",
+    "options": {
+      "a": "If the sponsor loses confidence in the approach at any point, we stop the work",
+      "b": "If changeovers explain under a third of the OTIF loss by week 4, we stop",
+      "c": "If progress at week 4 is slower than planned, we review the plan",
+      "d": "If the team judges the model is not good enough by week 4, we stop"
+    },
+    "answer": "b",
+    "explanation": "A kill criterion is measurable, tied to a gate, and agreed in the kickoff before anyone is attached to the solution. Confidence, slow progress or the team's judgment can be argued forever.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-045",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "The build starts Monday. A sponsor, an IT owner, a product owner and users are named, but no controller. What should you do?",
+    "options": {
+      "a": "Name the controller before the build, as owner of the baseline and gain",
+      "b": "Start the build and bring finance in once a first gain becomes visible",
+      "c": "Let the FDE team compute the baseline until finance has time for it",
+      "d": "Ask the sponsor to sign off the gain himself at the end of the project"
+    },
+    "answer": "a",
+    "explanation": "Five client roles need a name before the build, and the controller owns the baseline, the formula and the gain. A baseline built later, or by the FDE, is a fight with finance at month six.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-046",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "In shadow mode, the system's plans now match the planner's on most days. What is the next step of the deployment?",
+    "options": {
+      "a": "She publishes the system's plan by default unless she objects",
+      "b": "She starts from the system's plan, and every change needs a reason",
+      "c": "Small repairs of a known class publish alone, with her informed",
+      "d": "The system publishes the whole plan, and she reviews only the exceptions"
+    },
+    "answer": "b",
+    "explanation": "Deployment runs shadow, co-pilot, default, then autonomous by class. After shadow comes co-pilot, where each change carries a reason the improvement loop can use. The whole plan never publishes alone.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-047",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "The planner moves an order off the line the system chose. Her reason: 'The customer would send it back.' What do you do next?",
+    "options": {
+      "a": "Write a rule keeping this customer's orders off that line from now on",
+      "b": "Log it as a one-off preference and keep the system's original plan",
+      "c": "Ask her whether it is because of a quality audit on that line",
+      "d": "Keep asking why until the answer is a plant fact with an owner"
+    },
+    "answer": "d",
+    "explanation": "The first answer is a consequence, not a rule. Ask why without suggesting the answer until you reach a fact that will hold next week, such as a line qualification, and the person who owns it.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-048",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Your planning system keeps missing order changes that the scheduling clerk writes in a paper notebook. What does the course suggest?",
+    "options": {
+      "a": "Ask IT to add a field for these changes in the ERP's next scheduled upgrade",
+      "b": "Have the model read photos of her notebook pages every evening",
+      "c": "A small intake app where she records each change, structured and timed",
+      "d": "Take these changes out of scope, since no system holds them today"
+    },
+    "answer": "c",
+    "explanation": "Build mini-apps that collect what no system holds: event intake, overrides with a reason, execution capture. The data then arrives structured, timed and owned, instead of waiting for an ERP project.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-049",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Your platform provides the solvers, the rules engine, permissions, audit and a model gateway. Which work on site belongs to your team?",
+    "options": {
+      "a": "A faster solver tuned to the specific lines and products of this plant",
+      "b": "The plant's rules, the field mappings and who may do what",
+      "c": "A new audit log and secret store built for this client's security team",
+      "d": "A dedicated model gateway with this client's own prompt templates"
+    },
+    "answer": "b",
+    "explanation": "Compose the platform; your code is the architecture and the plant. A local solver or harness becomes another orphan for IT, while the rules, mappings and permissions are what only the site can give.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-050",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Day 2 of the project: group IT says any new cloud service needs a six-week security review. Your plan assumed access in week one. What do you do?",
+    "options": {
+      "a": "Start the review today and work on exports while it runs",
+      "b": "Ask the sponsor to waive the review for this one project",
+      "c": "Pause the project until the security review is complete",
+      "d": "Use a personal cloud account until the approval arrives"
+    },
+    "answer": "a",
+    "explanation": "Technical dead ends have known moves; the mistake is improvising around the rules. Start the review on day one and keep working on exports, so the six weeks are not lost.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-051",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Your Verifier finds that the gain you showed the CFO two weeks ago is overstated by a third. Steering is on Friday. What do you do?",
+    "options": {
+      "a": "Correct it in the Friday steering pack, with a short footnote",
+      "b": "Tell the sponsor and controller within a day, with the corrected figure",
+      "c": "Explain it on Friday, when there is enough time to give the full context",
+      "d": "Keep the figure and lower next quarter's target to compensate"
+    },
+    "answer": "b",
+    "explanation": "Announce a data error first, before anyone finds it, with the corrected figure and what it changes, then add the check that would have caught it. Trust lost by a correction returns; a cover-up does not.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-052",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "The sponsor has skipped two weekly reviews, and only he can unblock group security. You asked him in private, with a date. Nothing moved. What next?",
+    "options": {
+      "a": "Go around him and contact group security directly yourself",
+      "b": "Wait until his workload eases after the coming board review",
+      "c": "Escalate to whoever sold the project, so scope or sponsor changes",
+      "d": "Raise his absence in front of everyone at the next steering committee"
+    },
+    "answer": "c",
+    "explanation": "A sponsor who does not act is a contract problem, not a mood: name the act, ask in private with a date, then take it back to whoever sold the project. Exposing him in public loses him for good.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-053",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Go-live is next week. Site IT has nobody to own the app yet, and the planner offers to 'keep an eye on it'. What do you do?",
+    "options": {
+      "a": "Go live, and stay on site yourself until an owner is found",
+      "b": "Go live, with the planner as owner until IT finds someone",
+      "c": "Go live, and hand the app to the vendor's support desk",
+      "d": "Hold go-live until the client names an owner in IT"
+    },
+    "answer": "d",
+    "explanation": "A named owner at the client before go-live, or no go-live. Deployed means monitored, documented and owned by a named person in IT; anything else leaves an orphan application.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-054",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Your scheduler works at the first plant. The COO wants it at a second plant that runs at 64% capacity. What do you do first?",
+    "options": {
+      "a": "Copy the first plant's rules and thresholds to save the local team time",
+      "b": "Redo the true-process walk there, since its problem may not be planning",
+      "c": "Deploy the same release now and tune it there after go-live",
+      "d": "Have the first plant's planner train the second plant's planner"
+    },
+    "answer": "b",
+    "explanation": "What worked on one site is a hypothesis on the next. A plant at 64% capacity may lack orders, not a better plan; start again from its true process and ask what it does better.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-055",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "You take a working planning system to a second plant. Which part do you rebuild there with its local owners rather than reuse?",
+    "options": {
+      "a": "The local rules, data connectors and thresholds",
+      "b": "The ontology core and the rules engine behind it",
+      "c": "The platform's permissions, harness and audit trail",
+      "d": "The solvers and the structure of the scorecard"
+    },
+    "answer": "a",
+    "explanation": "Reuse the core, rebuild the edge: the ontology core, platform, solvers and scorecard travel. Local rules, connectors, thresholds, the first user and the rituals are rebuilt with the people who own them.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-056",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Your coding agent says 'all tests pass' after fixing an OEE calculation. In the diff, you see it changed the test's expected value. What do you do?",
+    "options": {
+      "a": "Accept it, since the tests pass and the build is now green",
+      "b": "Delete the test, since it was clearly wrong in the first place",
+      "c": "Ask the agent to confirm in writing that the new value is right",
+      "d": "Restore the test and have it change the code, not the test"
+    },
+    "answer": "d",
+    "explanation": "Use AI tools for speed, and earn trust by checking. A test changed to pass checks nothing; recompute the value from the raw rows if in doubt, and record the rule in CLAUDE.md.",
+    "source": "Doctrine, deployment and the FDE way",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-057",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Your app shows plant OEE at 71%. Your Verifier, computing it independently, gets 64%. The demo is in ten minutes. What do you do?",
+    "options": {
+      "a": "Find the cause of the gap before showing either of the two numbers",
+      "b": "Show the app's number, since the code behind it has been fully tested",
+      "c": "Show the average of the two figures, and mention the uncertainty",
+      "d": "Show both figures and let the client decide which one to trust"
+    },
+    "answer": "a",
+    "explanation": "Every number you show must survive someone else's check. Demo only when both pairs agree or you can explain the difference; a gap often hides an average of ratios or a unit error.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-058",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "You are writing a project kickoff document for a client's executive committee. What belongs on its first page?",
+    "options": {
+      "a": "The team's credentials and its references in the client's sector",
+      "b": "A description of the six phases of the method you will follow",
+      "c": "The problem, the gain with its condition, and the decision asked",
+      "d": "The full table of assumptions behind the low, base and high cases"
+    },
+    "answer": "c",
+    "explanation": "Answer first: page one carries the governing thought, the size with its condition, and the decision you ask for. Assumptions and method support it further down.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-059",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "Reading the signed proposal against its data annex, you find pre-sales promised a gain measured on data the plant does not record. When do you raise it?",
+    "options": {
+      "a": "At the kickoff: what you correct, why, and what you propose instead",
+      "b": "At week 6, once the project has collected enough data to prove the point",
+      "c": "During the build, by quietly narrowing the scope of the work",
+      "d": "Only with your account lead, so that the client does not worry"
+    },
+    "answer": "a",
+    "explanation": "Pre-sales promised something; the kickoff is where you correct it, never week 6. A promise corrected on day one costs a hard meeting; discovered at week 6, it costs the project.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DEP-3-060",
+    "domain": "DEP",
+    "tier": 3,
+    "stem": "In your first two weeks at a new plant, how should you take part in the daily production meeting?",
+    "options": {
+      "a": "Present your first findings each morning to show early progress",
+      "b": "Attend weekly only, since the daily meeting is operational detail",
+      "c": "Send a junior to take notes, so that you can spend the time building",
+      "d": "Attend every day, note which numbers are contested, speak when asked"
+    },
+    "answer": "d",
+    "explanation": "The morning meeting is where the plant thinks out loud and names problems before they reach any system. Being there daily and listening earns credibility; early findings can wait.",
+    "source": "Day 1, what an FDE is",
     "keepOrder": false,
     "status": "draft",
     "author": "claude",

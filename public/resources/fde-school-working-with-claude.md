@@ -32,7 +32,7 @@ Plan first and stop. Do not change anything until I say go.
 | Day 3 morning: the true process | An analyst who cites, and code that counts | "Where does `field/` contradict `stated/PRO-PLN-004-weekly-planning.md`? Quote both." Then: "Write a script that counts the events in `data/change_log_w15-w18.csv` by type and channel. Print the code and the result." |
 | Day 3 afternoon: the platform | Compose the platform tools; never rewrite them | "Read `platform/TOOLS.md` and `CLAUDE.md`. Propose `dailyRun` in `architecture/orchestrator.mjs` from the platform tools only: a guard first, an audit line last. Do not edit `platform/`." |
 | Day 4: the obstacles | A sparring partner for your answer, and a fast reader of the plant files | On a card: "Act as Hervé. Here is our first sentence and our 48-hour plan. What would make you refuse, and what is missing?" For the scale plan: "From the Day 2 bundle, give capacity, data systems, main problem and plant manager for Haguenau, Évreux and Tarragona, each with its source file." |
-| Day 5: the full motion | A fast analyst on your case pack, never a source | "Use only the files in this case pack; add nothing that is not in it. Give me the three biggest leaks in euros, each with its calculation and source." |
+| Day 5: the full motion | A fast analyst on your case pack, and a skeptical executive committee | "Use only this case pack. List every promise made in pre-sales and check each against the data annex: units, definitions, missing people, timing. Quote the line for each." Then: "Act as the CFO in this pack. What in our kickoff would you refuse, and why?" |
 
 ## Who does what in the team
 

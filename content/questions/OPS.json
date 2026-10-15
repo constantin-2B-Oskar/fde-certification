@@ -33,7 +33,7 @@
     "explanation": "Little's Law: lead time = WIP ÷ throughput = 90 ÷ 30 = 3 days, whatever the ERP's standard lead time says.",
     "source": "Day 5, the full motion",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -52,7 +52,7 @@
     "explanation": "At fixed throughput, more WIP means longer lead times. Cutting WIP is the only way to cut lead time without adding capacity.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -166,7 +166,7 @@
     "explanation": "Lead time = WIP ÷ throughput. At fixed throughput, the only way to shorten lead time is to hold less WIP; editing ERP standards changes no physical queue.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -185,7 +185,7 @@
     "explanation": "Little's Law: WIP = throughput × lead time. With throughput flat, doubling lead time means WIP roughly doubled too.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -204,7 +204,7 @@
     "explanation": "Work queues in front of the resource that cannot keep up. A low-OEE or unreliable machine may still have spare capacity, so it is not necessarily the constraint.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -223,7 +223,7 @@
     "explanation": "Exploiting the constraint means never feeding it bad parts: a minute spent on a part that will be scrapped is a minute lost for the whole plant.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -242,7 +242,7 @@
     "explanation": "Subordinate everything else to the constraint. Idle time on a non-bottleneck costs nothing; producing ahead of the constraint only adds WIP.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -261,7 +261,7 @@
     "explanation": "Elevate only after exploiting. Starvation and scrap waste capacity the plant already owns; buying more of it before fixing that is the expensive option.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -280,7 +280,7 @@
     "explanation": "The constraint moves once it is broken. The cycle repeats on the new one; further gains at the press are now a mirage.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -299,7 +299,7 @@
     "explanation": "A stock changes only through its flows. Sales may have dropped or production risen, but neither is required; only inflow exceeding outflow is.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -318,7 +318,7 @@
     "explanation": "Draw the map before touching tools. The stocks and flows show where orders wait and why; tools chosen before that tend to optimize the wrong place.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -337,7 +337,7 @@
     "explanation": "A backlog is a stock: it falls only by the amount outflow exceeds inflow each week. A small surplus of capacity drains a large backlog slowly.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -356,7 +356,7 @@
     "explanation": "This is the expedite doom loop: each turn adds changeovers, cuts capacity and creates more lateness, so it reinforces itself instead of settling.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -375,7 +375,7 @@
     "explanation": "Break the cheapest link. Protecting the sequence stops the extra changeovers that drive the loop; expediting better only spins it faster.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -394,7 +394,7 @@
     "explanation": "Delay plus strong reaction produces oscillation, the mechanism behind the bullwhip effect. Shorter delays or gentler corrections damp it.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -413,7 +413,7 @@
     "explanation": "A balancing loop pushes a variable back toward a target. The other three amplify the change they start with, which makes them reinforcing loops.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -432,7 +432,7 @@
     "explanation": "Changeovers within a family are short and between families long. Grouping families saves changeover time on the constraint, which is time for the whole plant.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -451,7 +451,7 @@
     "explanation": "SMED first separates internal tasks (machine stopped) from external ones (machine running) and moves external work out of the stop. Longer batches avoid changeovers but do not shorten them.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -470,7 +470,7 @@
     "explanation": "Batch size trades changeovers against waiting: other families queue longer and WIP grows, so lead time rises. Sequencing by family aims for both at once.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -489,7 +489,7 @@
     "explanation": "Takt time = available time ÷ customer demand = 400 ÷ 200 = 2 minutes per unit. It is the pace demand sets, not how fast the line can run.",
     "source": "Day 5, the full motion",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -508,7 +508,7 @@
     "explanation": "Takt time is the pace demand requires; cycle time is how long the station takes per unit. A cycle longer than takt means the station falls behind demand.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -527,7 +527,7 @@
     "explanation": "OTD counts only timing. OTIF also requires every line in full, so partial shipments that look on time are counted as failures.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -546,7 +546,7 @@
     "explanation": "First-pass yield counts only parts good the first time. Final yield hides the rework loop, which consumes capacity, especially if it passes through the bottleneck.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -565,7 +565,7 @@
     "explanation": "Lead time is mostly queue time, and queues grow with WIP (Little's Law). Processing time is usually a small fraction of lead time.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -584,7 +584,7 @@
     "explanation": "MRP plans materials against fixed lead times and ignores capacity limits. A feasible schedule respects the real hours of each resource.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -603,7 +603,7 @@
     "explanation": "MRP output is a material plan, not a schedule. A feasible schedule loads each resource only up to its real capacity, with its real constraints.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -622,7 +622,7 @@
     "explanation": "Real lead time is WIP ÷ throughput and moves with load. A fixed ERP standard is a planning parameter, not the real lead time.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -641,7 +641,7 @@
     "explanation": "Safety stock covers variability of demand and supply over the lead time. More variability at the same service level needs more safety stock.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -660,7 +660,7 @@
     "explanation": "Each extra point of service level costs more stock than the one before, so the last few points are expensive. Even at 99%, stockouts remain possible.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -678,6 +678,576 @@
     "answer": "a",
     "explanation": "Safety stock protects against variation during the replenishment lead time. A longer lead time exposes the part to more variation, so more safety stock is needed.",
     "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "retired",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-031",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Sam computes plant OEE by averaging the OEE of every shift row. Short shifts show 0% or 140%. What should Sam do?",
+    "options": {
+      "a": "Sum minutes and tonnes over the period, then compute each ratio once",
+      "b": "Drop the outlier rows, then keep averaging the per-shift ratios",
+      "c": "Cap every row's three ratios at 100% before averaging them together",
+      "d": "Weight each shift equally, since every shift is a planned unit of work"
+    },
+    "answer": "a",
+    "explanation": "Averaging ratios gives a short shift the weight of a full one and amplifies noise. Sum minutes and tonnes first, then divide; dropping or capping rows only hides the error.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-032",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Extrusion changeovers rose from 49 to 71 a week; breakdown minutes, speed and scrap stayed flat. Which OEE ratio carries the drop?",
+    "options": {
+      "a": "Performance, because each changeover slows the rate at which the line runs",
+      "b": "Quality, because every changeover makes some material that is off specification",
+      "c": "Availability, because changeover minutes are stops inside planned time",
+      "d": "No ratio moves, since changeover minutes are removed from planned time"
+    },
+    "answer": "c",
+    "explanation": "Run minutes are planned minutes minus every stop, changeovers included, so more changeovers lower availability. Speed and scrap held, so performance and quality do not move.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-033",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "One line's OEE is ten points below the fleet, all in performance. The log gives it the fleet's ideal rate, but it is a smaller extruder. What first?",
+    "options": {
+      "a": "Report it as the slowest line in the fleet and plan a speed improvement project on it",
+      "b": "Check its ideal rate against the machine's data sheet before judging it slow",
+      "c": "Remove the line from the plant OEE so it stops pulling the average down",
+      "d": "Lower its quality target so its OEE comes back in line with the others"
+    },
+    "answer": "b",
+    "explanation": "Performance is output against run hours times ideal rate. A wrong ideal rate in master data makes a line look slow when it runs at its real capability; check the rate before naming a finding.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-034",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Mixing is blocked 1,200 minutes a day, packing is starved 1,600, extrusion waits 60. A manager says packing is the problem: it idles most. Your answer?",
+    "options": {
+      "a": "Packing is the constraint, because idle time is output the plant has lost",
+      "b": "Mixing is the constraint, because it is the stage that stops the most minutes every day",
+      "c": "No stage can be named without the OEE of each stage, computed separately",
+      "d": "Extrusion is the constraint: it never waits, mixing waits on it, packing starves"
+    },
+    "answer": "d",
+    "explanation": "The constraint is busy and never waits; upstream stages are blocked by it, downstream ones starve. Packing idles because extrusion cannot feed it, so packing time is not the lever.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-035",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Unit 1 runs many complex models with frequent changeovers at 85% OEE; Unit 2 runs large simple orders at 95%. The sponsor wants Unit 1 at 95%. Your first caution?",
+    "options": {
+      "a": "The gap partly reflects product mix and changeovers, so compare like with like first",
+      "b": "Unit 1's machines are older, so the only real answer is to replace them",
+      "c": "OEE above 90% is rarely credible in practice, so Unit 2's figure must be audited first",
+      "d": "The target is fine: the same protocol should give the same OEE everywhere"
+    },
+    "answer": "a",
+    "explanation": "OEE depends on what a unit makes: many models and changeovers cost availability that simple long runs never lose. Set targets against comparable work, not the best unit's headline figure.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-036",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Extrusion is the constraint. Its crew takes breaks together, so the line stops 30 minutes a shift. What does the Theory of Constraints suggest first?",
+    "options": {
+      "a": "Speed up mixing so a larger buffer waits in front of extrusion",
+      "b": "Accept the stop as planned time and leave it out of the OEE figure",
+      "c": "Stagger the breaks so the constraint keeps running through them",
+      "d": "Request capex for a second extruder to cover the lost minutes"
+    },
+    "answer": "c",
+    "explanation": "Exploit before elevating: every minute the constraint stops is a minute of plant output lost. Staggering breaks costs almost nothing; a bigger buffer upstream does not add a single minute of extrusion.",
+    "source": "Doctrine, operations science",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-037",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Two defects waste the same material. One is caught before the constrained extruder, the other after it. Why does the second cost more in a sold-out plant?",
+    "options": {
+      "a": "Customers are more likely to see a defect found that late in the process",
+      "b": "Rework labor downstream of the constraint is paid at a higher hourly rate",
+      "c": "Inspection after the constraint is less accurate than inspection before it",
+      "d": "It also used constraint time, so a sellable tonne of output is lost too"
+    },
+    "answer": "d",
+    "explanation": "A defect that passes through the bottleneck consumed time the whole plant cannot recover. Catch defects before the constraint, so it only processes good material.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-038",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "A sold-out plant loses 18% of its constraint's hours to changeovers. The board is asked to fund a new line. What should come first?",
+    "options": {
+      "a": "Cut changeover time and count on the constraint, then reassess the capex",
+      "b": "Fund the new line now, since the plant is sold out and demand is proven",
+      "c": "Raise utilization targets on every machine to find the missing hours",
+      "d": "Outsource the smallest orders so the new line can be sized for large ones"
+    },
+    "answer": "a",
+    "explanation": "Exploit the constraint before you elevate it: hours lost to changeovers there are capacity the plant already owns. Capex comes only once those losses are taken out, and utilization targets elsewhere add nothing.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-039",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Better sequencing cut extrusion changeovers. Now packing runs flat out and extrusion waits on it. Your gains case still values freed extrusion hours. What next?",
+    "options": {
+      "a": "Keep valuing extrusion hours as before, since the case was already agreed with finance",
+      "b": "Push extrusion harder so the packing queue grows and keeps packing busy",
+      "c": "Report the sequencing project as finished and stop measuring the gain",
+      "d": "Re-identify the constraint: freed extrusion hours sell only if packing follows"
+    },
+    "answer": "d",
+    "explanation": "The constraint moves once it is relieved, so the process repeats. An extrusion hour is now worth little until packing is exploited; the gains case must follow the new bottleneck.",
+    "source": "Doctrine, operations science",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-040",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "A sold-out plant earns €100 contribution per constraint hour. A tool frees 1,000 hours at the constraint and 3,000 hours elsewhere. Gross yearly gain?",
+    "options": {
+      "a": "€0",
+      "b": "€100K",
+      "c": "€300K",
+      "d": "€400K"
+    },
+    "answer": "b",
+    "explanation": "Only constraint hours add output: 1,000 × €100 = €100K. €400K values hours at non-bottlenecks, where a saved hour is a mirage; €0 forgets that the plant is sold out.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": true,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-041",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Changeovers on the constraint fall and free run hours. Which conversion turns those hours into tonnes for the gains case?",
+    "options": {
+      "a": "The ideal rate of the line, as written in the shift log",
+      "b": "Plant output divided by calendar hours over the last twelve months",
+      "c": "Good tonnes per run hour: ideal rate × performance × quality",
+      "d": "The standard rate held in the ERP routing for each product"
+    },
+    "answer": "c",
+    "explanation": "A freed hour runs at the line's real speed and real yield, not its ideal rate. Use good tonnes per run hour at baseline, then value each tonne at contribution through the demand fork.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-042",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "You move from a compounder to a labor-driven plant assembling many references at low rates. Where do you look first for its constraint?",
+    "options": {
+      "a": "The most expensive machine on site, since depreciation is fixed",
+      "b": "The ERP's capacity report, which lists the load per work center",
+      "c": "The warehouse, since many references mean much more stock to handle",
+      "d": "Skills and staffing: the crews able to do each step, shift by shift"
+    },
+    "answer": "d",
+    "explanation": "In capital-heavy plants the machine is usually the constraint; in labor-driven plants it is skills and staffing. Know which game the plant plays before you hunt for the bottleneck.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-043",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "The ERP holds one 60-minute changeover for every product; the shift log shows 15 minutes to 4 hours by product pair. Why does this hurt sequencing?",
+    "options": {
+      "a": "Every order sequence costs the same on paper, so no better sequence is visible",
+      "b": "MRP can no longer compute the material each order needs for the week",
+      "c": "Total changeover time is always overstated, so every plan looks too pessimistic to use",
+      "d": "Scrap at changeovers stops being recorded anywhere in the shift log"
+    },
+    "answer": "a",
+    "explanation": "Changeover time depends on the sequence. With one flat value, a planning tool sees no difference between a good and a bad sequence, and its plans fail on the floor.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-044",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "On one line, blue to red takes 45 minutes and red to blue 75. This week it runs two blue lots and one red lot; due dates allow any order. Best sequence?",
+    "options": {
+      "a": "Blue, red, blue: alternate colors so each customer is served in turn",
+      "b": "The two blue lots, then red: one short changeover, light to dark",
+      "c": "Red first, then both blue lots: the darker color is cleared first",
+      "d": "Split the three lots over three lines so that no changeover is needed"
+    },
+    "answer": "b",
+    "explanation": "Group the same family and go from light to dark: one 45-minute changeover. Red first costs 75 minutes, alternating costs 120, and splitting moves the changeovers to other lines.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-045",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "After go-live, OTIF rises, but changeovers per shift go from 3 to 5 and scrap climbs. What does the scorecard lack?",
+    "options": {
+      "a": "A second outcome measure for OTIF, broken down by customer segment",
+      "b": "An adoption measure showing how often the planner uses the system",
+      "c": "A higher OTIF target, so the team keeps pushing on delivery",
+      "d": "A guardrail on changeovers and scrap, watched next to OTIF"
+    },
+    "answer": "d",
+    "explanation": "A guardrail is what must not get worse while you push the outcome. OTIF bought with extra changeovers is paid in scrap and constraint time.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-046",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "A purge takes 90 minutes. Operators fetch the next resin and preheat the die only after the line stops. What is the first SMED move?",
+    "options": {
+      "a": "Buy a quick-change die so the purge itself becomes shorter",
+      "b": "Fetch the resin and preheat the die while the line is still running",
+      "c": "Run longer batches so the 90-minute purge happens less often",
+      "d": "Write a detailed standard for the purge and train every shift on it"
+    },
+    "answer": "b",
+    "explanation": "SMED starts by moving external tasks, which can be done while the machine runs, out of the stop. Longer batches hide the changeover and raise stock; equipment comes after.",
+    "source": "Day 2, problems worth solving",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-047",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Weekly OTIF moves about two points with no change in the plant. Your draft scorecard targets one extra point in four weeks. What do you advise?",
+    "options": {
+      "a": "Keep the target, since one point of OTIF is already worth a lot of money to the plant",
+      "b": "Report OTIF monthly instead of weekly, which removes the noise for good",
+      "c": "Aim above the noise, or track a driver closer to the cause, such as answer time",
+      "d": "Average OTIF over every customer so the measure becomes more stable"
+    },
+    "answer": "c",
+    "explanation": "A gain smaller than the weekly noise cannot be seen, so nobody will sign it. Aim higher, or measure a driver you control that moves the outcome.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-048",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "OTIF is measured against the promise date. Sales now quotes 9 to 14 days where customers ask for 7. What does that do to OTIF?",
+    "options": {
+      "a": "It overstates service: padded promises are easy to meet",
+      "b": "It understates service, since the customer's date is earlier",
+      "c": "Nothing, because OTIF only counts whether quantities were complete",
+      "d": "It makes OTIF impossible to compute without the requested date"
+    },
+    "answer": "a",
+    "explanation": "Measured on the promise date, padding lifts OTIF while customers wait longer. Track quoted lead time with it, as the customer judges both.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-049",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "On last week's orders, the long solver gives 30% fewer changeover hours than the planner's plan. The sponsor wants 30% as the target. What do you say?",
+    "options": {
+      "a": "Accept it, since the solver has proven that the figure is achievable",
+      "b": "Halve it, to leave a comfortable margin for the first weeks",
+      "c": "Set no target until the system has run in production for a quarter",
+      "d": "That is entitlement; set the target between it and the best week"
+    },
+    "answer": "d",
+    "explanation": "Entitlement is what a perfect plan gives on paper with the same orders. A target sits between the best demonstrated week and entitlement, with a date and an owner.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-050",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "At 10:00 a customer moves one order's date. Why repair with the fast solver rather than rerun the full weekly optimization?",
+    "options": {
+      "a": "A full run would take hours, far too long for an event in the day",
+      "b": "A full run may reshuffle the week; the repair holds the freeze and moves little",
+      "c": "A full run ignores customer priorities, which only the fast solver applies",
+      "d": "A full run cannot read events, so every change would first have to be keyed in by hand"
+    },
+    "answer": "b",
+    "explanation": "The long solver runs in seconds, so speed is not the reason. A repair keeps what is running, changes only the next hours and penalizes each move, so the floor gets a stable plan.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-051",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Through Monday, nine events are each repaired well, yet on-time delivery erodes by evening. What brings it back?",
+    "options": {
+      "a": "The next daily long run, which re-optimizes the whole week from the current state",
+      "b": "Lifting the freeze, so that each repair can also move the orders that are running",
+      "c": "Widening each repair to the whole week, so every event triggers a full reshuffle",
+      "d": "Asking the planner to rebuild the plan by hand after each of the day's events"
+    },
+    "answer": "a",
+    "explanation": "Local repairs each make the best small change, and small changes add up to drift. The daily long run looks at every order again; the two loops do different jobs.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-052",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "A rush order arrives. The fast solver could start it sooner by stopping the lot now running. Why does the freeze rule forbid this?",
+    "options": {
+      "a": "Stopping a lot adds a changeover and scrap, and the floor cannot absorb it",
+      "b": "Rush orders are never allowed to overtake orders that are already planned",
+      "c": "The ERP refuses any change to a production order once it is released",
+      "d": "The freeze exists only to keep the planner's workload under control"
+    },
+    "answer": "a",
+    "explanation": "You do not stop a line in the middle of a lot: it costs a changeover, scrap and the crew's trust. The freeze protects the running order and the next one; the rush goes after.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-053",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Your repair tool minimizes lateness only. The night shift leader says the plan changes twice before 22:00 and he no longer knows what to run. What is missing?",
+    "options": {
+      "a": "A faster solver, so that each repair is published sooner after the event",
+      "b": "A shorter repair horizon, limited to the next two or three hours",
+      "c": "A penalty on every move, so each repair changes as little as possible",
+      "d": "An email to the shift leader each time the plan has been changed"
+    },
+    "answer": "c",
+    "explanation": "Plan stability is a value the floor depends on. Penalizing moves keeps repairs small; a longer freeze blocks useful repairs and an email only reports the churn.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-054",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "A colleague proposes that a language model produce next week's sequence for seven lines, with the rules in its prompt. What do you answer?",
+    "options": {
+      "a": "Agree, provided the prompt lists every rule with its id and its owner",
+      "b": "Use a solver to sequence under the rules; let the model explain the result",
+      "c": "Agree, but run the model several times and keep the plan that comes out most often",
+      "d": "Use a reasoning model instead, since it is built for long, hard problems"
+    },
+    "answer": "b",
+    "explanation": "Choosing among many combinations under hard rules is a solver's job: it finds a good sequence and proves it feasible. The model reads events and explains the solver's changes.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-055",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "The procedure says the plan is weekly and frozen Monday to Monday. Plan versions show half of Friday's orders moved by Wednesday. What do you design for?",
+    "options": {
+      "a": "A stronger weekly freeze, with every change approved on a form",
+      "b": "A better Friday plan, so that changes during the week stop",
+      "c": "A daily plan with repairs at each event, since that is how it runs",
+      "d": "A second planner, so that the weekly plan can be redone each day"
+    },
+    "answer": "c",
+    "explanation": "The procedure is a hypothesis; the change log is the evidence. The true process is a daily plan with repairs, so the system needs a daily run and a repair at every event.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-056",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Sales promises dates from the ERP's available-to-promise, which loads lines with no capacity limit. Retail micro-orders keep growing. What follows?",
+    "options": {
+      "a": "Promises get safer, since the ERP sees every order in the system",
+      "b": "Nothing, as long as the material for each order is in stock",
+      "c": "Late orders fall, because small orders fit between larger ones",
+      "d": "Promises exceed what the constraint can make; quote from a finite-capacity check"
+    },
+    "answer": "d",
+    "explanation": "MRP and ATP assume infinite capacity, so they promise dates a full line cannot meet. A what-if on the real plan gives a date that holds.",
+    "source": "Doctrine, operations science",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-057",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Extrusion has 3,000 tonnes of released orders waiting and makes 250 tonnes a day. Roughly how long does a new order wait before it runs?",
+    "options": {
+      "a": "About 4 days",
+      "b": "About 7 days",
+      "c": "About 12 days",
+      "d": "About 30 days"
+    },
+    "answer": "c",
+    "explanation": "Little's Law: lead time = WIP ÷ throughput = 3,000 ÷ 250 = 12 days, whatever the ERP's standard lead time says. Cutting released work shortens it.",
+    "source": "Doctrine, operations science",
+    "keepOrder": true,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-058",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Late orders become rushes, rushes break sequences, changeovers rise at the constraint, and more orders turn late. Where do you break this loop?",
+    "options": {
+      "a": "Insert changes where the same family already runs, to protect the sequence",
+      "b": "Add a weekend shift each week to absorb the extra rush orders that arrive",
+      "c": "Refuse every rush order until on-time delivery has fully recovered",
+      "d": "Hire a second planner so that the plan can be repaired faster each day"
+    },
+    "answer": "a",
+    "explanation": "This is a reinforcing loop: break it at its cheapest link. Protecting the family sequence stops changeovers from eating constraint capacity; extra shifts and planners pay to feed the loop.",
+    "source": "Doctrine, operations science",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-059",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "Your planning system works at a plant using 91% of its capacity. The COO wants it next at a sister plant using 64%, short of orders. What do you advise?",
+    "options": {
+      "a": "Deploy it there next, since that plant has the most room for improvement",
+      "b": "Deploy it as an exact copy, since the ERP is the same on both sites",
+      "c": "Find its first product elsewhere: freed hours sell nothing without orders",
+      "d": "Deploy it there first, since a mature lean plant adopts tools fastest"
+    },
+    "answer": "c",
+    "explanation": "A plan that frees hours is worth little where lines already stand idle. Start from that plant's true problem, here orders, before choosing what to bring.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "OPS-3-060",
+    "domain": "OPS",
+    "tier": 3,
+    "stem": "A sister plant runs at 78% of capacity, logs production on paper, uses 30% more energy per tonne than the others and faces a price war. Its first product?",
+    "options": {
+      "a": "Lyon's planning system, since better sequences also save energy",
+      "b": "Energy per tonne, starting by capturing the data at the source",
+      "c": "An OEE dashboard first, since it is the standard first step everywhere",
+      "d": "Nothing, since a plant on paper cannot use any digital system"
+    },
+    "answer": "b",
+    "explanation": "Capacity use and the main loss decide the first product: here energy, not throughput. With no data, start by capturing it at the source; Lyon's answer is only a hypothesis there.",
+    "source": "Day 4, what goes wrong, and how it scales",
     "keepOrder": false,
     "status": "draft",
     "author": "claude",

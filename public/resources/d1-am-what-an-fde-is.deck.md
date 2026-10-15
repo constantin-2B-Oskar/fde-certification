@@ -51,7 +51,7 @@ Renan Devillières
 2. **The business.** Where a plant loses money; how an FDE project is run.
 3. **The technology.** Plant systems and data; how AI works, and building with it.
 4. **The obstacles.** Dirty data and legacy systems; people who resist.
-5. **The full motion.** Two real engagements, then the FDE Certification exam.
+5. **The full motion.** Five companies, a kickoff for each, then the FDE Certification exam.
 
 ---
 <!-- 6 | Detail -->

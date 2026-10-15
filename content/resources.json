@@ -334,7 +334,8 @@
           "kind": "video",
           "title": "Session recording",
           "href": null,
-          "status": "coming_soon"
+          "status": "coming_soon",
+          "summary": "The recording of the day, added after the session."
         }
       ]
     },
@@ -395,14 +396,15 @@
           "kind": "video",
           "title": "Session recording",
           "href": null,
-          "status": "coming_soon"
+          "status": "coming_soon",
+          "summary": "The recording of the day, added after the session."
         }
       ]
     },
     {
       "id": "day-5",
       "title": "Day 5: The full motion",
-      "summary": "Two real engagements, disguised, run in parallel by teams: a plastics compounder and a sock manufacturer. Then the debrief, the operating principles, your 30/60/90-day plan and the FDE Certification exam.",
+      "summary": "Five companies, disguised, one per team: a family-owned compounder, a sports brand, an appliance and cookware group, a pharmaceutical laboratory and a printer company. Each team opens a signed project with a kickoff document for the executive committee. Then the debrief, the operating principles, your 30/60/90-day plan and the FDE Certification exam.",
       "tracks": [
         "manager",
         "fde"
@@ -419,7 +421,7 @@
           "id": "d5-pre-read",
           "kind": "preread",
           "title": "Day 5 pre-read",
-          "summary": "Before the session: how Friday runs, the main terms (steering committee, readout, 30/60/90-day plan) and how to prepare for the exam.",
+          "summary": "Before the session: how Friday runs, the main terms (pre-sales, kickoff, executive committee, baseline, kill criteria) and how to prepare for the exam.",
           "read": "d5-pre-read.md",
           "href": "/resources/d5-pre-read.md",
           "status": "available"
@@ -427,8 +429,8 @@
         {
           "id": "d5-slides-am",
           "kind": "slides",
-          "title": "The full motion",
-          "summary": "The brief for Friday morning: two real engagements, disguised, run in parallel by teams. 10 slides.",
+          "title": "The full motion: the kickoff",
+          "summary": "The brief for Friday morning: five companies, one per team, and what a kickoff must tell an executive committee after pre-sales. 10 slides.",
           "read": "d5-am-the-full-motion.deck.md",
           "href": "/resources/d5-am-the-full-motion.deck.md",
           "status": "available"
@@ -436,26 +438,53 @@
         {
           "id": "d5-case-1",
           "kind": "reading",
-          "title": "Case pack A: the plastics compounder",
-          "summary": "Teams 1 to 3. Changeovers eat the week at a four-plant compounder; the steering committee meets at 11:30.",
-          "read": "d5-am-case-pack-a-plastics-compounder.md",
-          "href": "/resources/d5-am-case-pack-a-plastics-compounder.md",
+          "title": "Case 1: Halden Polymers, a family-owned compounder",
+          "summary": "Team 1. Scheduling at the lead vinyl plant. The company, its strategy, what pre-sales promised, the site data and the six people you present to.",
+          "read": "d5-am-case-1-halden-polymers.md",
+          "href": "/resources/d5-am-case-1-halden-polymers.md",
           "status": "available"
         },
         {
           "id": "d5-case-2",
           "kind": "reading",
-          "title": "Case pack B: the sock manufacturer",
-          "summary": "Teams 4 and 5. A knitter inspects everything and the defect rate has not moved in years; the steering committee meets at 11:30.",
-          "read": "d5-am-case-pack-b-sock-manufacturer.md",
-          "href": "/resources/d5-am-case-pack-b-sock-manufacturer.md",
+          "title": "Case 2: Peakline, a sports brand that makes what it sells",
+          "summary": "Team 2. Fewer line stops from missing parts at its European bike plant, just before the peak season. The company, its strategy, what pre-sales promised, the site data and the committee.",
+          "read": "d5-am-case-2-peakline.md",
+          "href": "/resources/d5-am-case-2-peakline.md",
+          "status": "available"
+        },
+        {
+          "id": "d5-case-3",
+          "kind": "reading",
+          "title": "Case 3: Groupe Ardent, small appliances and cookware",
+          "summary": "Team 3. Less scrap on the coating lines of a French cookware plant. The company, its strategy, what pre-sales promised, the site data and the executive committee.",
+          "read": "d5-am-case-3-groupe-ardent.md",
+          "href": "/resources/d5-am-case-3-groupe-ardent.md",
+          "status": "available"
+        },
+        {
+          "id": "d5-case-4",
+          "kind": "reading",
+          "title": "Case 4: Laboratoires Sorel, pharmaceuticals and dermo-cosmetics",
+          "summary": "Team 4. Faster batch release at a dermo-cosmetics plant, under pharmaceutical rules. The company, its strategy, what pre-sales promised, the site data and the executive committee.",
+          "read": "d5-am-case-4-laboratoires-sorel.md",
+          "href": "/resources/d5-am-case-4-laboratoires-sorel.md",
+          "status": "available"
+        },
+        {
+          "id": "d5-case-5",
+          "kind": "reading",
+          "title": "Case 5: Meridian Imaging, printers and document services",
+          "summary": "Team 5. A higher first-time fix rate for field technicians, during an acquisition. The company, its strategy, what pre-sales promised, the site data and the executive committee.",
+          "read": "d5-am-case-5-meridian-imaging.md",
+          "href": "/resources/d5-am-case-5-meridian-imaging.md",
           "status": "available"
         },
         {
           "id": "d5-exercises-am",
           "kind": "exercise",
           "title": "Morning exercises",
-          "summary": "The timing of the morning, the five-slide readout template and the checklist before the steering committee.",
+          "summary": "The situation, the timing, the eight-slide kickoff template, the checklist and the questions the executive committee will ask.",
           "read": "d5-am-the-full-motion.exercises.md",
           "href": "/resources/d5-am-the-full-motion.exercises.md",
           "status": "available"
@@ -464,7 +493,7 @@
           "id": "d5-slides-pm",
           "kind": "slides",
           "title": "Debrief, principles and the exam",
-          "summary": "What really happened in both engagements, the ten operating principles of the week, and the close.",
+          "summary": "The debrief of the five kickoffs, the ten operating principles of the week, and the close. Added after the session.",
           "href": null,
           "status": "coming_soon"
         },
@@ -476,6 +505,14 @@
           "read": "d5-pm-debrief-and-exam.exercises.md",
           "href": "/resources/d5-pm-debrief-and-exam.exercises.md",
           "status": "available"
+        },
+        {
+          "id": "d5-recording",
+          "kind": "video",
+          "title": "Session recording",
+          "summary": "The recording of the day, added after the session.",
+          "href": null,
+          "status": "coming_soon"
         }
       ]
     }

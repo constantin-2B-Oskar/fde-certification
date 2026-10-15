@@ -71,7 +71,7 @@
     "explanation": "Each fact needs exactly one owner system. Two owners for the same fact is how a plant ends up with several OEE figures and no truth.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -90,7 +90,7 @@
     "explanation": "An idempotent pipeline gives the same result however many times it runs. Stable business keys and upserts make reruns safe.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -489,7 +489,7 @@
     "explanation": "Levels 0 to 2 cover sensing and control, level 3 manufacturing operations (MES), level 4 business planning (ERP).",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": true,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -508,7 +508,7 @@
     "explanation": "In ISA-95 terms, planning sits at levels 3 and 4. Acting directly on level 0 to 2 control skips the layers that manage execution and machine safety.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -527,7 +527,7 @@
     "explanation": "ISA-95 levels work at different time scales. Signals are condensed into events (stops, counts, states) before level 3 and 4 systems consume them.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -546,7 +546,7 @@
     "explanation": "The pattern follows the decision's pace. Files and replicas refreshed daily or weekly suit slow decisions; APIs and queues serve decisions taken within the hour.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -565,7 +565,7 @@
     "explanation": "Read first; write back with validation and an audit trail. Retrying until accepted or overwriting in bulk hides errors in a system of record.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -584,7 +584,7 @@
     "explanation": "File extracts are a legitimate first integration pattern. They let work start safely while the next rung, API access, is reviewed.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -603,7 +603,7 @@
     "explanation": "A queue pushes events to consumers when they occur. Polling adds load on the source and delay, and neither pattern removes validation.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -622,7 +622,7 @@
     "explanation": "The census asks where each needed fact lives: in systems, in spreadsheets or only in people's heads. The last two layers are often the largest.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -641,7 +641,7 @@
     "explanation": "Data in heads is extracted by sitting with the expert on real cases. ERP standards miss the rules, and history alone cannot tell rules from habits.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -660,7 +660,7 @@
     "explanation": "Data in spreadsheets and heads must be extracted by hand, which takes time. The census sizes that work before a date is promised.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -679,7 +679,7 @@
     "explanation": "Spreadsheet data is real data. Give it an owner, a format and load checks so it can feed production like any other source.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -698,7 +698,7 @@
     "explanation": "Short stops and slow cycles rarely reach the downtime log. Data archaeology compares logged events with what the floor actually shows.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -717,7 +717,7 @@
     "explanation": "Maintenance hidden inside changeovers is classic data archaeology. Separating the two shows the true changeover time and the real maintenance load.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -736,7 +736,7 @@
     "explanation": "Poor logs point to where the real causes hide. Going to the floor recovers them; discarding or modeling them as noise loses the signal.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -755,7 +755,7 @@
     "explanation": "Logs miss micro-stops and mislabel events. A model fed logged downtime assumes capacity the plant does not have.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -774,7 +774,7 @@
     "explanation": "Checks at each stage, such as row counts, null rates and ranges, catch partial loads. A schema check passes because the columns are fine.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -793,7 +793,7 @@
     "explanation": "Incremental loads with upserts on business keys process only what changed. Full reloads grow with history however often they run.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -812,7 +812,7 @@
     "explanation": "A data contract fixes what the source delivers and who announces changes. Null-rate checks catch breaks the contract missed, on the first run.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -831,7 +831,7 @@
     "explanation": "Range checks catch values outside physical limits. Row counts and freshness would pass, because the data arrived complete and on time.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -850,7 +850,7 @@
     "explanation": "A join to a many side repeats the one side's columns. Sum order-level values before joining, or sum at line level.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -869,7 +869,7 @@
     "explanation": "A left join keeps every machine and counts zero where no stop matches. An inner join silently drops the machines with no stops.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -888,7 +888,7 @@
     "explanation": "An inner join keeps only matching rows. Orphan keys, often from data entry or migration, vanish silently; a left join and a null check reveal them.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -907,7 +907,7 @@
     "explanation": "Window functions compute running values per partition without collapsing rows. A GROUP BY on machine gives one figure for the whole period.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -926,7 +926,7 @@
     "explanation": "An unweighted average of averages ignores volume. Sum cycle time and parts over the whole period, then divide.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -945,7 +945,7 @@
     "explanation": "UTC makes events comparable and safe across daylight saving changes; keeping the source zone lets you rebuild local shift views.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -964,7 +964,7 @@
     "explanation": "Available time comes from the shift calendar, holidays and planned stops. Without it, capacity is overstated by a large factor.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -983,7 +983,7 @@
     "explanation": "Units of measure must be explicit. A stored, tested conversion factor avoids silent errors of 25 times in stock and consumption.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1002,7 +1002,7 @@
     "explanation": "The bill of materials says what should be used; genealogy records which actual lots were consumed. Only genealogy supports a trace or a recall.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1021,7 +1021,7 @@
     "explanation": "Shift-based metrics need the shift calendar, not midnight boundaries. Splitting a shift across two days distorts per-shift and per-day figures.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1040,7 +1040,7 @@
     "explanation": "Writes go to the owner system; copies refresh from it. Writing to two places creates two owners and, soon, two truths.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1059,7 +1059,7 @@
     "explanation": "Every field has one owner; other sources are copies that never take edits. Syncing edits back makes the copy a second owner.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1078,7 +1078,7 @@
     "explanation": "Least privilege limits damage when something goes wrong. A dedicated, logged service account is traceable without borrowing a person's login.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1097,7 +1097,7 @@
     "explanation": "Secrets live outside code. Once exposed, a password is compromised, so it is rotated; hiding the repository leaves it in the history.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1115,6 +1115,690 @@
     "answer": "c",
     "explanation": "Audit logs make every automated write explainable: what changed, on which inputs, under which account. Without them nobody can answer the planners.",
     "source": "Day 3, IT and infrastructure fundamentals",
+    "keepOrder": false,
+    "status": "retired",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-037",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "A teammate asks a coding assistant to compute plant OEE from a shift log nobody has opened yet. What should happen first?",
+    "options": {
+      "a": "Profile the file: counts per date and shift, ranges, duplicates, gaps, units",
+      "b": "Ask the model for a typical industry OEE figure to use as a sanity check on the result",
+      "c": "Let the tool clean every anomaly it finds automatically, then compute",
+      "d": "Compute OEE first, then look for outliers if the figure seems odd"
+    },
+    "answer": "a",
+    "explanation": "Profiling before computing is the first verification habit: anomalies change the result and must be decided by the team. Cleaning automatically hides the decisions; checking against an industry figure checks nothing about this file.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-038",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Profiling a shift log, you find one line reporting about 12,000 t in shifts where its peers make about 14 t. What is the right move?",
+    "options": {
+      "a": "Delete those rows as outliers and carry on with the analysis",
+      "b": "Keep them, since extreme values average out over ninety days",
+      "c": "Flag a probable kilogram entry in the data notes and confirm with the site",
+      "d": "Divide them by 1,000 in the code, since the unit error is obvious to anyone"
+    },
+    "answer": "c",
+    "explanation": "Quarantine with a reason; never fix silently. The likely unit error is recorded, the handling is decided with the team and confirmed with the site. Dividing silently may be right, but nobody can check or trust a correction that was never written down.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-039",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Seven rows in a shift log repeat the same date, shift and machine with identical values in every column. How do you handle them?",
+    "options": {
+      "a": "Keep them, since each one may record a second run of the line",
+      "b": "Remove the exact copies and record how many, and why, in the data notes",
+      "c": "Average each pair of rows into a single row before computing",
+      "d": "Leave them, since seven rows barely move a quarterly figure for the plant"
+    },
+    "answer": "b",
+    "explanation": "Identical rows on the key date, shift and machine are duplicates: they double count output and minutes. Remove them and write the decision down so another pair can check it. 'Too small to matter' is a silent assumption.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-040",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Your app shows availability as the mean of each row's run/planned ratio, and three rows have zero planned minutes. What is the sound approach?",
+    "options": {
+      "a": "Average the row ratios, skipping rows where planned time is zero",
+      "b": "Average per machine first, then average the seven machine figures",
+      "c": "Replace zero planned time with 480 minutes so every row has a ratio",
+      "d": "Sum run minutes and planned minutes over the period, then divide"
+    },
+    "answer": "d",
+    "explanation": "Ratios are computed from sums: a short or idle shift must not weigh like a full one. Summing first also handles zero planned time without inventing minutes, as setting 480 would.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-041",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Pair B computes M07 OEE at 61% by hand; the app shows 66%. The demo is in ten minutes. What does the course expect?",
+    "options": {
+      "a": "Show the app's figure, since it is computed in code from the CSV",
+      "b": "Show the average of the two values and mention the uncertainty",
+      "c": "Find which assumption differs, or explain the gap, before showing it",
+      "d": "Show Pair B's figure, since a manual check is the more reliable one"
+    },
+    "answer": "c",
+    "explanation": "Every number shown must survive someone else's check: demo only when both pairs agree or can explain the difference. Code is not right because it is code; a hand calculation is not right because it is manual.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-042",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Your daily output uses the shift-start date, so the 22:00 to 06:00 shift counts on the day it began. Finance reports from midnight. What do you do?",
+    "options": {
+      "a": "Nothing, since both conventions give the same daily totals over a full month",
+      "b": "Split each night shift's output evenly across the two days",
+      "c": "Move every night shift to the next day to match finance",
+      "d": "State the convention and agree with finance on one before comparing"
+    },
+    "answer": "d",
+    "explanation": "Shift calendars are a silent assumption: the two conventions give different daily figures. Write the convention down and agree it with the people who will compare numbers, rather than reshaping the data on a guess.",
+    "source": "Doctrine, data and enterprise systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-043",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "One line's minutes per changeover are double the other lines'. A shift leader says the crew cleans the screen pack during changeovers. What follows?",
+    "options": {
+      "a": "Maintenance is hidden in changeover time; separate it before modeling changeovers",
+      "b": "That line's products are harder to change; give it a longer changeover rule in the model",
+      "c": "The log is wrong for that line; exclude it from the changeover analysis",
+      "d": "Changeovers are the problem on that line; target them for reduction first"
+    },
+    "answer": "a",
+    "explanation": "Data archaeology: logged categories mix activities. Cleaning done during changeovers inflates changeover time and hides maintenance, so a rule or target built on the raw figure is wrong.",
+    "source": "Doctrine, data and enterprise systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-044",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "A line logs little downtime, yet its output is well below run minutes times the nameplate rate. What should you check first?",
+    "options": {
+      "a": "Lower the nameplate rate until the performance figure looks normal",
+      "b": "Short stops and slow running that nobody logs, observed on the floor",
+      "c": "Whether scrap is counted twice in the line's quality figure",
+      "d": "Whether the planned minutes wrongly include the line's weekend shutdowns"
+    },
+    "answer": "b",
+    "explanation": "A gap between logged run time and output usually means unlogged micro-stops or slow cycles. Watch the line before trusting the log; tuning the rate to fit the result hides the loss.",
+    "source": "Doctrine, data and enterprise systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-045",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "The procedure says the weekly plan is frozen; the planner says she rewrites it daily. How do you establish how often it really changes?",
+    "options": {
+      "a": "Ask the planner to estimate how many changes she makes in a week",
+      "b": "Survey the shift leaders on how stable they find the published weekly plan",
+      "c": "Count change events and saved plan versions with code, by type and horizon",
+      "d": "Reread the procedure and the ERP flow for the exceptions they allow"
+    },
+    "answer": "c",
+    "explanation": "The procedure is a hypothesis and the change log is the evidence. Loops are computed from data with code you can show, not estimated in interviews or read from the stated process.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-046",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Interviews say the plan changes all the time, yet the ERP shows few changes. Most changes are keyed into it days later, or never. What follows?",
+    "options": {
+      "a": "The interviews exaggerate, since the ERP is the system of record",
+      "b": "The ERP is unreliable and should be replaced before any planning work starts",
+      "c": "Late keying does not matter, since the changes do reach the ERP",
+      "d": "The ERP reflects the official process and understates the real loop"
+    },
+    "answer": "d",
+    "explanation": "Data produced by the official process can mislead: the ERP holds what was keyed, when it was keyed. The real loop is measured from the sources where changes happen. The ERP stays the system of record for orders.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-047",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "You ask an AI assistant to infer the real planning steps from eight interviews. What makes its output usable on the as-is map?",
+    "options": {
+      "a": "Each step cites a file and line, and you check a sample against the sources",
+      "b": "A confident summary without citations, which keeps the as-is map short and easy to read",
+      "c": "Its synthesis as it is, since it has read every interview in full",
+      "d": "Only the steps that match the written procedure, to avoid noise"
+    },
+    "answer": "a",
+    "explanation": "Use the model as an analyst you check, not an oracle: every step of the true process cites a file, and someone verifies samples. Keeping only steps that match the procedure throws away the true process.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-048",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "The ERP holds orders and one changeover time for all products; the planner's whiteboard holds real times by family. Who owns each fact?",
+    "options": {
+      "a": "The ERP owns both, since it is the system of record",
+      "b": "The ERP owns the order; the planner owns the changeover rule",
+      "c": "The planner owns both, since her figures are more accurate",
+      "d": "Ownership is shared, with a weekly reconciliation of the two"
+    },
+    "answer": "b",
+    "explanation": "One owner per fact: the ontology says which system or person owns it. The ERP is right about orders and wrong about changeovers; the planner's rule gets an id, a source and her as owner.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-049",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "You consolidate plan changes from a clerk's notebook, a mailbox, line comments and lab records into one log. What makes it fit to use?",
+    "options": {
+      "a": "A model reviews the merged file and removes inconsistent rows",
+      "b": "The ERP confirms each event, since it is the system of record",
+      "c": "The clerk who logs the changes checks it against her own record",
+      "d": "Nothing more, since each source is first-hand and can be trusted as it is"
+    },
+    "answer": "c",
+    "explanation": "A merged log is only evidence once the person who knows the changes has checked it. The ERP cannot confirm events that were never keyed into it, and a model removing rows is a silent fix.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-050",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Line logs arrive as one CSV a day at 06:00, but your repair loop must react to a breakdown within minutes. What do you do?",
+    "options": {
+      "a": "Capture breakdowns as they happen in an intake app, and ask for faster exports",
+      "b": "Run the repair loop on the 06:00 file and accept a day of delay on every event",
+      "c": "Have a model predict today's breakdowns from last year's logs",
+      "d": "Poll the shared folder every minute in case a newer file appears"
+    },
+    "answer": "a",
+    "explanation": "A daily batch means deciding on yesterday's plant. Capture the event at the source when it happens, and ask the vendor or IT for a faster feed; polling a folder does not make the file arrive sooner.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-051",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Lab results are stored by batch number and orders by order number, with nothing linking them. A quality hold must reach the right order. What is the durable fix?",
+    "options": {
+      "a": "Match batches to orders by date proximity in a nightly script",
+      "b": "Ask the model to guess the order from the lab comment text",
+      "c": "Build a new database that holds both and replaces the lab system",
+      "d": "Have the lab record the order number at entry, with an owner"
+    },
+    "answer": "d",
+    "explanation": "When the link does not exist, capture it at the source with an owner for the field. Matching by date or model guesses breaks silently, and a new database nobody owns becomes an orphan.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-052",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Customer change requests arrive in a key account manager's private mailbox. Your event reader needs them. What is the right access route?",
+    "options": {
+      "a": "Store his mailbox credentials in the connector's configuration file",
+      "b": "A shared planning mailbox, created by IT, that the connector reads",
+      "c": "A forwarding rule set up quietly from his personal mailbox",
+      "d": "Ask him to key every request into the ERP first, then read the ERP"
+    },
+    "answer": "b",
+    "explanation": "Access is granted, not taken: IT creates a shared mailbox the connector may read, and the private mailbox stays private. Borrowed credentials and quiet forwarding break least privilege and trust.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-053",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "A scheduling clerk's paper notebook is the only record of plan changes since February. How should the team treat it?",
+    "options": {
+      "a": "Ignore it, since paper records are not reliable enough",
+      "b": "Photograph it and let a model infer the rules from it",
+      "c": "Type it with her consent, check it with her, then capture changes in an app",
+      "d": "Wait for a new MES that will log every plan change automatically, with timestamps"
+    },
+    "answer": "c",
+    "explanation": "Much of the data agents need lives outside systems. Bring it in with its owner's consent and check, then build a mini-app so new changes are captured structured and timed.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-054",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Your connectors show which orders the planner moved in the plan, but not why. Where should the reason come from?",
+    "options": {
+      "a": "An override screen that asks her for a reason each time",
+      "b": "The ERP change history, which records each edit and its author",
+      "c": "A model that infers likely reasons from the order data",
+      "d": "A monthly interview in which she reviews all her changes"
+    },
+    "answer": "a",
+    "explanation": "The reason lives only in the planner's head, so a mini-app collects it at the moment of the override. Each reason then becomes a rule, a data fix or a decision; the ERP records the edit, not the why.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-055",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Your platform includes an ERP write-back connector for published plans. On the first day of the pilot, what state should it be in?",
+    "options": {
+      "a": "Enabled, with the agent writing only orders it is confident about",
+      "b": "Enabled for the planner's account and disabled for every agent",
+      "c": "Removed from the build until the whole pilot has finished",
+      "d": "Built but disabled, until the IT owner enables it after tests"
+    },
+    "answer": "d",
+    "explanation": "Read first; write back with validation and an audit trail, each step earned. The write-back exists, stays off by default and is enabled by IT once tests and a runbook exist. Confidence is not permission.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-056",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "You take a planning system to a second plant whose shop-floor data sits in a different MES. What do you rebuild there?",
+    "options": {
+      "a": "The ontology core, since each plant names things differently",
+      "b": "The data connectors and field mapping, plus the local rules",
+      "c": "The solver, tuned to the new plant's data format",
+      "d": "Nothing, since the group ERP is the same on every site"
+    },
+    "answer": "b",
+    "explanation": "Reuse the core, rebuild the edge: the ontology, platform and solvers are reused; connectors, field mappings and local rules are rebuilt per site. A shared ERP does not mean shared shop-floor data.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-057",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "One plant in a rollout records production on paper. A model will need its stop and output data. What is the plan?",
+    "options": {
+      "a": "Skip the plant until it has bought and installed an MES",
+      "b": "Use the group ERP figures, which already cover every site",
+      "c": "Capture at the source with a simple form for weeks before relying on it",
+      "d": "Estimate its data from a similar plant in the group that already runs an MES"
+    },
+    "answer": "c",
+    "explanation": "When the data does not exist, create it at the source: a form or a sensor, for a few weeks, before any model depends on it. Borrowed or estimated data describes another plant.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-058",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "The line logger's vendor says its product has no API, and you need its data next week. What is the first move?",
+    "options": {
+      "a": "Use the file it already writes, or a database view agreed with IT",
+      "b": "Scrape its screens with a script that nobody at the client maintains",
+      "c": "Wait until the vendor's roadmap adds an API to the product",
+      "d": "Ask operators to re-key the data into a shared spreadsheet"
+    },
+    "answer": "a",
+    "explanation": "Dead ends have known moves: ask the vendor, use the export it already produces, or read a view with IT. Screen scraping creates an orphan; re-keying adds a source of error and work for operators.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-059",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "The ERP and the planner's spreadsheet give different line speeds. Planning uses one and finance the other. What is the move?",
+    "options": {
+      "a": "Use the average of the two values in the solver",
+      "b": "Let the model choose the more plausible of the two values on each solver run",
+      "c": "Use the higher speed, which matches the plant's targets",
+      "d": "Name the source of truth with its owner; reconcile with finance"
+    },
+    "answer": "d",
+    "explanation": "When two systems disagree, decide which one counts with the owner, object by object, and reconcile regularly with finance. Averaging or letting a model choose gives a number nobody owns.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-060",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Your Verifier finds the scrap baseline double counts a component, so the gain shown to the controller is a third too high. What do you do?",
+    "options": {
+      "a": "Correct it quietly in next month's report",
+      "b": "Tell sponsor and controller within a day, with the corrected figure",
+      "c": "Wait to present it at Friday's steering committee",
+      "d": "Keep the figure for now and offset it with a new gain found in the coming weeks"
+    },
+    "answer": "b",
+    "explanation": "Announce a data error first, with the corrected number and the check that would have caught it. Trust lost by a correction comes back; trust lost by a cover-up does not.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-061",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "A model needs the reason for each stop, but the logger's comment field is free text and mostly empty. What do you do?",
+    "options": {
+      "a": "Add a reason code at the source and collect it for a few weeks first",
+      "b": "Let the model infer stop reasons from the comments that do exist",
+      "c": "Build the model without reasons and add them after go-live",
+      "d": "Ask maintenance to rebuild last year's reasons from memory"
+    },
+    "answer": "a",
+    "explanation": "Data that does not exist is captured at the source, structured, for a period long enough to use. Inferring from sparse text or memory gives guesses that look like data.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-062",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Group security needs six weeks to review any new cloud service, and your plan assumed live data access in week one. What do you do?",
+    "options": {
+      "a": "Run the pilot on a personal cloud account until the review ends",
+      "b": "Ask the sponsor to waive the security review for a short, low-risk pilot",
+      "c": "Start the review on day one and work on agreed exports meanwhile",
+      "d": "Pause the project until the review has been completed"
+    },
+    "answer": "c",
+    "explanation": "Start the security review on day one and work on read-only exports while it runs. Shortcutting the rules, or waiting idle, both cost more than the six weeks.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-063",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Group IT requires plant data to stay in the EU, on the group's own tenant. How do you set up the multi-site platform?",
+    "options": {
+      "a": "Copy each site's data to your own cloud for faster development",
+      "b": "Deploy the software in the client's tenant, under its access rules",
+      "c": "Anonymize the data and move it to a central vendor data lake",
+      "d": "Ask for an exception at the pilot site, then comply with the rule at the other sites"
+    },
+    "answer": "b",
+    "explanation": "Bring the software to the data: it runs on the client's servers, in their tenant and region, with secrets in a vault and access per role, the same on every site.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-064",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Your loader appends each day's event file. A corrected file is resent and every event in it now appears twice. What is the fix?",
+    "options": {
+      "a": "Truncate the table and reload the full history every night",
+      "b": "Ask the source system never to resend a corrected file",
+      "c": "Upsert on a stable business key, so reloading a file is harmless",
+      "d": "Remove the duplicates in each dashboard query, at display time, for every chart"
+    },
+    "answer": "c",
+    "explanation": "An idempotent pipeline gives the same result however often it runs: stable business keys and upserts make reloads and corrections safe. Full reloads grow slower; fixing at display leaves the data wrong.",
+    "source": "Doctrine, data and enterprise systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-065",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "After a vendor update, one of two daily exports arrives with its columns in a new order. What should the pipeline do?",
+    "options": {
+      "a": "Map the columns by position and load the file as usual",
+      "b": "Stop the whole pipeline until the vendor has answered",
+      "c": "Load it anyway and let the model detect and correct the mismatched fields afterwards",
+      "d": "Quarantine that file with a reason, load the other, alert the owner"
+    },
+    "answer": "d",
+    "explanation": "Quarantine with a reason; never fix silently. The suspect file is held and named, the good one flows, and the owner fixes the cause. Loading by position silently writes values into the wrong fields.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-066",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "You join orders to change events to count late orders per customer. The count exceeds the number of orders. Why?",
+    "options": {
+      "a": "The join drops orders that have no change events at all",
+      "b": "Orders with several events appear once per event; count distinct orders",
+      "c": "Late orders are counted twice because of time zone offsets",
+      "d": "The change log holds events for orders not in the order table"
+    },
+    "answer": "b",
+    "explanation": "A one-to-many join repeats each order per matching event, so counts and sums inflate. Count distinct order keys, or aggregate events before joining.",
+    "source": "Doctrine, data and enterprise systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-067",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "You join lines to breakdowns and count per line for this month. Lines with no breakdowns are missing from the report. What happened?",
+    "options": {
+      "a": "An inner join dropped lines with no match; use a left join from lines",
+      "b": "The breakdown table is incomplete and needs reloading from source",
+      "c": "COUNT drops any line whose breakdown total is zero, by design",
+      "d": "The lines table has duplicate keys that cancel each other out"
+    },
+    "answer": "a",
+    "explanation": "An inner join keeps only rows that match on both sides. A left join from the lines table keeps every line, with a zero count where there were no breakdowns.",
+    "source": "Doctrine, data and enterprise systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-068",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "An agent reads incoming emails and turns them into planning events. Which grants should its service identity have?",
+    "options": {
+      "a": "Propose and confirm events, so the planner is spared routine clicks",
+      "b": "Read the ERP fully, so it can check every order it finds in emails",
+      "c": "Propose events only: no confirming, publishing or ERP writes",
+      "d": "The same rights as the planner, so the two can work interchangeably"
+    },
+    "answer": "c",
+    "explanation": "Least privilege: the event reader may propose; a person confirms and the planner publishes. Narrow grants are what stop a hidden instruction in an email from changing the plan.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-069",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Planners ask why twelve orders moved overnight. What should let you answer within minutes?",
+    "options": {
+      "a": "The model's chat history for the night, if it was kept",
+      "b": "A rerun of last night's solver with the same parameters",
+      "c": "A comparison of the ERP order table before and after",
+      "d": "An audit line per decision and write, with actor and rule ids"
+    },
+    "answer": "d",
+    "explanation": "Observability is a platform layer: every decision, tool call and write leaves an audit line naming the actor and the rules behind it. A before and after comparison shows what moved, not why.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-070",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "A team wants a planning tool to read machine stops directly from the line controllers. What is usually the better source?",
+    "options": {
+      "a": "Stop events from the MES or historian, above the control level",
+      "b": "The ERP, which records every stop as it happens on the line",
+      "c": "A model that estimates stops from hourly output figures",
+      "d": "The controllers themselves, polled every second by the planning tool"
+    },
+    "answer": "a",
+    "explanation": "In ISA-95 terms, levels 0 to 2 are sensing and control; the MES and historians at level 3 turn signals into stop events. A planning tool reads those, without touching the control layer.",
+    "source": "Doctrine, data and enterprise systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-071",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Your kickoff document for the executive committee must name the data source of the gains baseline. Which source should it be?",
+    "options": {
+      "a": "Your own pipeline, since it is cleaner than the client's systems",
+      "b": "The system finance already trusts, with the controller as its owner",
+      "c": "The vendor's benchmark figures for comparable plants in the sector",
+      "d": "The dashboard the team built during pre-sales"
+    },
+    "answer": "b",
+    "explanation": "The baseline comes from the system finance already trusts and is owned by the controller, fixed in week one. A gain measured from your own pipeline is one the controller cannot compute without you.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "DAT-3-072",
+    "domain": "DAT",
+    "tier": 3,
+    "stem": "Your census shows that about 40% of the facts the planning tool needs exist in no system. What follows for the plan?",
+    "options": {
+      "a": "Delay the start until IT has loaded those facts into the ERP",
+      "b": "Build on system data now and add the rest after go-live",
+      "c": "Let the model infer the missing facts from historical data",
+      "d": "Budget time with the experts and mini-apps to capture them"
+    },
+    "answer": "d",
+    "explanation": "About 40% of the data agents need lives in heads and spreadsheets, as the course's field figure says. Extracting it on site is planned work, not a gap to defer or guess.",
+    "source": "Day 3, from the stated process to the target architecture",
     "keepOrder": false,
     "status": "draft",
     "author": "claude",

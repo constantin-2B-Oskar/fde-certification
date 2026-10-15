@@ -90,7 +90,7 @@
     "explanation": "Feasibility rules often live as shadow algorithms kept by experts. Extracting and encoding them, by sitting with the people and walking real cases, is core ontology work.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -717,7 +717,7 @@
     "explanation": "Events are things that happen at a time; states are what is true now. Keeping changes as events preserves history and lets the current state be derived and audited.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -736,7 +736,7 @@
     "explanation": "Temporal validity lets each batch link to the recipe version valid when it was made. Overwriting loses traceability; new product codes break the product's identity.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -755,7 +755,7 @@
     "explanation": "Units of measure are a modeling primitive. Bare numbers invite silent errors of a factor of two; explicit units and conversions make every quantity unambiguous.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -774,7 +774,7 @@
     "explanation": "Cardinality must match reality. One-to-many would lose batches that mix lots, which breaks traceability exactly when a recall needs it.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -793,7 +793,7 @@
     "explanation": "Suppliers have sites, lead times, certifications and links to many materials. Modeled as a text attribute, none of that can be queried or reasoned over.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -812,7 +812,7 @@
     "explanation": "Sequence-dependent setups are properties of the transition, held at type level. A single average per family hides exactly the sequencing choices the scheduler must make.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -831,7 +831,7 @@
     "explanation": "A constraint missing at type level fails the same way on every instance of the type. Isolated or one-off overrides point rather to people, staffing or breakdowns.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -850,7 +850,7 @@
     "explanation": "A rule stored on one instance applies to that instance only. The other machines get infeasible plans, the floor overrides them and trust erodes.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -869,7 +869,7 @@
     "explanation": "Plans that look valid but ignore real constraints get overridden on the floor, and after a few such plans planners stop trusting the tool. Predict this before go-live.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -888,7 +888,7 @@
     "explanation": "Overrides come from rules the floor enforces and the model lacks. Checking type-level constraints against planners' rules finds them before go-live; filled ERP fields can still be wrong.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -907,7 +907,7 @@
     "explanation": "Exceptions reveal the real rule and its conditions. A stated rule taken at face value becomes a hard constraint the floor will override when the exception comes up.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -926,7 +926,7 @@
     "explanation": "Studying overrides is one of the three ways to extract shadow algorithms. Each override with its reason points to a missing rule or to wrong data.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -945,7 +945,7 @@
     "explanation": "Real decision rules often live in spreadsheets like this. Decoding the logic with its author turns it into explicit rules the model can carry.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -964,7 +964,7 @@
     "explanation": "Walking recent real cases reveals the rules actually applied, exceptions included. Manuals and ideal descriptions reproduce the official process, not the one that runs.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -983,7 +983,7 @@
     "explanation": "Identity resolution needs explicit, maintained mapping. Guessing at query time is unreliable, and renaming or deleting records in owner systems breaks what depends on them.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1002,7 +1002,7 @@
     "explanation": "Name similarity proposes candidates; it does not prove identity. Two grades of the same resin can differ by one character, so matches need explicit confirmation.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1021,7 +1021,7 @@
     "explanation": "New materials keep appearing in both systems. Identity mapping must be maintained continuously, with an owner, or it decays like the rest of the model.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1040,7 +1040,7 @@
     "explanation": "When the same supplier appears under different codes across systems without explicit mapping, every count, total and ranking built on it is wrong.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1059,7 +1059,7 @@
     "explanation": "Graph storage helps with questions that chain many relationships and with variable structure. An ontology does not require it and can live on relational storage.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1078,7 +1078,7 @@
     "explanation": "An ontology is a model of meaning, not a storage technology. Relational storage can hold entities and relationships; a graph database is a choice, not a precondition.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1097,7 +1097,7 @@
     "explanation": "The key question chains supplier, lot, batch, shipment and customer. The others read one fact from one entity, which any table answers directly.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1116,7 +1116,7 @@
     "explanation": "Things are nodes, relationships between them are edges, and values describing a node or an edge are properties.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1135,7 +1135,7 @@
     "explanation": "Validation means experts testing the model on recent real cases. Complete field mapping and opinions about how it looks say nothing about whether its decisions hold.",
     "source": "Day 4, technical roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1154,7 +1154,7 @@
     "explanation": "The ontology drives decisions, so changes to it are treated like code changes: versioned, reviewed and tested before release.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1173,7 +1173,7 @@
     "explanation": "Versioning makes every change traceable and reversible. Without it, a regression in plans cannot be tied to the change that caused it.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1192,7 +1192,7 @@
     "explanation": "A new constraint can break plans that were fine. Replaying recent real cases shows its side effects; the proposer's approval and synthetic data do not.",
     "source": "Day 3, build lab",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1211,7 +1211,7 @@
     "explanation": "The ontology references each fact's owner system; it does not become a second source of truth. Fixing the value at the source keeps every consumer consistent.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1230,7 +1230,7 @@
     "explanation": "Each fact keeps one owner system. The ontology models meaning and references the owner of each fact; a full copy drifts from the source and competes with it.",
     "source": "Day 3, IT and infrastructure fundamentals",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -1248,6 +1248,576 @@
     "answer": "a",
     "explanation": "The ontology records the owner system of each fact. Averaging or picking the latest value hides the conflict instead of resolving where the truth lives.",
     "source": "Day 3, IT and infrastructure fundamentals",
+    "keepOrder": false,
+    "status": "retired",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-031",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Your event reader turns a customer email into a quantity change. How should the ontology record that change against the order?",
+    "options": {
+      "a": "Overwrite the order's quantity so the order shows only the new value",
+      "b": "As a timestamped event linked to the order, which then updates its state",
+      "c": "As a new order that replaces the old one, under a fresh order number from the ERP",
+      "d": "As a free-text comment on the order for the planner to read later"
+    },
+    "answer": "b",
+    "explanation": "Events and states are separate primitives: a dated event linked to the order keeps the history, lets the fast solver react and lets you count the loops. Overwriting the field destroys that evidence.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-032",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "A customer's audit qualifies a line for its products until the end of June. What does the qualification need in the model?",
+    "options": {
+      "a": "A reminder in the customer file to check the audit before July",
+      "b": "Nothing, since the planner removes the line when the audit lapses",
+      "c": "A flag on the line that marks it as audited for every customer it might ever serve",
+      "d": "A validity period on the qualification, checked against each order's run date"
+    },
+    "answer": "d",
+    "explanation": "Temporal validity is a modeling primitive: a qualification holds between two dates and the engine checks it for every plan. A reminder or a planner's memory lapses silently.",
+    "source": "Doctrine, ontology and knowledge graphs",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-033",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Large orders are sometimes split across two lines, but your model links each order to exactly one line. What happens?",
+    "options": {
+      "a": "Split orders cannot be planned or traced, so they get handled off the system",
+      "b": "The solver runs slower, because it has fewer line choices to explore for each order",
+      "c": "Nothing, since the planner can enter each half as a separate order",
+      "d": "Changeover times get counted twice for every order in the plant"
+    },
+    "answer": "a",
+    "explanation": "Cardinality is part of the model: if an order can run on several lines, the link must allow one to many. A model that forbids real cases pushes them off the system, where shadow processes start. Fake half-orders corrupt the order count.",
+    "source": "Doctrine, ontology and knowledge graphs",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-034",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Run rates arrive in tonnes per hour from the MES and in kilograms per minute from a line's data sheet. Plans are off by a large factor. What was missing?",
+    "options": {
+      "a": "A larger model that can infer the right unit from the context",
+      "b": "A rule telling planners to check every run rate by hand at the start of each week",
+      "c": "A unit of measure on each quantity, with explicit conversion in code",
+      "d": "A single rate averaged across both sources every night"
+    },
+    "answer": "c",
+    "explanation": "Units of measure are a modeling primitive: each quantity carries its unit and code converts it once. Guessing or averaging hides the error instead of removing it.",
+    "source": "Doctrine, ontology and knowledge graphs",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-035",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "The long solver's plan beats the planner's Friday plan by 30% on changeover hours. Before anyone celebrates, what do you check first?",
+    "options": {
+      "a": "Whether the solver runs fast enough to be used every morning",
+      "b": "Whether the scorecard target can be raised to match the new gap",
+      "c": "Whether the gap comes from rules the engine does not hold yet",
+      "d": "Whether the planner's own plan was keyed into the app correctly"
+    },
+    "answer": "c",
+    "explanation": "A plan far better than the expert's often breaks constraints nobody encoded. A gap made of missing rules is not entitlement; walk it with the planner before it reaches the scorecard.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-036",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Your rule inventory has no rule on the dryer shared by two lines. The floor never starts that grade on both lines at once. What do you predict at go-live?",
+    "options": {
+      "a": "Plans that start the grade on both lines together, which the floor refuses",
+      "b": "Lower run rates on both lines whenever that grade is planned on either of them",
+      "c": "A slower solver, since it must explore many more sequences",
+      "d": "No visible effect, since operators already know the rule well"
+    },
+    "answer": "a",
+    "explanation": "A shared resource is a constraint across instances. Without it the solver starts both lines, the floor overrides, and trust falls. Predict such failures from gaps in the inventory before go-live.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-037",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Changeovers from black on one line take 150 minutes instead of 60, because that line's screw is worn. Where should this rule sit?",
+    "options": {
+      "a": "On the machine type, so every extruder of that model inherits it",
+      "b": "On the product family, since black is hard to purge from any line in the plant",
+      "c": "In the ERP routing, as the new standard changeover for all lines",
+      "d": "On that line's instance, owned by maintenance, until the screw is replaced"
+    },
+    "answer": "d",
+    "explanation": "The wear is a fact about one machine, not its type, so the rule belongs to the instance, with an owner who can end it. Put on the type, it would slow every similar line.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-038",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "The procedure says the weekly plan is frozen, yet the change log shows the plan changing every day. Where do you look for the rules the plant runs on?",
+    "options": {
+      "a": "In the procedure, updated with a note on the current exceptions",
+      "b": "In the people who change the plan, their notebooks and the change log",
+      "c": "In the ERP configuration, since it records every published plan",
+      "d": "In a standard rule library for the industry, supplied by a planning software vendor"
+    },
+    "answer": "b",
+    "explanation": "The procedure is a hypothesis; the change log is the evidence. The real rules are run by the people who change the plan and sit in their notebooks, whiteboards and workbooks.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-039",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Asked why she moved an order off a line, the planner says, 'The customer would send it back.' What do you do with that answer?",
+    "options": {
+      "a": "Keep asking why, since a consequence is not yet a fact about the plant",
+      "b": "Record a rule that this customer's orders go to a different line",
+      "c": "Mark it as a personal preference and keep the system's plan as is",
+      "d": "Ask her whether the customer's audit is the reason, to save her time in the interview"
+    },
+    "answer": "a",
+    "explanation": "'They would send it back' is a consequence. Ask why until the answer is a fact about the plant that holds next week and has an owner, such as a line qualification. Suggesting the audit leads the witness.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-040",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "A planner moved an order because the customer's buyer called the plant manager this week. How should this disagreement close?",
+    "options": {
+      "a": "As a new permanent priority rule for that customer",
+      "b": "As a data fix to the customer's promise date in the ERP",
+      "c": "As not a rule: a one-off decision, recorded with its reason",
+      "d": "As a proposed rule, left in the register until someone objects"
+    },
+    "answer": "c",
+    "explanation": "A call this week is true this week. Turned into a permanent rule, it makes every following week wrong; closing it as not a rule, with the reason logged, keeps the model clean.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-041",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "At a sock manufacturer, the knitting settings that work live only in senior operators' heads. What should your kickoff plan to capture them?",
+    "options": {
+      "a": "A survey asking each operator to list the settings they use",
+      "b": "Walks through recent runs with the operators, who sign the rules as authors",
+      "c": "A model trained on machine logs that infers the settings without them",
+      "d": "A request that the supervisor write a full settings manual by the end of month one"
+    },
+    "answer": "b",
+    "explanation": "Make the expert the author: walk recent real runs with the people who hold the settings, ask for the exceptions, and record each rule under their name. Logs alone miss why a setting was chosen.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-042",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "A 2021 notebook says three changeovers per shift at most; the planner says four since last year. What goes into the rule register?",
+    "options": {
+      "a": "The two values, with the solver using the stricter one each time",
+      "b": "The notebook's value, since a written source beats a spoken one",
+      "c": "The planner's value alone, with no source needed, since she is the expert on the plant",
+      "d": "Four as active, citing both sources, with three retired and an owner named"
+    },
+    "answer": "d",
+    "explanation": "When sources disagree, the owner decides what holds now. The current value goes in with its sources; the superseded one is retired, not deleted, so the history stays readable.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-043",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Overnight, a model drafted 40 rules from scanned planner notebooks. How should they enter the rules engine?",
+    "options": {
+      "a": "Directly as active rules, since they come from the plant's own notes",
+      "b": "As a block of instructions added to the event reader's prompt",
+      "c": "Only after the IT team has checked their syntax and parameters",
+      "d": "As proposed rules with their sources, until each owner validates"
+    },
+    "answer": "d",
+    "explanation": "The model drafts, the expert validates, the engine applies. A drafted rule changes nothing until its owner signs it: notebooks can be outdated, and syntax checks say nothing about the plant.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-044",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "The planner validates a new forbidden transition and it becomes active. What should be added to the code base at the same time?",
+    "options": {
+      "a": "A comment in the solver code that explains the rule's purpose",
+      "b": "A test case that fails if any plan breaks that rule",
+      "c": "A new prompt section telling the model that the rule exists",
+      "d": "A dashboard tile counting how often the rule is applied"
+    },
+    "answer": "b",
+    "explanation": "An active rule is tested, one case per rule in the suite, so a later change that breaks it fails before it reaches the floor. That is treating the model like code.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-045",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "A customer that had top priority has moved to a competitor. What happens to its priority rule?",
+    "options": {
+      "a": "It is retired with a reason; it stops applying and its history stays",
+      "b": "It is deleted from the register so that no future or past plan can cite it again",
+      "c": "It stays active, since the customer might come back next year",
+      "d": "Its weight is set to zero so the solver quietly ignores it"
+    },
+    "answer": "a",
+    "explanation": "Retired means the rule stops and its history stays, so past plans that cited it remain explainable. Deleting it, or zeroing it without a status change, breaks the audit trail.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-046",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Your rules are encoded and the solvers run. How do you show the planner the model is right about her plant before she relies on it?",
+    "options": {
+      "a": "Show her the number of rules encoded and the solver's run time",
+      "b": "Ask her to read the full rule register and sign every page",
+      "c": "Run it beside her on real weeks and review every difference with her",
+      "d": "Compare its plans with the ERP's standard lead times for each product"
+    },
+    "answer": "c",
+    "explanation": "Validate with the expert against recent real cases: in shadow mode the system plans next to her, and each difference is a missing rule, a wrong one or a real gain. Signing pages tests nothing.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-047",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Overnight, a changeover parameter changed and Monday's plan moved six orders. Nobody can say who changed it or why. What practice was missing?",
+    "options": {
+      "a": "Versioned rule changes, each with an author, a review and an audit line",
+      "b": "A faster solver, so the whole plan can be recomputed and checked before the shift starts",
+      "c": "A prompt instructing the model never to alter changeover values",
+      "d": "A weekly export of the rule register to a shared spreadsheet"
+    },
+    "answer": "a",
+    "explanation": "Changes to the model are treated like code changes: versioned, reviewed and logged with their author, so a moved plan traces back to the change that moved it.",
+    "source": "Doctrine, ontology and knowledge graphs",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-048",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "The ERP holds the orders; the planner holds the changeover rules. A colleague proposes copying both into a new database for the app. What do you propose instead?",
+    "options": {
+      "a": "Copy both, and let the app's database win any disagreement",
+      "b": "Move the rules into the ERP so that one system holds everything",
+      "c": "Keep the copies, and reconcile them by hand each Friday",
+      "d": "Reference each fact in its owner system; capture only what none holds"
+    },
+    "answer": "d",
+    "explanation": "The ontology says which system owns each fact and points to it. A new database nobody owns becomes a second source of truth; capture apps exist only for facts no system holds.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-049",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Why the night shift swapped an order is recorded only as free text in the line log. What does your architecture add?",
+    "options": {
+      "a": "A model that reads the free text and rewrites the plan on its own",
+      "b": "A request to the MES vendor to add a structured reason field",
+      "c": "A small capture app where the shift leader records what ran and why",
+      "d": "A rule that every swap must first be approved by the planner"
+    },
+    "answer": "c",
+    "explanation": "A fact no system holds is captured at the source, by a mini-app for the person who knows it, and becomes an owned fact like any other. Guessing from free text or waiting on a vendor leaves the gap open.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-050",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "A planner asks the assistant why an order moved to Friday. Where should the facts in its answer come from?",
+    "options": {
+      "a": "From the model's own reasoning about the plant's likely constraints",
+      "b": "From the solver's diff and the ids of the rules it applied",
+      "c": "From the most similar past answers kept in the chat history",
+      "d": "From the procedure that describes how the weekly plan is built"
+    },
+    "answer": "b",
+    "explanation": "Code owns the facts; the model explains. The explainer turns the solver's diff and the cited rule ids into words; without them it writes something fluent that may be invented.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-051",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "An engineer wants to paste the plant's 100 rules into the system prompt and let the model sequence the orders. What is the main objection?",
+    "options": {
+      "a": "The prompt would cost too many tokens on each call to be affordable",
+      "b": "Nobody can audit those rules, and a language model is a poor sequencer",
+      "c": "The model would first need to be fine-tuned on all of the rules",
+      "d": "The rules change too rarely to be worth giving to a model at all"
+    },
+    "answer": "b",
+    "explanation": "Known rules go to a rules engine, each with an id, source, owner and status; combinations go to a solver. Nobody can audit a prompt with a hundred rules, and the model cannot prove a sequence feasible.",
+    "source": "Day 3, LLMs and agentic systems",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-052",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Your event reader extracts planning events from customer emails. How should the ontology shape what it outputs?",
+    "options": {
+      "a": "It fills the fields of an event type already defined in the ontology",
+      "b": "It writes a short summary that the planner reads before acting",
+      "c": "It creates a new object type when an email mentions something unknown",
+      "d": "It copies the full email into the order record for later search"
+    },
+    "answer": "a",
+    "explanation": "The ontology is the model's vocabulary: it extracts into fields that already exist, which code can check (the order exists, the product exists). Prose or invented types cannot be checked or acted on.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-053",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "The solver rejects a new order because its product belongs to no family. What does this tell you?",
+    "options": {
+      "a": "The solver is too strict and should skip the family check for new products",
+      "b": "The model should guess the family from the product name each time",
+      "c": "The order should be planned by hand from now on, outside the system",
+      "d": "Code relies on the ontology as types; the missing link is a data fix"
+    },
+    "answer": "d",
+    "explanation": "Code uses the ontology as types: without a family, a product's changeovers are unknown. The gap is a data fix for whoever owns product master data, not a check to relax or a guess.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-054",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Group IT standardizes on relational databases and objects to a graph database for the ontology. What do you answer?",
+    "options": {
+      "a": "A graph database is required, since relational tables cannot hold relationships",
+      "b": "Then the ontology must stay in documents rather than in a database",
+      "c": "It can live on relational tables; a graph helps mainly with multi-hop queries",
+      "d": "Relational storage works only if every rule is moved into the ERP"
+    },
+    "answer": "c",
+    "explanation": "An ontology is a model of meaning, not a storage choice. A graph database helps with multi-hop questions and varying structure, but nodes, edges and properties map onto relational tables.",
+    "source": "Doctrine, ontology and knowledge graphs",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-055",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "Lyon's system is live. At a second plant, the ontology core fits, but planners there decide differently. Where do you start?",
+    "options": {
+      "a": "Load Lyon's rules and fix the differences as overrides appear",
+      "b": "Ask group IT for the plant's ERP routings and build from them",
+      "c": "Redo the true process walk there, with that plant's own people",
+      "d": "Send Lyon's planner to train the local team on her rules"
+    },
+    "answer": "c",
+    "explanation": "What worked at one site is a hypothesis at the next: local rules live in local heads, so redo the stated versus true process walk. Loading another site's rules first makes the local planner a corrector, not an author.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-056",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "A third plant keeps its production records on paper. Taking the planning system there, what do you rebuild?",
+    "options": {
+      "a": "The ontology core, since a paper plant needs a simpler model",
+      "b": "Data capture and connectors, feeding the same ontology core",
+      "c": "The solvers, since paper plants plan with different methods",
+      "d": "Nothing, since planners can key Lyon's export format by hand"
+    },
+    "answer": "b",
+    "explanation": "Reuse the core, rebuild the edge: connectors are edge, so a paper plant gets capture at the source feeding objects the core already defines. Rebuilding the core or the solvers throws away the reuse.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-057",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "You leave a plant in two months. Who must be able to read and change its ontology by then?",
+    "options": {
+      "a": "Site IT and the business owner, trained on it before you leave",
+      "b": "The platform vendor's support team, under a maintenance contract",
+      "c": "The FDE team, through remote access after the engagement ends",
+      "d": "The group data office, which owns every model in the company"
+    },
+    "answer": "a",
+    "explanation": "Someone must own the ontology after go-live or it decays as the plant changes. Site IT is trained on it so it can read it, change it and own it; you leave, they stay.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-058",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "After planning, the plant wants an assistant for quality holds. What from your planning work does it reuse most directly?",
+    "options": {
+      "a": "The long solver's objective function and its priority weights",
+      "b": "The planner's override log from the first months of the project",
+      "c": "The event reader's prompt, adapted to quality messages",
+      "d": "The objects already modeled: orders, products, lines, lots, rules"
+    },
+    "answer": "d",
+    "explanation": "Use cases share one model of the operation: a quality hold breaks the plan, so the second use case reuses objects and links already modeled. That is why it costs much less than the first.",
+    "source": "Day 1, what an FDE is",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-059",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "A customer has different codes in the ERP, the carrier file and the claims database. Your audited-lines rule misses some of its orders. What is needed?",
+    "options": {
+      "a": "An explicit, owned mapping from each system's code to one customer",
+      "b": "A fuzzy match on names, rerun each time the rules engine runs",
+      "c": "A model that guesses the customer from each order's text",
+      "d": "A rule asking planners to check customer names by hand"
+    },
+    "answer": "a",
+    "explanation": "The same customer under several codes needs an explicit, owned mapping; otherwise a rule keyed on one code misses orders filed under the others. Fuzzy matching can silently link different entities.",
+    "source": "Doctrine, ontology and knowledge graphs",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "ONT-3-060",
+    "domain": "ONT",
+    "tier": 3,
+    "stem": "A second plant splits into two local codes what Lyon calls one product family. What do you do?",
+    "options": {
+      "a": "Rename the plant's codes in its ERP so that they match Lyon's",
+      "b": "Map both local codes to the core's family, with a local owner",
+      "c": "Build a separate ontology for that plant, starting from scratch",
+      "d": "Keep Lyon's names and let the planners translate by hand"
+    },
+    "answer": "b",
+    "explanation": "The ontology core is reused and local codes are the edge, mapped explicitly to core objects and owned locally. Renaming in the ERP changes another system's facts; a separate ontology loses the reuse.",
+    "source": "Day 4, what goes wrong, and how it scales",
     "keepOrder": false,
     "status": "draft",
     "author": "claude",

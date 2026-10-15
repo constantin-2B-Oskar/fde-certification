@@ -316,4 +316,4 @@ Forty-five minutes. Use the plant files and the IT director's interview in the D
 - Edgar Schein, *Organizational Culture and Leadership*.
 
 **Tomorrow**
-- Two real engagements, disguised, in parallel. Then what really happened, your 30/60/90 plan, and the FDE Certification exam.
+- Five companies, disguised, one per team: the kickoff of a signed project in front of the executive committee. Then the debrief, your 30/60/90 plan, and the FDE Certification exam.

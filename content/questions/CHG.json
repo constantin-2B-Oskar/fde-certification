@@ -71,7 +71,7 @@
     "explanation": "Overrides are information. Each reveals a constraint the model lacks or data that is wrong; fixing them is how trust and accuracy rise together.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude-spec",
     "reviewedBy": null
   },
@@ -546,7 +546,7 @@
     "explanation": "A systematic override points to a rule the model lacks or data that is wrong. Treating it as a training or discipline issue throws that information away.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -565,7 +565,7 @@
     "explanation": "Overrides are information only if their reasons are captured. A count shows the size of the problem, not which rule or data is missing.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -584,7 +584,7 @@
     "explanation": "Fewer overrides is good news only if missing rules and bad data were fixed. Users who stop overriding but decide elsewhere have abandoned the tool, not adopted it.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -603,7 +603,7 @@
     "explanation": "Adoption is not usage. Count decisions taken with the tool and the reasons for overrides; logins and sessions measure presence, not decisions.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -622,7 +622,7 @@
     "explanation": "Logging in is not deciding. The spreadsheet holds rules or data the tool lacks, or a fear not yet addressed; finding which is the work.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -641,7 +641,7 @@
     "explanation": "Mandating usage through KPIs from day one buys logins, not decisions. It also hides the override reasons that would improve the tool.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -660,7 +660,7 @@
     "explanation": "To turn a skeptic, solve one of their pains first, show their own data and give them authorship. Mandates and outside case studies do not address why he doubts.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -679,7 +679,7 @@
     "explanation": "Skeptics trust their own data. A replay on her line's history answers her doubt in her terms; benchmarks and clean demos invite the reply 'not here'.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -698,7 +698,7 @@
     "explanation": "Give the skeptic authorship. His error-finding is the best source of missing rules, and authorship turns the critic into a defender.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -717,7 +717,7 @@
     "explanation": "Objection handling runs acknowledge, clarify, answer with evidence, confirm. Statistics fired back unasked miss the specific case and make the person feel unheard.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -736,7 +736,7 @@
     "explanation": "Answer with evidence on the specific case. If the objection is right, it is an override-style signal: fix the rule and show the fix.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -755,7 +755,7 @@
     "explanation": "The last step is confirm: check with the person that the concern is resolved. Closing it on your own side leaves the objection alive on hers.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -774,7 +774,7 @@
     "explanation": "Difficult conversations start with facts before opinions. The traced cases give him something to examine instead of a judgment to defend against.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -793,7 +793,7 @@
     "explanation": "Separate the person from the problem. Locating the issue in the process protects his standing and keeps the discussion on what to fix.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -812,7 +812,7 @@
     "explanation": "End on a next step. Without an owner and a date, the conversation changes nothing on the ground.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -831,7 +831,7 @@
     "explanation": "Facts before opinions, and the person separated from the problem: looking at why the flag was missed may reveal a missing rule rather than a careless planner.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -850,7 +850,7 @@
     "explanation": "Train at the workstation, on real cases, shift by shift. Classroom and demo training teach features; the workstation teaches the job with the tool.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -869,7 +869,7 @@
     "explanation": "Build super-users on every shift. A peer on site answers questions on real cases at the moment they arise; remote support and manuals do not.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -888,7 +888,7 @@
     "explanation": "Super-users carry training on the floor, shift by shift. Building several per shift keeps coaching alive when people move; recordings and vendor cover do not coach on real cases.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -907,7 +907,7 @@
     "explanation": "Train on real cases at the workstation. Operators trust a tool they have seen handle their own work, exceptions included; real cases also surface missing rules early.",
     "source": "Day 4, human roadblocks",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -926,7 +926,7 @@
     "explanation": "Middle management and IT are often decisive. Supervisors decide what actually happens each shift, whatever the sponsor says.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -945,7 +945,7 @@
     "explanation": "On the influence-interest grid, high influence and low interest means keep satisfied. Ignoring him risks a late veto from someone who can block.",
     "source": "Day 5, the full motion",
     "keepOrder": false,
-    "status": "draft",
+    "status": "retired",
     "author": "claude",
     "reviewedBy": null
   },
@@ -963,6 +963,462 @@
     "answer": "c",
     "explanation": "IT is often decisive. Mapping it early and involving it turns a likely blocker into a partner; going around it creates risk and resentment.",
     "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "retired",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-025",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "At kickoff the plant manager is eager; the planner, told today, says 'it will never work here'. How do you read the gap?",
+    "options": {
+      "a": "The planner is blocking the project and the sponsor should step in now",
+      "b": "Normal: he has lived with the decision for weeks, she has just heard it",
+      "c": "The plant manager has misjudged his own plant and the scope should shrink",
+      "d": "The planner already knows the data is wrong and is hiding it from you"
+    },
+    "answer": "b",
+    "explanation": "The curve is personal and the sponsor is always ahead: he is at decision while she is at shock or denial. Your job is to see where each person is and give her clear information and reasons, not to escalate.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-026",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "You choose the first crew to use the new event-intake app. Which crew gives the rollout the best start?",
+    "options": {
+      "a": "The most resistant crew, because converting them convinces everyone else",
+      "b": "The crew keenest on new technology, whatever their standing on the floor",
+      "c": "Every crew at once, so that no crew feels left out or judged",
+      "d": "A crew the floor respects, that you can make visibly successful in weeks"
+    },
+    "answer": "d",
+    "explanation": "Choose first users for credibility on the floor, not only enthusiasm, and make them visibly successful. The early majority follows people it respects; starting with the most resistant person is the slow path.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-027",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "A shift leader answers your first demo with: 'We tried that in 2019.' What is your best next move?",
+    "options": {
+      "a": "Ask what happened in 2019 and what that team got wrong",
+      "b": "Explain in detail how this system differs from the 2019 one",
+      "c": "Show results from other plants where the system already works",
+      "d": "Ask the sponsor to remind the shift that the project is a priority"
+    },
+    "answer": "a",
+    "explanation": "Resistance is information: 'we tried that' is scar tissue. Asking what happened surfaces the real lesson and shows you listen; arguing that this time is different answers the position, not the fear behind it.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-028",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "An operator keeps his own setpoint on one line instead of the system's and says 'we have always done it this way'. What is your first move?",
+    "options": {
+      "a": "Show him the line data proving the standard setpoint performs better",
+      "b": "Ask his shift leader to enforce the system's setpoint from Monday",
+      "c": "Ask what he knows that the system does not, and test his setting",
+      "d": "Log his overrides and report the adoption gap at the weekly review"
+    },
+    "answer": "c",
+    "explanation": "Behind the stance there is usually a fear, often of being blamed for the workaround. Asking what he knows credits his expertise; if the setting holds, it becomes the standard under his name. Proving him wrong hardens the stance.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-029",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "One shift asks 'who asked for this?' while the other shifts use the tool. The site director backs the project. What is the most likely gap?",
+    "options": {
+      "a": "That shift's operators were trained less thoroughly than the others",
+      "b": "Their shift leader, the sponsor they follow, has not said it matters",
+      "c": "The tool works poorly under that shift's specific conditions at night",
+      "d": "The site director's announcement email never reached that shift"
+    },
+    "answer": "b",
+    "explanation": "Sponsorship must cascade to every target's direct boss: operators follow their shift leader, not the director's email. 'Who asked for this?' signals that sponsorship has not reached them.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-030",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "A production manager agrees in every steering committee, yet his teams have never heard of the tool. What is the right fix?",
+    "options": {
+      "a": "Brief his teams yourself, so that the message reaches them directly",
+      "b": "Raise his silence at the next steering committee, in front of peers",
+      "c": "Ask the site director to send the teams a written instruction instead",
+      "d": "His own boss makes passing the change down one of his objectives"
+    },
+    "answer": "d",
+    "explanation": "He is a black hole: agreement upward, silence downward. Going around him undermines the sustaining sponsor his teams follow; the fix is his boss making it his objective.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-031",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "Six weeks after go-live, the plant manager asks for proof the tool is adopted. What do you show him?",
+    "options": {
+      "a": "Decisions now taken in the tool: plans issued, overrides logged with reasons",
+      "b": "Daily logins per user and per shift, with their trend since the go-live date",
+      "c": "Survey scores from planners on their satisfaction with the tool",
+      "d": "The number of screens and reports opened in the tool each week"
+    },
+    "answer": "a",
+    "explanation": "Adoption is not usage: a decision once made in a spreadsheet is now made in the tool. Logins and screens show presence, not decisions; a planner can log in and still plan in her spreadsheet.",
+    "source": "Day 2, leading an FDE project",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-032",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "Sam, a scheduling clerk, asks you directly whether the system will cost him his job. Nothing has been decided. What do you say?",
+    "options": {
+      "a": "That nobody will lose their job, since the project aims at growth",
+      "b": "That you cannot discuss it and he should not worry for now",
+      "c": "That it is not your decision, and his manager and HR will tell him",
+      "d": "Which tasks the system will remove, and your guess about his role"
+    },
+    "answer": "c",
+    "explanation": "Never promise that nobody will lose their job: it is not the FDE's decision. Be honest about who decides and make sure the sponsor and HR settle it; reassurance you cannot back destroys trust when it fails.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-033",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "Before her manager has spoken to her, a clerk hears in the canteen that her task will be automated. What do you do first?",
+    "options": {
+      "a": "Find out who leaked the news, so that the plan can be protected",
+      "b": "Go to her within the hour and say what is decided and what is not",
+      "c": "Keep to the planned announcement date so that the sequence holds",
+      "d": "Ask the sponsor to send the whole site a clarifying written note"
+    },
+    "answer": "b",
+    "explanation": "When it leaks, go to the person affected first, the same hour, even without every answer, then tell the sponsor. Hunting the leaker or waiting for the planned date leaves her hearing about her job second.",
+    "source": "Day 1, consulting skills",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-034",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "The plant manager asks you to define what the planner's job becomes once the system publishes plans. What is your answer?",
+    "options": {
+      "a": "Draft the new job description yourself, since you know the system best",
+      "b": "Promise her the role stays unchanged, to protect her cooperation",
+      "c": "Propose she becomes the system's administrator, to keep her on side",
+      "d": "That decision is his and HR's; you can describe which tasks change"
+    },
+    "answer": "d",
+    "explanation": "The FDE does not decide roles: only the employer can promise anything about a job. Your part is the facts about which tasks the system takes, adds or changes, so that HR and the manager can decide.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-035",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "During five whys, the planner pauses and you ask: 'Is it because of the customer audit?' What is the risk?",
+    "options": {
+      "a": "She agrees, and you lose the reason she would have given",
+      "b": "She feels judged, and stops sharing rules for the session",
+      "c": "The rule gets recorded without any named owner attached",
+      "d": "You stop too early, at a consequence rather than a rule"
+    },
+    "answer": "a",
+    "explanation": "Leading the witness gets a yes and loses what she would have said. Ask open questions and wait; the planner is the author of the rule, not a box to confirm your hypothesis.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-036",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "The planner moves an order forward because the customer's buyer called the plant manager this week. How do you record it?",
+    "options": {
+      "a": "As a new priority rule for that customer, owned by the planner",
+      "b": "As a soft preference that the solver applies on every future plan",
+      "c": "As a one-off decision, closed as not a rule, with its reason",
+      "d": "As a data error in the order's due date, to be fixed in the ERP"
+    },
+    "answer": "c",
+    "explanation": "Turning a preference into a rule is a classic five-whys error: true this week, wrong every week after. Every disagreement ends as a rule, a data fix or a decision that it is not a rule.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-037",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "A maintenance technician tells you a worn screw makes black-to-color changeovers on his line take far longer. Who should own that rule?",
+    "options": {
+      "a": "The planner, since every sequencing rule passes through her plan",
+      "b": "The technician, who will know when the screw is replaced",
+      "c": "The FDE team, until the client names a permanent owner later",
+      "d": "Site IT, since the rule will live in the rules engine they run"
+    },
+    "answer": "b",
+    "explanation": "A rule's owner is the person who knows the fact and will know when it changes. A rule nobody owns is wrong the day the plant changes; when the screw is replaced, the rule is retired and its history stays.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-038",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "To be safe, the team wants the planner to approve every changeover time the rules engine computes. What does the course say?",
+    "options": {
+      "a": "Keep it: a human check is the best defense against any model error",
+      "b": "Keep it for the first month, then drop it once no error has been seen",
+      "c": "Replace it with a model that reviews each computed changeover time",
+      "d": "Drop it: a person checking arithmetic adds cost and a source of error"
+    },
+    "answer": "d",
+    "explanation": "Put a human where a decision needs an owner, not where code is weak. Applying a validated rule is deterministic; the planner's gates are validating the rule once and publishing the plan.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-039",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "Your team is placing human gates in the target planning architecture. Which step needs the planner's own decision?",
+    "options": {
+      "a": "Extracting quantities and dates from customer emails into events",
+      "b": "Re-keying each plan change into the ERP once it is decided",
+      "c": "Choosing which of two customers is served first on Thursday",
+      "d": "Checking that each changeover time matches the rule register"
+    },
+    "answer": "c",
+    "explanation": "A trade-off between customers needs someone who answers for it. Email extraction gets a person only when confidence is low; re-keying and checking arithmetic are where a human is a cost, not a control.",
+    "source": "Day 3, from the stated process to the target architecture",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-040",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "In the first weeks of co-pilot mode, overrides with a reason rise sharply. The plant manager is worried. How do you read it?",
+    "options": {
+      "a": "As expected: each reason exposes a rule, and they should fall later",
+      "b": "As a sign the system is worse than the old plan and should go back to shadow",
+      "c": "As resistance from the planner, to be raised with her manager this week",
+      "d": "As noise from a new screen, which will settle once she knows it well"
+    },
+    "answer": "a",
+    "explanation": "Measure the loop: overrides with a reason should rise first, then fall as reasons become rules, data fixes or decisions. Overrides are information, not a verdict on the tool or on the planner.",
+    "source": "Day 3, the platform and the first loop",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-041",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "Week 3: the maintenance manager tells a full canteen your team will 'leave another orphan and cut jobs'. What is your first move?",
+    "options": {
+      "a": "Ask the sponsor to correct him in public at the next site meeting",
+      "b": "Ship one small thing that helps his team this week, in front of them",
+      "c": "Present the project charter to him, with the support plan after go-live",
+      "d": "Explain to him in detail how this project differs from the last one"
+    },
+    "answer": "b",
+    "explanation": "A bad reputation is answered by conduct, not argument: it is about the last project, not you. Promise little and deliver it in front of them; a public correction by the sponsor hardens the story.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-042",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "Your sponsor has cancelled two reviews and ignores email. Only he can escalate a frozen access request. What is your first move?",
+    "options": {
+      "a": "Go straight to whoever sold the project and ask for a new sponsor",
+      "b": "Raise his absence at the steering committee, in front of his peers",
+      "c": "Ask him in private for that one act, with a date and what delay costs",
+      "d": "Ask group IT to unfreeze the request without the sponsor's support"
+    },
+    "answer": "c",
+    "explanation": "A weak sponsor is a contract problem, handled in order: name one act only he can do, ask in private with a date and the cost, and escalate only if that fails. Public pressure costs his trust.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-043",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "You asked the sponsor in private for one act, with a date and its cost. The date passed with nothing done. What now?",
+    "options": {
+      "a": "Wait one more month, since sponsors have many competing priorities",
+      "b": "Do the act yourself through your own contacts at group level",
+      "c": "Repeat the request by email, copying his team for visibility",
+      "d": "Take it back to whoever sold the project: scope or sponsor changes"
+    },
+    "answer": "d",
+    "explanation": "A sponsor owes thirty minutes a week, a blocker cleared within a week and public support. When the private ask fails, escalate to whoever sold the project: the scope or the sponsor changes.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-044",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "The sponsor wants slides 'supporting the APS business case'. Your backtest shows the planner's real schedule beats the official plan. What fits?",
+    "options": {
+      "a": "Meet him in private, start from his goal, and show the data with options",
+      "b": "Produce the slides he asked for and put the backtest in an appendix",
+      "c": "Present the backtest at the steering committee to correct his theory",
+      "d": "Decline the request and report the conflict to the group COO"
+    },
+    "answer": "a",
+    "explanation": "Move the sponsor in private, from his goal: his interest is a credible plan for the group, not the APS itself. Correcting him in public or burying the finding both lose him.",
+    "source": "Day 5, the full motion",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-045",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "The planner cancels the rule-validation session for the third time: 'no time for your file'. Forty rules wait for her signature. Who do you ask?",
+    "options": {
+      "a": "The planner again, with a firmer deadline and the cost of delay",
+      "b": "Her manager, for named hours in the plan, such as two on Tuesday",
+      "c": "The sponsor, to order her to attend the next session on Friday",
+      "d": "Nobody: validate the rules yourself and let her review them later"
+    },
+    "answer": "b",
+    "explanation": "Experts never have time because nobody gave it to them: ask the manager, not the expert, for named hours. Validating her rules yourself removes the authorship that makes them hold.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-046",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "At a sister plant running at 64% capacity, the planner shows no interest in a better schedule. How does the course read this?",
+    "options": {
+      "a": "She is resisting and needs the same co-authoring as at the first site",
+      "b": "Her manager has not freed her time, so ask him for named hours",
+      "c": "She wins little from it there; expect little until she wins something",
+      "d": "The plant culture rejects new tools, a sales problem to escalate"
+    },
+    "answer": "c",
+    "explanation": "Each actor must be able to say what they win. With lines at 64%, a better plan changes little for her; expect nothing from an actor who wins nothing, and ask whether planning is the right first product there.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-047",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "At a second plant, crews want the daily review in their own format, and the plant manager wants to skip rule validation. What do you adapt?",
+    "options": {
+      "a": "Each of them, since respecting local culture means following the site",
+      "b": "Neither: the first site's rituals and process are the proven standard",
+      "c": "Rule validation only, since the review format matters more to crews",
+      "d": "The review format; rule validation is part of the target and holds"
+    },
+    "answer": "d",
+    "explanation": "Adapt language, rituals and the path; hold the target: validated rules, a followed plan, shared data. If local culture blocks the target, it is a sales problem for the sponsor, not something to bend on the floor.",
+    "source": "Day 4, what goes wrong, and how it scales",
+    "keepOrder": false,
+    "status": "draft",
+    "author": "claude",
+    "reviewedBy": null
+  },
+  {
+    "id": "CHG-3-048",
+    "domain": "CHG",
+    "tier": 3,
+    "stem": "Saturday: the weekend crew leader says 'Nobody asked us' and refuses the tablet; two operators nod. What do you do in the first hours?",
+    "options": {
+      "a": "Talk with him in person, listen first, and ask what the system missed",
+      "b": "Call the sponsor at once so he orders the crew to use it on Monday",
+      "c": "Take the weekend off the system until the weekday rollout is stable",
+      "d": "Email the crew the training material and the rollout schedule again"
+    },
+    "answer": "a",
+    "explanation": "Whatever goes wrong, hours 0 to 4 belong to the person, in person, listening before explaining; the sponsor hears it from you within a day. 'Nobody asked us' says the change reached them without them.",
+    "source": "Day 4, what goes wrong, and how it scales",
     "keepOrder": false,
     "status": "draft",
     "author": "claude",

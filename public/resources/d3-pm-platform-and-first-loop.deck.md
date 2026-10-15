@@ -302,6 +302,6 @@ This slide gives the answer to an exercise. It is added here after the session.
 <!-- 33 | Detail -->
 ## Tomorrow: the obstacles
 
-- Morning: technical roadblocks. Dirty exports, legacy systems, integration dead ends, and an idempotent pipeline.
-- Afternoon: human roadblocks. Corinne, Sylvie, Kevin and Hervé, when the system you built today changes their work.
+- A half day, in the afternoon. What goes wrong: technical dead ends and people, and your first 48 hours.
+- Then scaling: taking the system you built today from Lyon to the group's three other plants.
 - Before you leave: write one thing you would do differently on a real site.

@@ -12,12 +12,11 @@ Renan Devillières
 
 ---
 <!-- 2 | Detail -->
-## This afternoon: one hour to learn from the cases, two hours of exam, then the close
+## This afternoon: one hour to learn from the kickoffs, two hours of exam, then the close
 
 | Time | Block |
 |---|---|
-| 13:30 | Cross-readouts: one team per case, five minutes each |
-| 13:45 | What really happened |
+| 13:30 | Debrief of the five kickoffs |
 | 14:05 | Operating principles of the week |
 | 14:15 | Your 30/60/90 plan |
 | 14:30 | Break, chargers, exam rules |
@@ -25,41 +24,36 @@ Renan Devillières
 | 16:45 | Close, feedback, certificates |
 
 ---
-<!-- 3 | Divider | ghost: REAL -->
-## What really happened
+<!-- 3 | Divider | ghost: KICKOFF -->
+## Five kickoffs, debriefed
 
 ---
 <!-- 4 | Detail -->
-## The compounder: the method worked, and the gain is still argued because nobody froze the baseline
+## Each team, three questions, two minutes
 
-- A sequence-aware scheduler went into full run at the lead plant, on about 15% of its production.
-- About 650 changeover hours a year saved on MTO orders: 36% of MTO changeover time.
-- Yield up 15 to 30% on scheduled items; about €220K a year projected from four months × 3.5, not yet validated over twelve months.
-- Next priority: measure predicted against actual setup time, the baseline that did not exist.
-- Rollout to the second site slowed by missing line routings, filled with a manual capture template.
-
-Source: OSS engagement records, disguised; figures scaled and rounded.
+1. Which promise from pre-sales did you correct, and how did the committee take it?
+2. Which trap did you find, and which did you miss?
+3. Which member of the committee did you not convince, and what would have moved them?
 
 ---
-<!-- 5 | Detail -->
-## The sock manufacturer: the problem was when defects were found, not how many
+<!-- 5 | Framework -->
+## Pre-sales got the same four things wrong in five companies
 
-- Quality effort was real: about 200 FTE, checkpoints everywhere. An architecture problem, not a motivation problem.
-- 60% of defects were found when all the cost was spent; detection latency was not tracked.
-- Levers estimated at €0.9M to €1.2M (earlier detection) and €1.2M to €2.0M (faster root cause) a year, to refine jointly.
-- Data before sensors: four weeks on existing data, then a costed sensor playbook, then one block of 96 machines.
-- The go or no-go became the setup cost per machine, measured in the pilot.
-
-Source: OSS engagement records, disguised; figures scaled and rounded.
+| What pre-sales did | What the kickoff does |
+|---|---|
+| Promised beyond the signed scope: a group roll-out, a demo, automatic release, the whole fleet | Says what was bought, what was not, and what comes after a gate |
+| Used a number with the wrong unit or definition | Agrees one definition, owned by the client's controller |
+| Left someone out of the room: IT, quality, HR | Names them owners from week 1 |
+| Framed the gain as fewer people, or one-off cash as yearly profit | Frames it as throughput, capacity or cash, and lets HR decide roles |
 
 ---
 <!-- 6 | Detail -->
-## What both cases teach, in four sentences
+## What the five kickoffs teach, in four sentences
 
-1. Freeze the baseline in week one, or argue the gain forever.
-2. Label every projection: run-rate, annualized from how many months, validated by whom.
-3. Master data and tacit knowledge decide how fast you replicate.
-4. Size by the client's constraint: lead time for one, absenteeism and resilience for the other.
+1. A promise corrected at kickoff costs one hard meeting; at week 6, it costs the project.
+2. The baseline is defined and frozen in week one, by the client.
+3. The calendar belongs to the client: the peak, the validation, the integration.
+4. Every person at the table must find their own win, or expect nothing from them.
 
 ---
 <!-- 7 | Divider | ghost: RULES -->
@@ -76,11 +70,11 @@ Source: OSS engagement records, disguised; figures scaled and rounded.
 | The controller computes the gain, from a protocol signed in week one | Tuesday afternoon |
 | One source of truth per data object | Wednesday morning |
 | Code owns the facts; the model explains | Wednesday afternoon |
-| Quarantine with a reason; never fix silently | Thursday morning |
-| Name the fear before you argue with the stance | Thursday afternoon |
+| Quarantine with a reason; never fix silently | Monday: profiling the shift logs |
+| Name the fear before you argue with the stance | Thursday: the situation cards |
 | Make the expert the author | Corinne |
 | Move the sponsor in private, from his goal | Hervé |
-| Bad news travels the same day, with options | Every day |
+| Bad news travels the same day, with options | Thursday, and every day |
 
 ---
 <!-- 9 | Hero -->

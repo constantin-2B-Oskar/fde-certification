@@ -2,7 +2,7 @@
 
 *AI 50%: drafted by Claude from the FDE School curriculum, The FDE Company teamspace and OSS field material. Renan validates before delivery.*
 
-FDE School, by Devoteam and OSS Ventures. Five days, twenty future Forward Deployed Engineers, one plant all week, two real engagements on Friday, and the FDE Certification exam to close.
+FDE School, by Devoteam and OSS Ventures. Five days, twenty future Forward Deployed Engineers, one plant all week, five companies on Friday, and the FDE Certification exam to close.
 
 ## What the week must produce
 
@@ -35,20 +35,20 @@ And each participant has sat the FDE Certification exam (240 questions, 120 minu
 | 2. The business | Problems worth solving: P&L, account strategy, the bottleneck, sizing in euros | Leading an FDE project: the six-phase method, scoping, governance, the gains validation protocol | Price the leaks found on Day 1; write the project charter and the validation protocol | Renan |
 | 3. The technology | IT and infrastructure: plant systems, ISA-95, integration, source of truth, security | AI fundamentals and build lab: tokens to agents, retrieval, tools, evals, ontology | Plant Pulse v1: a grounded assistant that checks schedule feasibility against the changeover rules | Nicolas |
 | 4. The obstacles | No session: Day 4 is a half day | What goes wrong, technical and people, and your first 48 hours; then scaling: humility, owners, incentives, local culture, IT from day one | Eight situation cards from the Lyon project; a scale plan from Lyon to Polymex's three other plants | Renan |
-| 5. The full motion | Two real engagements, disguised, run in parallel by teams | Debrief of what really happened, operating principles, first-deployment plan, FDE Certification exam | The toolkit built Monday to Thursday, applied to real case data | Renan |
+| 5. The full motion | Five companies, disguised, one per team: the kickoff of a signed project in front of the executive committee | Debrief of the kickoffs, operating principles, first-deployment plan, FDE Certification exam | The toolkit built Monday to Thursday, applied to a real company's situation | Renan |
 
 ### Friday in detail
 
 | Time | Block |
 |---|---|
-| 9:00 to 12:00 | Cases in parallel: three teams take the plastics compounder, two take the sock manufacturer. Each team runs diagnostic, sizing, plan and a steering-committee readout. |
+| 9:00 to 12:00 | Five companies in parallel, one per team. Each team checks what pre-sales promised against the data, writes a kickoff document and presents it to the executive committee, played by another team and the trainer. |
 | 12:00 to 13:30 | Lunch |
-| 13:30 to 14:30 | Cross-readouts, then "what really happened" for both cases, then the operating principles and each participant's 30/60/90 plan for their first deployment |
+| 13:30 to 14:30 | Debrief of the five kickoffs, then the operating principles and each participant's 30/60/90 plan for their first deployment |
 | 14:30 to 14:45 | Break, laptops charged, exam rules |
 | 14:45 to 16:45 | FDE Certification exam, in the room |
 | 16:45 to 17:30 | Close, feedback, certificates |
 
-The site lists the two cases as morning and afternoon sessions. Running them in parallel gives each case a full morning and leaves room for the exam at the end, as requested.
+Running the five cases in parallel gives each team a full morning and leaves room for the exam at the end.
 
 ## The Polymex thread
 
@@ -95,7 +95,7 @@ Five teams of four, mixed by background so every team has at least one confident
 ## House rules
 
 - Chatham House: what is said in the room can be used, never attributed.
-- Friday's cases are real engagements, disguised. If you think you recognize a company, keep it to yourself and do not add details that are not in the case pack.
+- Friday's cases are inspired by real companies, disguised. If you think you recognize a company, keep it to yourself and do not add details that are not in the case pack.
 - No client data in consumer AI tools, during the week or after.
 - AI tools are unrestricted in labs. What is judged is whether you checked the output. AI tools are forbidden during the exam.
 - Laptops closed during teaching blocks, open in labs.
@@ -109,7 +109,7 @@ Definition of done at 9:40: `claude` answers in each terminal, each participant 
 
 ## Confidentiality protocol for Friday
 
-Some participants come from the companies behind the two real cases. The case packs follow five rules: company, site, product and people names are replaced; every financial figure is scaled by a constant factor and rounded; dates are shifted; internal politics and the investor relationship are left out; gains are framed as throughput, the same team producing more, never as headcount. The facilitator never confirms or denies which company a case is drawn from. Recommended: Renan tells the participants concerned before Friday that a disguised version of an engagement they may know will be used, and asks them not to fill gaps from memory.
+Some participants may come from the companies behind the five cases. The case packs follow five rules: company, site, product and people names are replaced; every financial figure is scaled and rounded; the project and the site data are invented for the exercise; internal politics and the investor relationship are left out; gains are framed as throughput, the same team producing more, never as headcount. The facilitator never confirms or denies which company a case is drawn from. Recommended: Renan tells the participants concerned before Friday that a disguised version of an engagement they may know will be used, and asks them not to fill gaps from memory.
 
 ## Exam logistics (Friday 14:45 to 16:45)
 
@@ -149,7 +149,7 @@ Every session has the same set: the deck (`.dc.html`, OSS identity, opens in the
 | `Day 3 - The technology` | D3 AM, Plant systems and data (Nicolas) | `D3 AM - Deck - Plant systems and data.dc.html` | `D3 AM - Facilitator guide.md` | `D3 AM - Exercises.md` (IT landscape, systems map, access plan) |
 | | D3 PM, AI fundamentals and the build lab (Nicolas) | `D3 PM - Deck - AI fundamentals and the build lab.dc.html` | `D3 PM - Facilitator guide.md` | `D3 PM - Exercises.md`, `D3 PM - Lab kit - Plant Pulse v1.zip` |
 | `Day 4 - The obstacles` | D4 PM, What goes wrong, and how it scales (Renan); a half day, the former morning and role-plays are in `_archive/` | `D4 PM - Deck - Obstacles and scaling.dc.html` | `D4 PM - Facilitator guide.md` | `D4 PM - Exercises.md` (eight situation cards, the scale plan) |
-| `Day 5 - The full motion` | D5 AM, The full motion: two real cases (Renan) | `D5 AM - Deck - The full motion.dc.html` | `D5 AM - Facilitator guide.md` (with what really happened) | `D5 AM - Case pack A - Plastics compounder.md`, `D5 AM - Case pack B - Sock manufacturer.md`, `D5 AM - Exercises.md` |
+| `Day 5 - The full motion` | D5 AM, The full motion: the kickoff, five companies (Renan) | `public/resources/d5-am-the-full-motion.deck.md` (no designed deck yet) | `d5-am-the-full-motion.facilitator.md` (traps and model answers) | the five case packs `d5-am-case-1` to `d5-am-case-5`, `d5-am-the-full-motion.exercises.md` |
 | | D5 PM, Debrief, principles and the exam (Renan) | `D5 PM - Deck - Debrief and exam.dc.html` | `D5 PM - Facilitator guide.md` | `D5 PM - Exercises.md` (30/60/90, feedback, exam rules) |
 
 Shared assets (fonts, logos, brand photography, the deck stage) live in `shared/`. To change a deck, edit its `Deck content.md` and rebuild with `shared/tools/build-deck.js`, or edit the `.dc.html` directly.
