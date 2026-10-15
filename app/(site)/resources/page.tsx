@@ -97,7 +97,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
       </ol>
 
       {reading.length > 0 && (
-        <section className="border-t border-ink pt-6">
+        <section id="further-reading" className="scroll-mt-4 border-t border-ink pt-6">
           <h2 className="display text-27">Further reading</h2>
           <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {reading.map((r) => (
@@ -105,7 +105,9 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
                 <p className="text-13 text-steel">Reading</p>
                 <h3 className="mt-1 flex-1 text-17 font-semibold leading-snug">{r.title}</h3>
                 <p className="mt-2 text-15 text-steel">{r.by}</p>
-                <a href={r.href} target="_blank" rel="noopener noreferrer" className="link mt-4 text-15 font-semibold">Open</a>
+                {r.read
+                  ? <Link href={`/resources/read/${r.read}`} className="link mt-4 text-15 font-semibold">Read</Link>
+                  : <a href={r.href} target="_blank" rel="noopener noreferrer" className="link mt-4 text-15 font-semibold">Open</a>}
               </li>
             ))}
           </ul>

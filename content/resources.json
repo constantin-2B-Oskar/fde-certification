@@ -354,6 +354,15 @@
       ],
       "items": [
         {
+          "id": "d4-day3-feedback",
+          "kind": "reading",
+          "title": "Day 3 main feedback",
+          "summary": "The five points you raised on Day 3, and what changed: clearer exercise instructions, a Claude Code survival kit, data with traps, the link between theory and exercises, and the app-building part.",
+          "read": "d4-day3-feedback.md",
+          "href": "/resources/d4-day3-feedback.md",
+          "status": "available"
+        },
+        {
           "id": "d4-pre-read",
           "kind": "preread",
           "title": "Day 4 pre-read",
@@ -467,6 +476,22 @@
     }
   ],
   "furtherReading": [
+    {
+      "id": "fr-claude-code-survival-kit",
+      "title": "The Claude Code survival kit: prompting and checking the quality of the code",
+      "by": "FDE School",
+      "read": "fde-school-claude-code-survival-kit.md",
+      "href": "/resources/fde-school-claude-code-survival-kit.md",
+      "domains": [
+        "LLM",
+        "GAI"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
     {
       "id": "fr-kg-benchmark",
       "title": "A benchmark to understand the role of knowledge graphs on LLM accuracy for question answering on enterprise SQL databases",
