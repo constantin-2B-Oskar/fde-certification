@@ -97,8 +97,8 @@
           "id": "d1-recording",
           "kind": "video",
           "title": "Session recording",
-          "summary": "The Day 1 session on Circleback, with its transcript.",
-          "href": "https://circleback.ai/meetings/5rTdu1yN7UaWHj8WEWyzw?tab=transcript&t=0m0s",
+          "summary": "The session recordings, in the FDE School folder on Google Drive.",
+          "href": "https://drive.google.com/drive/folders/1bpgcQfC-WqQQLAMrqdK22-ROQAqTlkDn",
           "status": "available"
         }
       ]
@@ -195,8 +195,8 @@
           "id": "d2-recording",
           "kind": "video",
           "title": "Session recording",
-          "summary": "The Day 2 session on Circleback, with its transcript.",
-          "href": "https://circleback.ai/meetings/ZJ3DBEXVHORSvVvrCu22c?tab=transcript&t=1m2s",
+          "summary": "The session recordings, in the FDE School folder on Google Drive.",
+          "href": "https://drive.google.com/drive/folders/1bpgcQfC-WqQQLAMrqdK22-ROQAqTlkDn",
           "status": "available"
         }
       ]
@@ -334,9 +334,9 @@
           "id": "d3-recording",
           "kind": "video",
           "title": "Session recording",
-          "href": null,
-          "status": "coming_soon",
-          "summary": "The recording of the day, added after the session."
+          "href": "https://drive.google.com/drive/folders/1bpgcQfC-WqQQLAMrqdK22-ROQAqTlkDn",
+          "status": "available",
+          "summary": "The session recordings, in the FDE School folder on Google Drive."
         }
       ]
     },
@@ -396,9 +396,9 @@
           "id": "d4-recording",
           "kind": "video",
           "title": "Session recording",
-          "href": null,
-          "status": "coming_soon",
-          "summary": "The recording of the day, added after the session."
+          "href": "https://drive.google.com/drive/folders/1bpgcQfC-WqQQLAMrqdK22-ROQAqTlkDn",
+          "status": "available",
+          "summary": "The session recordings, in the FDE School folder on Google Drive."
         }
       ]
     },
@@ -544,9 +544,9 @@
           "id": "d5-recording",
           "kind": "video",
           "title": "Session recording",
-          "summary": "The recording of the day, added after the session.",
-          "href": null,
-          "status": "coming_soon"
+          "summary": "The session recordings, in the FDE School folder on Google Drive.",
+          "href": "https://drive.google.com/drive/folders/1bpgcQfC-WqQQLAMrqdK22-ROQAqTlkDn",
+          "status": "available"
         }
       ]
     }
