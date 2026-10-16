@@ -32,13 +32,17 @@ describe.skipIf(!hasDb)('attempt lifecycle (database)', async () => {
     expect((await A.saveAnswer(attemptId, 'GAI-9-999', 'a', false)).ok).toBe(false);
   });
 
-  it('refuses saves after the deadline plus grace, then lazy expiry finalizes as expired, idempotently', async () => {
-    await db().update(schema.attempts).set({ deadlineAt: new Date(Date.now() - 31_000) }).where(eq(schema.attempts.id, attemptId));
+  it('keeps an attempt open after its time runs out, accepts answers and a late submit, idempotently', async () => {
+    await db().update(schema.attempts).set({ deadlineAt: new Date(Date.now() - 3_600_000) }).where(eq(schema.attempts.id, attemptId));
     const { questions } = await A.runnerData((await A.getAttempt(attemptId))!);
-    expect(await A.saveAnswer(attemptId, questions[1].id, 'b', false)).toEqual({ ok: false, reason: 'closed' });
-    const a = await A.getAttemptFresh(attemptId);
-    expect(a?.status).toBe('expired');
+    expect(await A.saveAnswer(attemptId, questions[1].id, 'b', false)).toEqual({ ok: true });
+    expect((await A.getAttemptFresh(attemptId))?.status).toBe('in_progress');
+    await A.submitAttempt(attemptId, { [questions[2].id]: { o: 'c', f: false } });
+    const a = await A.getAttempt(attemptId);
+    expect(a?.status).toBe('submitted');
     expect(a?.correctCount).not.toBeNull();
+    const items = await db().select().from(schema.attemptItems).where(eq(schema.attemptItems.attemptId, attemptId));
+    expect(items.find((i) => i.questionId === questions[2].id)?.selectedOptionId).toBe('c'); // the late answer counted
     const before = JSON.stringify(a);
     expect(await A.finalize(attemptId, 'submitted')).toBe(false);
     expect(JSON.stringify(await A.getAttempt(attemptId))).toBe(before);

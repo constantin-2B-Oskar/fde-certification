@@ -112,7 +112,7 @@ Alone, on the template in the handout. You keep it; your future mentor reads it.
 
 - On fde-certification.vercel.app, in this room, on your laptop, plugged in.
 - No AI tools, no notes, no other tabs.
-- If your connection drops, reopen the page in the same browser; the timer keeps running on the server.
+- If your connection drops, reopen the page in the same browser. The timer is a guide: at zero, keep going and submit when ready.
 - If you do not pass, you can retake it after 24 hours.
 
 ---

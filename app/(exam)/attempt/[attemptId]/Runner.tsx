@@ -120,20 +120,22 @@ export function Runner({ attemptId, trackName, questions, initialAnswers, server
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // The server is the only clock: count down from its deadline, corrected for this device's clock offset.
+  // The timer is indicative: at zero nothing is submitted; the candidate keeps answering and submits when ready.
   useEffect(() => {
     const offset = serverNow - Date.now();
     let warned5 = deadline - serverNow <= 5 * 60_000;
     let warned1 = deadline - serverNow <= 60_000;
+    let overAnnounced = deadline - serverNow <= 0;
     const tick = () => {
       const left = deadline - (Date.now() + offset);
       setRemaining(left);
       if (!warned5 && left <= 5 * 60_000) { warned5 = true; setAnnouncement('5 minutes left'); }
       if (!warned1 && left <= 60_000) { warned1 = true; setAnnouncement('1 minute left'); }
-      if (left <= 0) submit();
+      if (!overAnnounced && left <= 0) { overAnnounced = true; setAnnouncement('The suggested time is over. You can keep answering and submit when you are ready.'); }
     };
     const id = setInterval(tick, 250);
     return () => clearInterval(id);
-  }, [deadline, serverNow, submit]);
+  }, [deadline, serverNow]);
 
   // Record leaving the exam tab (shown to admins, never blocking).
   useEffect(() => {
@@ -173,9 +175,16 @@ export function Runner({ attemptId, trackName, questions, initialAnswers, server
             <p className="font-semibold">{trackName}</p>
             <p className="tnum text-15 text-steel">Question {index + 1} of {total}. {answeredCount} answered.</p>
           </div>
-          <p className={`display tnum text-34 ${warning ? 'text-fail' : ''}`} aria-label={`Time left ${formatClock(remaining)}`}>
-            {formatClock(remaining)}
-          </p>
+          {remaining > 0 ? (
+            <p className={`display tnum text-34 ${warning ? 'text-fail' : ''}`} aria-label={`Suggested time left ${formatClock(remaining)}`}>
+              {formatClock(remaining)}
+            </p>
+          ) : (
+            <p className="text-right text-15 text-steel" aria-label="The suggested time is over">
+              <span className="display tnum block text-27 text-ink">+{formatClock(-remaining)}</span>
+              Time is up: keep going and submit when ready
+            </p>
+          )}
         </div>
       </div>
       <p className="sr-only" role="status" aria-live="polite">{announcement}</p>

@@ -40,7 +40,7 @@ export default async function ExamPage({ params }: { params: Promise<{ track: st
         <p>{track.questionCount} questions, {track.durationMinutes} minutes. That&apos;s about {secs} seconds per question, so skip what you don&apos;t know, flag it, and come back at the end.</p>
         <p>One right answer per question. Wrong answers cost nothing, so answer everything.</p>
         <p>Closed book: no notes, search or AI assistants. We record when you leave the exam tab.</p>
-        <p>Your answers save as you go. If your connection drops, reopen this page in the same browser to continue. The timer keeps running.</p>
+        <p>Your answers save as you go. If your connection drops, reopen this page in the same browser to continue. The timer is a guide: when it reaches zero you can keep answering, and nothing is sent until you submit.</p>
         <p>Pass mark: {pass}%.{track.cooldownHours > 0 && ` If you don't pass, you can retake after ${track.cooldownHours} hours.`}</p>
       </div>
       <h2 className="display mt-10 text-27">Your details</h2>

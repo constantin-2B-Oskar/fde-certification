@@ -13,7 +13,6 @@ const { attempts, attemptItems, certificates } = schema;
 export type Attempt = typeof attempts.$inferSelect;
 export type Certificate = typeof certificates.$inferSelect;
 
-export const GRACE_MS = 30_000;
 
 export const ORGANIZATION_TYPES = [
   { id: 'devoteam', label: 'Devoteam' },
@@ -47,12 +46,7 @@ export async function startAttempt(input: StartInput, holdsCookie: (attemptId: s
   if (!track) return { kind: 'closed' };
   const email = normalizeEmail(input.email);
 
-  // Lazy expiry first, so an abandoned attempt never blocks its owner.
-  const previous = await db().select().from(attempts)
-    .where(and(eq(attempts.email, email), eq(attempts.trackId, track.id)))
-    .orderBy(desc(attempts.startedAt));
-  for (const a of previous) if (a.status === 'in_progress') await finalizeIfDue(a);
-
+  // No lazy expiry: the timer is indicative, so an attempt whose time ran out is resumed, never closed (step 2).
   // 1. A valid certificate already exists.
   const [cert] = await db().select().from(certificates)
     .where(and(eq(certificates.email, email), eq(certificates.trackId, track.id),
@@ -110,28 +104,12 @@ export async function getAttempt(attemptId: string): Promise<Attempt | undefined
   return a;
 }
 
-/** Reads an attempt, finalizing it first when its deadline plus grace has passed. */
+/**
+ * Reads an attempt. The timer is indicative (Renan, 16 October): an attempt is never closed because its time ran out,
+ * only when the candidate submits it, so there is no lazy expiry here any more.
+ */
 export async function getAttemptFresh(attemptId: string): Promise<Attempt | undefined> {
-  const a = await getAttempt(attemptId);
-  if (a && a.status === 'in_progress' && (await finalizeIfDue(a))) return getAttempt(attemptId);
-  return a;
-}
-
-export function isPastGrace(a: Pick<Attempt, 'deadlineAt'>, now = new Date()): boolean {
-  return now.getTime() > a.deadlineAt.getTime() + GRACE_MS;
-}
-
-/** Lazy expiry. Returns true when the attempt was finalized by this call. */
-export async function finalizeIfDue(a: Attempt): Promise<boolean> {
-  if (a.status !== 'in_progress' || !isPastGrace(a)) return false;
-  return finalize(a.id, 'expired');
-}
-
-/** Finalizes all overdue attempts (used by admin pages before listing). */
-export async function finalizeOverdue(): Promise<void> {
-  const overdue = await db().select().from(attempts)
-    .where(and(eq(attempts.status, 'in_progress'), sql`${attempts.deadlineAt} < now() - interval '30 seconds'`));
-  for (const a of overdue) await finalize(a.id, 'expired');
+  return getAttempt(attemptId);
 }
 
 /**
@@ -225,7 +203,7 @@ export type SaveResult = { ok: true } | { ok: false; reason: 'closed' | 'unknown
 
 export async function saveAnswer(attemptId: string, questionId: string, optionId: OptionId | null, flagged: boolean): Promise<SaveResult> {
   const a = await getAttempt(attemptId);
-  if (!a || a.status !== 'in_progress' || isPastGrace(a)) return { ok: false, reason: 'closed' };
+  if (!a || a.status !== 'in_progress') return { ok: false, reason: 'closed' };
   const res = await db().update(attemptItems)
     .set({ selectedOptionId: optionId, flagged, answeredAt: new Date() })
     .where(and(eq(attemptItems.attemptId, attemptId), eq(attemptItems.questionId, questionId)))
@@ -235,22 +213,20 @@ export async function saveAnswer(attemptId: string, questionId: string, optionId
 
 export type AnswerMap = Record<string, { o: OptionId | null; f: boolean }>;
 
-/** Upserts the full answer map (only within deadline plus grace), then finalizes. */
+/** Upserts the full answer map, then finalizes. Accepted at any time: the timer is indicative. */
 export async function submitAttempt(attemptId: string, answers: AnswerMap): Promise<void> {
   const a = await getAttempt(attemptId);
   if (!a || a.status !== 'in_progress') return;
-  if (!isPastGrace(a)) {
-    const items = await db().select().from(attemptItems).where(eq(attemptItems.attemptId, attemptId));
-    const now = new Date();
-    for (const it of items) {
-      const ans = answers[it.questionId];
-      if (!ans) continue;
-      if (ans.o === it.selectedOptionId && ans.f === it.flagged) continue;
-      await db().update(attemptItems).set({ selectedOptionId: ans.o, flagged: ans.f, answeredAt: now })
-        .where(and(eq(attemptItems.attemptId, attemptId), eq(attemptItems.questionId, it.questionId)));
-    }
+  const items = await db().select().from(attemptItems).where(eq(attemptItems.attemptId, attemptId));
+  const now = new Date();
+  for (const it of items) {
+    const ans = answers[it.questionId];
+    if (!ans) continue;
+    if (ans.o === it.selectedOptionId && ans.f === it.flagged) continue;
+    await db().update(attemptItems).set({ selectedOptionId: ans.o, flagged: ans.f, answeredAt: now })
+      .where(and(eq(attemptItems.attemptId, attemptId), eq(attemptItems.questionId, it.questionId)));
   }
-  await finalize(attemptId, isPastGrace(a) ? 'expired' : 'submitted');
+  await finalize(attemptId, 'submitted');
 }
 
 export async function reportFocusLoss(attemptId: string): Promise<void> {
@@ -291,7 +267,5 @@ export async function inProgressAttemptsAmong(ids: string[], trackId: string): P
   if (!ids.length) return [];
   const rows = await db().select().from(attempts)
     .where(and(inArray(attempts.id, ids), eq(attempts.trackId, trackId), eq(attempts.status, 'in_progress')));
-  const live: Attempt[] = [];
-  for (const a of rows) if (!(await finalizeIfDue(a))) live.push(a);
-  return live;
+  return rows; // never closed for time: the timer is indicative
 }

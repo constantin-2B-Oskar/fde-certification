@@ -38,5 +38,5 @@ Answer on the site, on the **Feedback** page (`/feedback`): eight ratings from 1
 
 - FDE Certification track at fde-certification.vercel.app. 240 questions, 120 minutes, pass mark 65%, closed book.
 - Your laptop, plugged in, on the room Wi-Fi. No AI tools, no notes, no other tabs.
-- If your connection drops, reopen the page in the same browser and continue. The timer keeps running on the server.
+- If your connection drops, reopen the page in the same browser and continue. The timer is a guide: when it reaches zero, keep going and submit when you are ready.
 - If you do not pass, you can retake it after 24 hours.
