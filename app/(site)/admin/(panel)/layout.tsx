@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { requireAdmin } from '@/lib/admin/guard';
 
 const LINKS = [
-  ['/admin', 'Overview'], ['/admin/attempts', 'Attempts'], ['/admin/certificates', 'Certificates'],
+  ['/admin', 'Overview'], ['/admin/attempts', 'Attempts'], ['/admin/results', 'Results'], ['/admin/certificates', 'Certificates'],
   ['/admin/questions', 'Questions'], ['/admin/humans', 'Community'], ['/admin/feedback', 'Feedback'], ['/admin/data', 'Data'],
 ];
 

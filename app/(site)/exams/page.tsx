@@ -9,7 +9,7 @@ export default function ExamsPage() {
     <div className="space-y-14">
       <section id="exams" aria-labelledby="tracks-h">
         <h1 id="tracks-h" className="display text-44">Exams</h1>
-        <p className="prose-width mt-2">Pick the track that matches your role, study the material for it, then take the exam.</p>
+        <p className="prose-width mt-2">Pick the track that matches your role, study the material for it, then take the exam. <Link className="link" href="/exams/results">See the FDE Certification results</Link>.</p>
         <table className="data mt-4 hidden sm:table">
           <thead>
             <tr><th scope="col">Track</th><th scope="col">Who it&apos;s for</th><th scope="col">Exam</th><th scope="col">Pass mark</th><th scope="col"><span className="sr-only">Action</span></th></tr>
