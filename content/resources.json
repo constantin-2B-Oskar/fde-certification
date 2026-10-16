@@ -71,7 +71,8 @@
           "summary": "The morning lab: brief, rules for Claude Code, 90 days of shift logs and the data dictionary. Clone it and ship a dashboard.",
           "page": "/resources/polymex",
           "href": "/resources/fde-school-day1-participant-kit.zip",
-          "status": "available"
+          "status": "available",
+          "pageLabel": "Open the Polymex page"
         },
         {
           "id": "d1-slides-pm",
@@ -418,6 +419,29 @@
       ],
       "items": [
         {
+          "id": "d5-day4-feedback",
+          "kind": "reading",
+          "title": "Day 4 main feedback",
+          "summary": "The four points you raised on Day 4, and what changed: shorter theory, more exercises in the morning, a real ontology shown, and a simple example of an ontology.",
+          "read": "d5-day4-feedback.md",
+          "href": "/resources/d5-day4-feedback.md",
+          "status": "available"
+        },
+        {
+          "id": "d5-simple-ontology",
+          "kind": "reading",
+          "title": "A simple ontology, step by step",
+          "summary": "The ontology of a two-oven bakery in five steps, the same five steps at Lyon, a twenty-minute exercise, and where to see a real ontology in production.",
+          "read": "fde-school-a-simple-ontology.md",
+          "href": "/resources/fde-school-a-simple-ontology.md",
+          "status": "available",
+          "tracks": [
+            "exco",
+            "manager",
+            "fde"
+          ]
+        },
+        {
           "id": "d5-pre-read",
           "kind": "preread",
           "title": "Day 5 pre-read",
@@ -500,10 +524,20 @@
         {
           "id": "d5-plan",
           "kind": "template",
-          "title": "Your 30/60/90 plan, feedback and exam rules",
-          "summary": "The 30/60/90 template for your first deployment, the feedback form and the exam rules read aloud at 14:40.",
+          "title": "Your 30/60/90 plan and exam rules",
+          "summary": "The 30/60/90 template for your first deployment and the exam rules read aloud at 14:40.",
           "read": "d5-pm-debrief-and-exam.exercises.md",
           "href": "/resources/d5-pm-debrief-and-exam.exercises.md",
+          "status": "available"
+        },
+        {
+          "id": "d5-feedback",
+          "kind": "template",
+          "title": "Feedback on the week",
+          "summary": "The end-of-week feedback form, ten minutes, before certificates. Answer on the site; your name is optional and only the trainers read the answers.",
+          "page": "/feedback",
+          "pageLabel": "Give your feedback",
+          "href": null,
           "status": "available"
         },
         {
@@ -532,6 +566,499 @@
         "exco",
         "manager",
         "fde"
+      ],
+      "theme": "Start here",
+      "kind": "guide"
+    },
+    {
+      "id": "fr-simple-ontology",
+      "theme": "Start here",
+      "kind": "guide",
+      "title": "A simple ontology, step by step",
+      "by": "FDE School",
+      "read": "fde-school-a-simple-ontology.md",
+      "href": "/resources/fde-school-a-simple-ontology.md",
+      "domains": [
+        "ONT"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-palantir-fdse",
+      "theme": "The FDE role",
+      "kind": "video",
+      "title": "The role of a Forward Deployed Software Engineer",
+      "by": "Palantir, on YouTube",
+      "href": "https://www.youtube.com/watch?v=5OYy_UtINo4",
+      "domains": [
+        "DEP"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-fde-dirty-secret",
+      "theme": "The FDE role",
+      "kind": "video",
+      "title": "The dirty secret of forward deployed engineering",
+      "by": "Natalie Meurer, AI Engineer conference",
+      "href": "https://www.youtube.com/watch?v=Byv311hdoHE",
+      "domains": [
+        "DEP"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-mom-test",
+      "theme": "The FDE role",
+      "kind": "book",
+      "title": "The Mom Test: how to talk to customers and learn if your business is a good idea",
+      "by": "Rob Fitzpatrick, 2013",
+      "href": "https://www.momtestbook.com/",
+      "domains": [
+        "DEP"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-ng-electricity",
+      "theme": "The FDE role",
+      "kind": "video",
+      "title": "Artificial intelligence is the new electricity",
+      "by": "Andrew Ng, Stanford Graduate School of Business",
+      "href": "https://www.youtube.com/watch?v=21EiKfQYZXc",
+      "domains": [
+        "GAI"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-karpathy-intro",
+      "theme": "AI, language models and agents",
+      "kind": "video",
+      "title": "Intro to large language models (1 hour)",
+      "by": "Andrej Karpathy",
+      "href": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+      "domains": [
+        "LLM",
+        "GAI"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-karpathy-deep",
+      "theme": "AI, language models and agents",
+      "kind": "video",
+      "title": "Deep dive into LLMs like ChatGPT (3.5 hours)",
+      "by": "Andrej Karpathy",
+      "href": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-3b1b-brief",
+      "theme": "AI, language models and agents",
+      "kind": "video",
+      "title": "Large language models explained briefly (8 minutes)",
+      "by": "3Blue1Brown",
+      "href": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+      "domains": [
+        "LLM",
+        "GAI"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-3b1b-transformers",
+      "theme": "AI, language models and agents",
+      "kind": "video",
+      "title": "Transformers, the tech behind LLMs",
+      "by": "3Blue1Brown",
+      "href": "https://www.youtube.com/watch?v=wjZofJX0v4M",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-ibm-rag",
+      "theme": "AI, language models and agents",
+      "kind": "video",
+      "title": "What is retrieval-augmented generation (RAG)?",
+      "by": "IBM Technology",
+      "href": "https://www.youtube.com/watch?v=T-D1OfcDW1M",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-ng-agentic",
+      "theme": "AI, language models and agents",
+      "kind": "video",
+      "title": "What's next for AI agentic workflows",
+      "by": "Andrew Ng, at Sequoia Capital",
+      "href": "https://www.youtube.com/watch?v=sal78ACtGTc",
+      "domains": [
+        "LLM",
+        "GAI"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-anthropic-agents-video",
+      "theme": "AI, language models and agents",
+      "kind": "video",
+      "title": "Building more effective AI agents",
+      "by": "Anthropic, on YouTube",
+      "href": "https://www.youtube.com/watch?v=uhJJgc-0iTQ",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-anthropic-agents",
+      "theme": "AI, language models and agents",
+      "kind": "article",
+      "title": "Building effective agents",
+      "by": "Anthropic engineering blog",
+      "href": "https://www.anthropic.com/engineering/building-effective-agents",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-anthropic-context",
+      "theme": "AI, language models and agents",
+      "kind": "article",
+      "title": "Effective context engineering for AI agents",
+      "by": "Anthropic engineering blog",
+      "href": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-claude-code-practices",
+      "theme": "AI, language models and agents",
+      "kind": "article",
+      "title": "Claude Code best practices",
+      "by": "Anthropic engineering blog",
+      "href": "https://www.anthropic.com/engineering/claude-code-best-practices",
+      "domains": [
+        "LLM",
+        "DEP"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-prompt-engineering",
+      "theme": "AI, language models and agents",
+      "kind": "article",
+      "title": "Prompt engineering overview",
+      "by": "Anthropic documentation",
+      "href": "https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-evals",
+      "theme": "AI, language models and agents",
+      "kind": "article",
+      "title": "Your AI product needs evals",
+      "by": "Hamel Husain",
+      "href": "https://hamel.dev/blog/posts/evals/",
+      "domains": [
+        "LLM",
+        "RSK"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-llm-patterns",
+      "theme": "AI, language models and agents",
+      "kind": "article",
+      "title": "Patterns for building LLM-based systems and products",
+      "by": "Eugene Yan",
+      "href": "https://eugeneyan.com/writing/llm-patterns/",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-genai-platform",
+      "theme": "AI, language models and agents",
+      "kind": "article",
+      "title": "Building a generative AI platform",
+      "by": "Chip Huyen, 2024",
+      "href": "https://huyenchip.com/2024/07/25/genai-platform.html",
+      "domains": [
+        "LLM",
+        "RSK"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-ai-engineering",
+      "theme": "AI, language models and agents",
+      "kind": "book",
+      "title": "AI Engineering: building applications with foundation models",
+      "by": "Chip Huyen, O'Reilly, 2025",
+      "href": "https://huyenchip.com/books/",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-co-intelligence",
+      "theme": "AI, language models and agents",
+      "kind": "book",
+      "title": "Co-Intelligence: living and working with AI",
+      "by": "Ethan Mollick, 2024",
+      "href": "https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/",
+      "domains": [
+        "GAI"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-prediction-machines",
+      "theme": "AI, language models and agents",
+      "kind": "book",
+      "title": "Prediction Machines, and its sequel Power and Prediction",
+      "by": "Ajay Agrawal, Joshua Gans, Avi Goldfarb",
+      "href": "https://www.predictionmachines.ai/",
+      "domains": [
+        "GAI",
+        "VAL"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-attention-paper",
+      "theme": "AI, language models and agents",
+      "kind": "paper",
+      "title": "Attention is all you need (the transformer paper)",
+      "by": "Vaswani et al., 2017",
+      "href": "https://arxiv.org/abs/1706.03762",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-rag-paper",
+      "theme": "AI, language models and agents",
+      "kind": "paper",
+      "title": "Retrieval-augmented generation for knowledge-intensive NLP tasks",
+      "by": "Lewis et al., 2020",
+      "href": "https://arxiv.org/abs/2005.11401",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-hf-course",
+      "theme": "AI, language models and agents",
+      "kind": "course",
+      "title": "The LLM course (free)",
+      "by": "Hugging Face",
+      "href": "https://huggingface.co/learn/llm-course",
+      "domains": [
+        "LLM"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-ai-for-everyone",
+      "theme": "AI, language models and agents",
+      "kind": "course",
+      "title": "AI for Everyone (free to audit)",
+      "by": "Andrew Ng, DeepLearning.AI on Coursera",
+      "href": "https://www.coursera.org/learn/ai-for-everyone",
+      "domains": [
+        "GAI"
+      ],
+      "tracks": [
+        "exco",
+        "manager"
+      ]
+    },
+    {
+      "id": "fr-palantir-ontology-video",
+      "theme": "Ontology and data",
+      "kind": "video",
+      "title": "Palantir ontology overview: a real ontology, shown",
+      "by": "Palantir, on YouTube",
+      "href": "https://www.youtube.com/watch?v=YDAxITCNcko",
+      "domains": [
+        "ONT"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-palantir-ontology-oil",
+      "theme": "Ontology and data",
+      "kind": "video",
+      "title": "The ontology in a real case: oil and gas infrastructure",
+      "by": "Palantir, on YouTube",
+      "href": "https://www.youtube.com/watch?v=UVNAWRN1nCg",
+      "domains": [
+        "ONT"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-first-ontology",
+      "theme": "Ontology and data",
+      "kind": "video",
+      "title": "Deep dive: creating your first ontology",
+      "by": "Ontologize, on YouTube",
+      "href": "https://www.youtube.com/watch?v=wP5g8uXvPbg",
+      "domains": [
+        "ONT"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-palantir-ontology-docs",
+      "theme": "Ontology and data",
+      "kind": "article",
+      "title": "The ontology: object types, properties, links and actions",
+      "by": "Palantir Foundry documentation",
+      "href": "https://www.palantir.com/docs/foundry/ontology/overview/",
+      "domains": [
+        "ONT"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-knowledge-graph",
+      "theme": "Ontology and data",
+      "kind": "article",
+      "title": "What is a knowledge graph?",
+      "by": "Ontotext",
+      "href": "https://www.ontotext.com/knowledgehub/fundamentals/what-is-a-knowledge-graph/",
+      "domains": [
+        "ONT"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-ddia",
+      "theme": "Ontology and data",
+      "kind": "book",
+      "title": "Designing Data-Intensive Applications",
+      "by": "Martin Kleppmann, O'Reilly",
+      "href": "https://dataintensive.net/",
+      "domains": [
+        "DAT"
+      ],
+      "tracks": [
+        "fde"
       ]
     },
     {
@@ -547,7 +1074,9 @@
         "exco",
         "manager",
         "fde"
-      ]
+      ],
+      "theme": "Ontology and data",
+      "kind": "paper"
     },
     {
       "id": "fr-ontology-repair",
@@ -561,7 +1090,9 @@
       "tracks": [
         "manager",
         "fde"
-      ]
+      ],
+      "theme": "Ontology and data",
+      "kind": "paper"
     },
     {
       "id": "fr-oss-essays",
@@ -574,6 +1105,260 @@
       ],
       "tracks": [
         "exco",
+        "manager",
+        "fde"
+      ],
+      "theme": "Ontology and data",
+      "kind": "article"
+    },
+    {
+      "id": "fr-the-goal",
+      "theme": "Operations",
+      "kind": "book",
+      "title": "The Goal: a process of ongoing improvement",
+      "by": "Eliyahu Goldratt, 1984",
+      "href": "https://en.wikipedia.org/wiki/The_Goal_(novel)",
+      "domains": [
+        "OPS"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-goldratt-toc",
+      "theme": "Operations",
+      "kind": "video",
+      "title": "Eli Goldratt on what the theory of constraints is",
+      "by": "TOCICO",
+      "href": "https://www.youtube.com/watch?v=W18n8m97uuk",
+      "domains": [
+        "OPS"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-tps-toyota",
+      "theme": "Operations",
+      "kind": "video",
+      "title": "Toyota Production System: the overview shown by Toyota",
+      "by": "Toyota, shared by LeanSensei",
+      "href": "https://www.youtube.com/watch?v=cUFgFYQZ1TY",
+      "domains": [
+        "OPS"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-toyota-way",
+      "theme": "Operations",
+      "kind": "book",
+      "title": "The Toyota Way",
+      "by": "Jeffrey Liker, 2004",
+      "href": "https://en.wikipedia.org/wiki/The_Toyota_Way",
+      "domains": [
+        "OPS",
+        "CHG"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-factory-physics",
+      "theme": "Operations",
+      "kind": "book",
+      "title": "Factory Physics",
+      "by": "Wallace Hopp and Mark Spearman",
+      "href": "https://en.wikipedia.org/wiki/Factory_Physics",
+      "domains": [
+        "OPS"
+      ],
+      "tracks": [
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-thinking-systems",
+      "theme": "Operations",
+      "kind": "book",
+      "title": "Thinking in Systems: a primer",
+      "by": "Donella Meadows, 2008",
+      "href": "https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer",
+      "domains": [
+        "OPS"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-phoenix",
+      "theme": "Operations",
+      "kind": "book",
+      "title": "The Phoenix Project (The Goal, retold for IT)",
+      "by": "Gene Kim, Kevin Behr, George Spafford",
+      "href": "https://en.wikipedia.org/wiki/The_Phoenix_Project",
+      "domains": [
+        "OPS",
+        "DEP"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-pyramid",
+      "theme": "Value, strategy and the message",
+      "kind": "book",
+      "title": "The Pyramid Principle: logic in writing and thinking",
+      "by": "Barbara Minto",
+      "href": "https://www.barbaraminto.com/",
+      "domains": [
+        "DEP"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-good-strategy",
+      "theme": "Value, strategy and the message",
+      "kind": "book",
+      "title": "Good Strategy / Bad Strategy",
+      "by": "Richard Rumelt, 2011",
+      "href": "https://www.goodreads.com/book/show/11721966-good-strategy-bad-strategy",
+      "domains": [
+        "VAL"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-j-curve",
+      "theme": "Value, strategy and the message",
+      "kind": "paper",
+      "title": "The productivity J-curve: how intangibles complement general purpose technologies",
+      "by": "Brynjolfsson, Rock, Syverson, NBER",
+      "href": "https://www.nber.org/papers/w25148",
+      "domains": [
+        "VAL",
+        "GAI"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-dynamo",
+      "theme": "Value, strategy and the message",
+      "kind": "paper",
+      "title": "The dynamo and the computer: why productivity gains take decades",
+      "by": "Paul David, 1990",
+      "href": "https://www.jstor.org/stable/2006600",
+      "domains": [
+        "CHG",
+        "GAI"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-switch",
+      "theme": "Change and people",
+      "kind": "book",
+      "title": "Switch: how to change things when change is hard",
+      "by": "Chip and Dan Heath, 2010",
+      "href": "https://heathbrothers.com/books/switch/",
+      "domains": [
+        "CHG"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-getting-to-yes",
+      "theme": "Change and people",
+      "kind": "book",
+      "title": "Getting to Yes: negotiating agreement without giving in",
+      "by": "Roger Fisher and William Ury",
+      "href": "https://en.wikipedia.org/wiki/Getting_to_Yes",
+      "domains": [
+        "CHG"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-kotter",
+      "theme": "Change and people",
+      "kind": "article",
+      "title": "Leading change: why transformation efforts fail",
+      "by": "John Kotter, Harvard Business Review, 1995",
+      "href": "https://hbr.org/1995/05/leading-change-why-transformation-efforts-fail-2",
+      "domains": [
+        "CHG"
+      ],
+      "tracks": [
+        "exco",
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-bridges",
+      "theme": "Change and people",
+      "kind": "book",
+      "title": "Managing Transitions: making the most of change",
+      "by": "William Bridges",
+      "href": "https://www.wmbridges.com/books/",
+      "domains": [
+        "CHG"
+      ],
+      "tracks": [
+        "manager",
+        "fde"
+      ]
+    },
+    {
+      "id": "fr-schein",
+      "theme": "Change and people",
+      "kind": "book",
+      "title": "Organizational Culture and Leadership",
+      "by": "Edgar Schein",
+      "href": "https://en.wikipedia.org/wiki/Edgar_Schein",
+      "domains": [
+        "CHG"
+      ],
+      "tracks": [
         "manager",
         "fde"
       ]

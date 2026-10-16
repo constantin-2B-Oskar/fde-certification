@@ -90,3 +90,13 @@ export const humans = pgTable('humans', {
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
 }, (t) => [index('humans_email_idx').on(t.email)]);
+
+/** End-of-week feedback, one row per submission (app/(site)/feedback). Answers are keyed by the question ids in lib/feedback.ts. */
+export const feedback = pgTable('feedback', {
+  id: uuid('id').primaryKey().default(sql`gen_random_uuid()`),
+  name: text('name').notNull().default(''), // optional: empty means anonymous
+  track: text('track').notNull().default(''),
+  readiness: integer('readiness'), // 1 to 5
+  answers: jsonb('answers').$type<Record<string, string>>().notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+}, (t) => [index('feedback_created_idx').on(t.createdAt)]);

@@ -5,6 +5,7 @@ import { requireAdmin } from './guard';
 import { db, schema } from '@/lib/db/client';
 import { sendCertificateEmail } from '@/lib/email/send';
 import { normalizeEmail } from '@/lib/exam/attempts';
+import { deleteFeedback } from '@/lib/feedback';
 
 const { attempts, attemptItems, certificates, certificateLookups, humans } = schema;
 
@@ -91,4 +92,10 @@ export async function deleteHumanAdmin(form: FormData) {
   await db().delete(humans).where(eq(humans.id, String(form.get('id'))));
   revalidatePath('/admin/humans');
   revalidatePath('/humans');
+}
+
+export async function deleteFeedbackAdmin(form: FormData) {
+  await requireAdmin();
+  await deleteFeedback(String(form.get('id')));
+  revalidatePath('/admin/feedback');
 }

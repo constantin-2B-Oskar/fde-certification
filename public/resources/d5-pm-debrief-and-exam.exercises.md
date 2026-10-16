@@ -21,8 +21,9 @@ FDE School, by Devoteam and OSS Ventures. Participant handout.
 
 ## Feedback form (10 minutes, before certificates)
 
-| Question | Your answer |
-|---|---|
+Answer on the site, on the **Feedback** page (`/feedback`): seven questions and how ready you feel for a first deployment, from 1 to 5. Your name is optional; only the trainers read the answers.
+
+---|---|
 | The session that taught you the most, and why | |
 | The session to cut or shorten | |
 | One thing missing from the week | |

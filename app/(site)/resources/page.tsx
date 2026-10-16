@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { FURTHER_READING, KIND_LABEL, SESSIONS } from '@/lib/content/resources';
+import { FURTHER_READING, KIND_LABEL, READING_KIND_LABEL, SESSIONS } from '@/lib/content/resources';
 import { DOMAIN_NAMES, TRACKS, type Domain, type PublicTrackId, type Track } from '@/lib/config/tracks';
 
 export const metadata: Metadata = { title: 'Resources' };
@@ -25,6 +25,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
   const fits = (tracks: string[]) => active === 'all' || tracks.includes(active);
   const sessions = SESSIONS.filter((s) => fits(s.tracks));
   const reading = FURTHER_READING.filter((r) => fits(r.tracks));
+  const themes = [...new Set(reading.map((r) => r.theme))];
   const sel: Track | null = active === 'all' ? null : TRACKS[active as PublicTrackId];
   const examCount = (d: string) => (sel ? sel.blueprint[d as Domain].reduce((a: number, b: number) => a + b, 0) : 0);
 
@@ -80,7 +81,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
                         <Link href={`/resources/read/${it.read}`} className={`link ${it.deck ? '' : 'font-semibold'}`}>{it.deck ? 'Read as text' : it.kind === 'slides' ? 'View slides' : 'Read'}</Link>
                       )}
                       {available && it.page && (
-                        <Link href={it.page} className="link font-semibold">Open the Polymex page</Link>
+                        <Link href={it.page} className="link font-semibold">{it.pageLabel ?? 'Open'}</Link>
                       )}
                       {available && it.href && (
                         <a href={it.href} {...(local ? { download: true } : { target: '_blank', rel: 'noopener noreferrer' })} className={`link ${it.read || it.page ? '' : 'font-semibold'}`}>
@@ -99,18 +100,24 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
       {reading.length > 0 && (
         <section id="further-reading" className="scroll-mt-4 border-t border-ink pt-6">
           <h2 className="display text-27">Further reading</h2>
-          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {reading.map((r) => (
-              <li key={r.id} className="flex flex-col border border-ink p-5">
-                <p className="text-13 text-steel">Reading</p>
-                <h3 className="mt-1 flex-1 text-17 font-semibold leading-snug">{r.title}</h3>
-                <p className="mt-2 text-15 text-steel">{r.by}</p>
-                {r.read
-                  ? <Link href={`/resources/read/${r.read}`} className="link mt-4 text-15 font-semibold">Read</Link>
-                  : <a href={r.href} target="_blank" rel="noopener noreferrer" className="link mt-4 text-15 font-semibold">Open</a>}
-              </li>
-            ))}
-          </ul>
+          <p className="prose-width mt-2 text-steel">To go further after the week: guides, videos, books, articles and papers, by theme.</p>
+          {themes.map((theme) => (
+            <div key={theme} className="mt-8">
+              <h3 className="text-21 font-semibold">{theme}</h3>
+              <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {reading.filter((r) => r.theme === theme).map((r) => (
+                  <li key={r.id} className="flex flex-col border border-ink p-5">
+                    <p className="text-13 text-steel">{READING_KIND_LABEL[r.kind]}</p>
+                    <h4 className="mt-1 flex-1 text-17 font-semibold leading-snug">{r.title}</h4>
+                    <p className="mt-2 text-15 text-steel">{r.by}</p>
+                    {r.read
+                      ? <Link href={`/resources/read/${r.read}`} className="link mt-4 text-15 font-semibold">Read</Link>
+                      : <a href={r.href} target="_blank" rel="noopener noreferrer" className="link mt-4 text-15 font-semibold">{r.kind === 'video' ? 'Watch' : 'Open'}</a>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </section>
       )}
     </div>

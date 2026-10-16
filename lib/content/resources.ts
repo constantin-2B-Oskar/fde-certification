@@ -2,13 +2,18 @@ import data from '@/content/resources.json';
 
 export type ResourceKind = 'preread' | 'slides' | 'video' | 'reading' | 'template' | 'dataset' | 'exercise';
 /** `deck`: the slides as an HTML file in public/resources/, opened as is; `read`: a Markdown file in public/resources/ shown on the site; `page`: a dedicated page on the site; `href`: the file to download or open. */
-export type ResourceItem = { id: string; kind: ResourceKind; title: string; summary?: string; deck?: string; read?: string; page?: string; href: string | null; status: 'available' | 'coming_soon'; duration?: string; tracks?: string[] };
+export type ResourceItem = { id: string; kind: ResourceKind; title: string; summary?: string; deck?: string; read?: string; page?: string; pageLabel?: string; href: string | null; status: 'available' | 'coming_soon'; duration?: string; tracks?: string[] };
 export type Session = { id: string; title: string; summary: string; tracks: string[]; domains: string[]; items: ResourceItem[] };
-/** `read`: a Markdown file in public/resources/ shown on the site; `href`: the link to open, or the file to download when `read` is set. */
-export type Reading = { id: string; title: string; by: string; read?: string; href: string; domains: string[]; tracks: string[] };
+export type ReadingKind = 'guide' | 'video' | 'book' | 'article' | 'paper' | 'course';
+/** `theme`: the heading it is listed under; `read`: a Markdown file in public/resources/ shown on the site; `href`: the link to open, or the file to download when `read` is set. */
+export type Reading = { id: string; theme: string; kind: ReadingKind; title: string; by: string; read?: string; href: string; domains: string[]; tracks: string[] };
 
 export const SESSIONS = data.sessions as Session[];
 export const FURTHER_READING = data.furtherReading as Reading[];
+
+export const READING_KIND_LABEL: Record<ReadingKind, string> = {
+  guide: 'Guide', video: 'Video', book: 'Book', article: 'Article', paper: 'Paper', course: 'Course',
+};
 
 export const KIND_LABEL: Record<ResourceKind, string> = {
   preread: 'Pre-read', slides: 'Slides', video: 'Video', reading: 'Reading', template: 'Template', dataset: 'Lab kit', exercise: 'Exercises',
