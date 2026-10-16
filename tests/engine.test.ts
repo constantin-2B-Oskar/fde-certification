@@ -110,4 +110,8 @@ describe('admin statistics', () => {
     expect(median([4, 1, 2, 3])).toBe(2.5);
     expect(median([])).toBeNull();
   });
+  it('counts a neutralized question as correct for everyone', () => {
+    const r = score([{ domain: 'OPS', selected: 'b', answer: 'a', neutral: true }, { domain: 'OPS', selected: null, answer: 'a', neutral: true }, { domain: 'OPS', selected: 'b', answer: 'a' }], 0.5);
+    expect([r.correct, r.passed, r.marks]).toEqual([2, true, [true, true, false]]);
+  });
 });

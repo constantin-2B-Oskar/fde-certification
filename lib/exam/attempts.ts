@@ -9,7 +9,7 @@ import { score } from './score';
 import { newCertificateId } from '@/lib/certs/id';
 import { sendCertificateEmail } from '@/lib/email/send';
 
-const { attempts, attemptItems, certificates } = schema;
+const { attempts, attemptItems, certificates, neutralizedQuestions } = schema;
 export type Attempt = typeof attempts.$inferSelect;
 export type Certificate = typeof certificates.$inferSelect;
 
@@ -122,9 +122,11 @@ export async function finalize(attemptId: string, how: 'submitted' | 'expired'):
     if (!a || a.status !== 'in_progress') return null;
     const track = getTrack(a.trackId) ?? fallbackTrack(a.trackId);
     const items = await tx.select().from(attemptItems).where(eq(attemptItems.attemptId, attemptId)).orderBy(attemptItems.position);
+    const neutral = new Set((await tx.select({ q: neutralizedQuestions.questionId }).from(neutralizedQuestions)
+      .where(eq(neutralizedQuestions.trackId, a.trackId))).map((r) => r.q));
     const result = score(items.map((it) => {
       const q = getQuestion(it.questionId);
-      return { domain: q?.domain ?? it.questionId.slice(0, 3), selected: it.selectedOptionId, answer: q?.answer ?? '?' };
+      return { domain: q?.domain ?? it.questionId.slice(0, 3), selected: it.selectedOptionId, answer: q?.answer ?? '?', neutral: neutral.has(it.questionId) };
     }), track.passMark);
 
     const correctIds = items.filter((_, i) => result.marks[i]).map((it) => it.questionId);
@@ -216,7 +218,7 @@ export function addMonths(d: Date, months: number): Date {
   return r;
 }
 
-async function issueCertificate(tx: Tx, a: Attempt, track: Track, scorePct: number, now: Date): Promise<Certificate> {
+export async function issueCertificate(tx: Tx, a: Attempt, track: Track, scorePct: number, now: Date): Promise<Certificate> {
   for (let i = 0; i < 5; i++) {
     const id = newCertificateId(track.certPrefix, now.getUTCFullYear());
     const rows = await tx.insert(certificates).values({

@@ -100,3 +100,11 @@ export const feedback = pgTable('feedback', {
   answers: jsonb('answers').$type<Record<string, string>>().notNull(),
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
 }, (t) => [index('feedback_created_idx').on(t.createdAt)]);
+
+/** Questions neutralized for a track after a sitting (judged flawed): they count as correct for every candidate. */
+export const neutralizedQuestions = pgTable('neutralized_questions', {
+  trackId: text('track_id').notNull(),
+  questionId: text('question_id').notNull(),
+  correctRate: numeric('correct_rate', { precision: 5, scale: 2 }), // share answering correctly when neutralized, in %
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+}, (t) => [primaryKey({ columns: [t.trackId, t.questionId] })]);

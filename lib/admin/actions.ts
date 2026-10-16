@@ -7,6 +7,7 @@ import { sendCertificateEmail } from '@/lib/email/send';
 import { normalizeEmail } from '@/lib/exam/attempts';
 import { deleteFeedback } from '@/lib/feedback';
 import { regradeTrack } from '@/lib/exam/attempts';
+import { NEUTRALIZE_MIN_SERVED, neutralizeAndRescore, questionDifficulty } from '@/lib/exam/neutralize';
 import { redirect } from 'next/navigation';
 
 const { attempts, attemptItems, certificates, certificateLookups, humans } = schema;
@@ -107,4 +108,15 @@ export async function regradeFde() {
   const { upgraded } = await regradeTrack('fde');
   revalidatePath('/admin/results');
   redirect(`/admin/results?regraded=${upgraded}`);
+}
+
+/** Neutralizes the FDE questions below the chosen success rate (recomputed here, never trusted from the form), then re-scores. */
+export async function neutralizeFde(form: FormData) {
+  await requireAdmin();
+  const threshold = Number(form.get('threshold'));
+  if (![25, 30, 35].includes(threshold)) return;
+  const flagged = (await questionDifficulty('fde')).filter((q) => !q.neutralized && q.served >= NEUTRALIZE_MIN_SERVED && q.correctPct < threshold);
+  const { upgraded } = await neutralizeAndRescore('fde', flagged.map((q) => q.questionId), Object.fromEntries(flagged.map((q) => [q.questionId, q.correctPct])));
+  revalidatePath('/admin/results');
+  redirect(`/admin/results?neutralized=${flagged.length}&upgraded=${upgraded}`);
 }
