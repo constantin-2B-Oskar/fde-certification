@@ -1363,5 +1363,62 @@
         "fde"
       ]
     }
+  ],
+  "paperboards": [
+    {
+      "file": "/resources/img/paperboards/01-fishbone-and-variation.jpg",
+      "title": "The five Ms, and variation against the limit",
+      "caption": "A fishbone (Ishikawa) diagram with its five Ms, then a process whose spread sits too close to its limit: the losses are in the tail."
+    },
+    {
+      "file": "/resources/img/paperboards/02-narrow-the-variation.jpg",
+      "title": "Narrow the variation before you move the target",
+      "caption": "A wide distribution becomes a narrow one: once the process is stable, it can run closer to the limit."
+    },
+    {
+      "file": "/resources/img/paperboards/03-toyota-house.jpg",
+      "title": "The Toyota Production System house",
+      "caption": "The customer as the roof; just-in-time and jidoka as the pillars; standards, shop-floor performance and problem solving as the foundations."
+    },
+    {
+      "file": "/resources/img/paperboards/04-profit-and-volume.jpg",
+      "title": "Profit and volume",
+      "caption": "Profit against volume: fixed costs at zero, the break-even point, the marginal contribution of each extra unit, and the curve of returns that flatten."
+    },
+    {
+      "file": "/resources/img/paperboards/05-margin.jpg",
+      "title": "Margin grows with volume",
+      "caption": "The same reasoning on margin: what each extra unit sold brings once fixed costs are covered."
+    },
+    {
+      "file": "/resources/img/paperboards/06-a-step-in-fixed-costs.jpg",
+      "title": "A step in fixed costs",
+      "caption": "A new line or a new shift adds fixed cost at once: profit drops, then has to climb back past a new break-even point."
+    },
+    {
+      "file": "/resources/img/paperboards/07-four-cost-structures.jpg",
+      "title": "Four cost structures",
+      "caption": "Four profit-and-volume profiles side by side: where the fixed costs sit decides how much each extra unit is worth."
+    },
+    {
+      "file": "/resources/img/paperboards/08-team-debrief-strategy.jpg",
+      "title": "Team debrief: the strategic exercise",
+      "caption": "What each team (G1 to G5) did well and missed: risks and timing, checking assumptions, the client's strategic context and words, the issue tree, the operational plan."
+    },
+    {
+      "file": "/resources/img/paperboards/09-what-is-good.jpg",
+      "title": "What is good?",
+      "caption": "Not \"what a human would have done\": a computing time under six minutes, a level of performance equal to the target, and two conditions of use: someone accepts the plan, and the experts find it feasible."
+    },
+    {
+      "file": "/resources/img/paperboards/10-the-hype-curve.jpg",
+      "title": "The hype curve, and how to get through it",
+      "caption": "Inflated expectations, disillusion, then the new reality. Four ways through: humility, discretion, speed, and protection from higher up."
+    },
+    {
+      "file": "/resources/img/paperboards/11-team-debrief-hard-conversation.jpg",
+      "title": "Team debrief: the conversation with the sponsor",
+      "caption": "What each team did in the role-play: open questions, linking to what the sponsor cares about, being upfront about the success rate, the hard parts and the change, the triangle principle, the phases, and the impact."
+    }
   ]
 }

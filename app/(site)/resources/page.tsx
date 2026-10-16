@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { FURTHER_READING, KIND_LABEL, READING_KIND_LABEL, SESSIONS } from '@/lib/content/resources';
+import { FURTHER_READING, KIND_LABEL, PAPERBOARDS, READING_KIND_LABEL, SESSIONS } from '@/lib/content/resources';
 import { DOMAIN_NAMES, TRACKS, type Domain, type PublicTrackId, type Track } from '@/lib/config/tracks';
 
 export const metadata: Metadata = { title: 'Resources' };
@@ -96,6 +96,27 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
           </li>
         ))}
       </ol>
+
+      {PAPERBOARDS.length > 0 && (
+        <section id="paperboards" className="scroll-mt-4 border-t border-ink py-6">
+          <h2 className="display text-27">From the paperboards</h2>
+          <p className="prose-width mt-2 text-steel">The figures drawn live on the paperboard during the week. Click a photo to see it full size.</p>
+          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {PAPERBOARDS.map((p) => (
+              <li key={p.file} className="flex flex-col border border-ink">
+                <a href={p.file} target="_blank" rel="noopener" className="block bg-gauge/30">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={p.file} alt={p.title} loading="lazy" className="h-72 w-full object-cover object-top" />
+                </a>
+                <div className="flex-1 p-4">
+                  <h3 className="text-17 font-semibold leading-snug">{p.title}</h3>
+                  <p className="mt-1 text-15 text-steel">{p.caption}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {reading.length > 0 && (
         <section id="further-reading" className="scroll-mt-4 border-t border-ink pt-6">

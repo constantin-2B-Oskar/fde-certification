@@ -10,6 +10,9 @@ export type Reading = { id: string; theme: string; kind: ReadingKind; title: str
 
 export const SESSIONS = data.sessions as Session[];
 export const FURTHER_READING = data.furtherReading as Reading[];
+/** Photos of the paperboards drawn during the training, in public/resources/img/paperboards/. */
+export type Paperboard = { file: string; title: string; caption: string };
+export const PAPERBOARDS = data.paperboards as Paperboard[];
 
 export const READING_KIND_LABEL: Record<ReadingKind, string> = {
   guide: 'Guide', video: 'Video', book: 'Book', article: 'Article', paper: 'Paper', course: 'Course',
