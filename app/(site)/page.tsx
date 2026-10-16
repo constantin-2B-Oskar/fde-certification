@@ -23,7 +23,7 @@ export default function Home() {
           {[
             ['/resources', 'Course material', 'Slides, recordings, templates and case packs for each day, as they become available.'],
             ['/exams', 'Exams', 'One timed exam per track. Pass it and you get a certificate anyone can verify.'],
-            ['/humans', 'Humans', 'The FDE community: trainers, participants and certified practitioners. Add yourself.'],
+            ['/humans', 'Community', 'The FDE community: trainers, participants and certified practitioners. Add yourself, and join us on Slack.'],
             ['/glossary', 'Glossary', 'The terms used in the course and the exams, in plain words.'],
             ['/verify', 'Verify a certificate', 'Check that a certificate is genuine and still valid.'],
             ['/agents', 'Agents', 'How to use the site with an AI assistant such as Claude Code, and the rules it must follow.'],

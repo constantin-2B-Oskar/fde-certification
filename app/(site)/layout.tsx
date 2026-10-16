@@ -13,7 +13,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
             <span className="hidden font-semibold md:inline">{SITE.name}</span>
             <Link href="/resources" className="hover:underline">Resources</Link>
             <Link href="/exams" className="hover:underline">Exams</Link>
-            <Link href="/humans" className="hover:underline">Humans</Link>
+            <Link href="/humans" className="hover:underline">Community</Link>
             <Link href="/agents" className="hover:underline">Agents</Link>
             <Link href="/verify" className="hover:underline">Verify</Link>
           </nav>

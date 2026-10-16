@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { fullName, listHumans, roleLabel } from '@/lib/humans';
 import { deleteHumanAdmin, setHumanHidden } from '@/lib/admin/actions';
 
-export const metadata: Metadata = { title: 'Humans' };
+export const metadata: Metadata = { title: 'Community' };
 
 export default async function AdminHumans() {
   const people = await listHumans(true);
   return (
     <div>
-      <h1 className="display text-44">Humans</h1>
+      <h1 className="display text-44">Community</h1>
       <p className="mt-3 text-15 text-steel">Hide a page to take it out of the directory without deleting it. As admin you can also edit any page from its own page.</p>
       <table className="data mt-4 text-15">
         <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Organization</th><th>Added</th><th>Actions</th></tr></thead>

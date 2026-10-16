@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
     '/**': ['./assets/fonts/**', './public/logos/*.png'],
   },
   poweredByHeader: false,
+  // The directory is called Community on the site; its pages stay at /humans so shared links keep working.
+  async redirects() {
+    return [{ source: '/community', destination: '/humans', permanent: false }];
+  },
 };
 
 export default nextConfig;

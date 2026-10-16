@@ -6,7 +6,7 @@ import { canEdit, certificationsByEmail, fullName, getHumanBySlug, roleLabel } f
 import { appUrl } from '@/lib/env';
 import { CopyButton } from '@/components/CopyButton';
 
-export const metadata: Metadata = { title: 'Humans' };
+export const metadata: Metadata = { title: 'Community' };
 
 export default async function HumanPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ created?: string }> }) {
   const { slug } = await params;

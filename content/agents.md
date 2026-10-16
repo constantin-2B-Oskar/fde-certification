@@ -10,7 +10,7 @@ The site has four parts:
 
 - **Resources**: the course material of the five-day program, by session.
 - **Exams**: three timed multiple-choice exams, one per track. Pass and you get a certificate anyone can verify.
-- **Humans**: the community directory. Each person has a page with their role and their certifications.
+- **Community** (`/humans`): the community directory, and how to join the FDE community on the OSS Ventures Slack. Each person has a page with their role and their certifications.
 - **Verify**: public pages that confirm a certificate is genuine and valid.
 
 Everything except this page, certificate verification and the privacy notice sits behind a shared password that trainers give to participants. An assistant cannot read those pages unless its user gives it the content.
