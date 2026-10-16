@@ -108,7 +108,7 @@ Alone, on the template in the handout. You keep it; your future mentor reads it.
 
 ---
 <!-- 14 | Detail -->
-## The exam: 240 questions, 120 minutes, 65% to pass, closed book
+## The exam: 240 questions, 120 minutes, 50% to pass, closed book
 
 - On fde-certification.vercel.app, in this room, on your laptop, plugged in.
 - No AI tools, no notes, no other tabs.

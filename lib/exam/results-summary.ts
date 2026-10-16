@@ -18,7 +18,7 @@ export type ExamSummary = {
   passRate: number | null; // 0 to 1
   average: number | null; // score in %
   median: number | null;
-  /** Twenty bins of 5 points of the best scores: 0–4%, 5–9%, …, 95–100%, so a pass mark that is a multiple of 5 (65%, 75%) falls on a bin edge. */
+  /** Twenty bins of 5 points of the best scores: 0–4%, 5–9%, …, 95–100%, so a pass mark that is a multiple of 5 (50%, 65%, 75%) falls on a bin edge. */
   histogram: number[];
   /** Per domain, correct answers over questions asked, pooled over every candidate's best attempt. */
   domains: { domain: string; pct: number; total: number }[];

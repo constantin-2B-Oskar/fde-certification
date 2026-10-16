@@ -49,7 +49,7 @@ export const TRACKS = {
     id: 'fde', name: 'FDE Certification', certPrefix: 'FDE',
     audience: 'Engineers who build, deploy and run AI in industrial operations',
     scope: 'the full AI stack, ontology and data engineering in plants, validated gains, operations science, deployment craft and change on the shop floor',
-    durationMinutes: 120, questionCount: 240, passMark: 0.65, cooldownHours: 24, validityMonths: 24,
+    durationMinutes: 120, questionCount: 240, passMark: 0.5, cooldownHours: 24, validityMonths: 24,
     blueprint: { GAI: [2,4,6], LLM: [2,10,28], ONT: [2,8,20], DAT: [2,8,24], VAL: [2,8,22],
                  DEP: [2,8,20], CHG: [0,8,16], OPS: [0,4,20], RSK: [2,4,8] },
   },

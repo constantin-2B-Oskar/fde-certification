@@ -78,7 +78,7 @@ User accounts, single sign-on, payments, course enrollment, a content management
 |---|---|---|---|---|
 | Exco Fundamentals (`exco`) | Executive committee members who decide where AI goes in the P&L | 60 questions, 30 minutes | 70% (42/60) | Technology concepts and their business meaning: what generative AI is, how it works at a high level, ontology, data, value, risk. No change management, no deep technology. |
 | Manager Kit (`manager`) | Managers who sponsor or run AI deployments and the change around them | 120 questions, 60 minutes | 70% (84/120) | Same domains deeper, the full stack (tokens, context, retrieval, agents), change management and value capture in practice. |
-| FDE Certification (`fde`) | Engineers who build, deploy and run AI in industrial operations | 240 questions, 120 minutes | 65% (156/240) | Everything, at practitioner depth: modeling, data engineering in plants, operations science, validated gains, field craft. |
+| FDE Certification (`fde`) | Engineers who build, deploy and run AI in industrial operations | 240 questions, 120 minutes | 50% (120/240) | Everything, at practitioner depth: modeling, data engineering in plants, operations science, validated gains, field craft. |
 
 All three run at 30 seconds per question on average. That pace drives the item-writing rules in Part 2: short stems, short options, mental arithmetic only. Pass marks, durations, cooldowns and validity live in one configuration file (section 9) so Renan can recalibrate after cohort 1 without touching code.
 
