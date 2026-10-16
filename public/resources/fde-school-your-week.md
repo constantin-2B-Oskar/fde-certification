@@ -102,7 +102,7 @@ Some participants may come from the companies behind the five cases. The case pa
 
 ## Exam logistics (Friday 14:45 to 16:45)
 
-FDE Certification track at fde-certification.vercel.app, password `fdecompany`, 240 questions in 120 minutes, pass mark 75%, closed book. Participants use their own laptops on the room Wi-Fi with chargers plugged in. If a connection drops, the participant reopens the page in the same browser and continues; the timer keeps running on the server. A participant who does not pass can retake after 24 hours. The trainer reads the rules aloud at 14:40 and stays in the room.
+FDE Certification track at fde-certification.vercel.app, password `fdecompany`, 240 questions in 120 minutes, pass mark 65%, closed book. Participants use their own laptops on the room Wi-Fi with chargers plugged in. If a connection drops, the participant reopens the page in the same browser and continues; the timer keeps running on the server. A participant who does not pass can retake after 24 hours. The trainer reads the rules aloud at 14:40 and stays in the room.
 
 ## Reading list for the week
 

@@ -6,6 +6,8 @@ import { db, schema } from '@/lib/db/client';
 import { sendCertificateEmail } from '@/lib/email/send';
 import { normalizeEmail } from '@/lib/exam/attempts';
 import { deleteFeedback } from '@/lib/feedback';
+import { regradeTrack } from '@/lib/exam/attempts';
+import { redirect } from 'next/navigation';
 
 const { attempts, attemptItems, certificates, certificateLookups, humans } = schema;
 
@@ -98,4 +100,11 @@ export async function deleteFeedbackAdmin(form: FormData) {
   await requireAdmin();
   await deleteFeedback(String(form.get('id')));
   revalidatePath('/admin/feedback');
+}
+
+export async function regradeFde() {
+  await requireAdmin();
+  const { upgraded } = await regradeTrack('fde');
+  revalidatePath('/admin/results');
+  redirect(`/admin/results?regraded=${upgraded}`);
 }

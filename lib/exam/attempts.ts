@@ -1,7 +1,7 @@
 import 'server-only';
 import { and, desc, eq, gt, inArray, sql } from 'drizzle-orm';
 import { db, schema, type Tx } from '@/lib/db/client';
-import { getTrack, trackName, type Track } from '@/lib/config/tracks';
+import { getTrack, passThreshold, trackName, type Track } from '@/lib/config/tracks';
 import { bankVersion, getQuestion, servedQuestions } from '@/lib/bank/load';
 import type { OptionId } from '@/lib/bank/schema';
 import { draw } from './draw';
@@ -169,6 +169,30 @@ export async function finalize(attemptId: string, how: 'submitted' | 'expired'):
   if (!issued) return false;
   if (issued.cert) await sendCertificateEmail(issued.cert).catch((e) => console.error('certificate email failed', e));
   return true;
+}
+
+/**
+ * After a pass mark is lowered: every finished, non-voided attempt of the track that failed but now reaches the
+ * pass mark becomes a pass, gets its certificate and its email. Never turns a pass into a fail.
+ */
+export async function regradeTrack(trackId: string): Promise<{ upgraded: number }> {
+  const track = getTrack(trackId);
+  if (!track) return { upgraded: 0 };
+  const failed = await db().select().from(attempts).where(and(
+    eq(attempts.trackId, trackId), inArray(attempts.status, ['submitted', 'expired']), eq(attempts.passed, false)));
+  const certs: Certificate[] = [];
+  for (const a of failed) {
+    if (a.correctCount == null || a.correctCount < passThreshold(track.passMark, a.totalCount)) continue;
+    const cert = await db().transaction(async (tx) => {
+      const [locked] = await tx.select().from(attempts).where(eq(attempts.id, a.id)).for('update');
+      if (!locked || locked.passed !== false) return null; // already upgraded by a parallel click
+      await tx.update(attempts).set({ passed: true }).where(eq(attempts.id, a.id));
+      return issueCertificate(tx, locked, track, Number(locked.scorePct), new Date());
+    });
+    if (cert) certs.push(cert);
+  }
+  for (const c of certs) await sendCertificateEmail(c).catch((e) => console.error('certificate email failed', e));
+  return { upgraded: certs.length };
 }
 
 function fallbackTrack(trackId: string): Track {

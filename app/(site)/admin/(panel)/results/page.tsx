@@ -3,13 +3,17 @@ import Link from 'next/link';
 import { DOMAINS, TRACKS } from '@/lib/config/tracks';
 import { examResults } from '@/lib/exam/results';
 import { ExamResultsSummary } from '@/components/ExamResultsSummary';
+import { passThreshold } from '@/lib/config/tracks';
+import { regradeFde } from '@/lib/admin/actions';
 
 export const metadata: Metadata = { title: 'Results' };
 
 // Named: the same summary as the anonymous page (/exams/results), then one line per candidate.
-export default async function AdminResults() {
+export default async function AdminResults({ searchParams }: { searchParams: Promise<{ regraded?: string }> }) {
+  const { regraded } = await searchParams;
   const track = TRACKS.fde;
   const { candidates, summary } = await examResults(track.id);
+  const toUpgrade = candidates.filter((c) => !c.passed && c.scorePct >= track.passMark * 100).length;
   const domainPct = (c: (typeof candidates)[number], d: string) => {
     const s = c.domainScores?.[d];
     return s && s.total ? `${Math.round((s.correct / s.total) * 100)}%` : '–';
@@ -20,6 +24,14 @@ export default async function AdminResults() {
       <p className="mt-3 text-15 text-steel">
         Named version, admins only. Each candidate counts once, with their best attempt; voided attempts are left out. Participants see the same summary without names on <Link className="link" href="/exams/results">the anonymous page</Link>.
       </p>
+      {regraded != null && <p role="status" className="mt-4 border border-pass p-3 text-15">Re-graded: {regraded} {regraded === '1' ? 'attempt' : 'attempts'} turned into a pass, with certificates issued and emailed.</p>}
+      <section className="mt-6 border border-ink p-5">
+        <h2 className="text-17 font-semibold">Pass mark: {Math.round(track.passMark * 100)}% ({passThreshold(track.passMark, track.questionCount)} of {track.questionCount})</h2>
+        <p className="mt-1 text-15 text-steel">An attempt is graded when it is submitted. After a pass mark is lowered, re-grade the attempts finished before the change: those that now reach it become a pass and receive their certificate by email. Nobody loses a pass.</p>
+        {toUpgrade > 0
+          ? <form action={regradeFde} className="mt-3"><button className="btn" type="submit">Re-grade at {Math.round(track.passMark * 100)}%: {toUpgrade} {toUpgrade === 1 ? 'candidate' : 'candidates'} to upgrade</button></form>
+          : <p className="mt-3 text-15">Every finished attempt is graded at the current pass mark.</p>}
+      </section>
       <ExamResultsSummary summary={summary} passMark={track.passMark} />
       <h2 className="mt-10 text-21 font-semibold">Candidates</h2>
       <div className="mt-3 overflow-x-auto">

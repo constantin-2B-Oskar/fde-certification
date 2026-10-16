@@ -93,7 +93,7 @@ Choose today's roles at the end of the round table. Everyone holds each role at 
 
 - No marks from Monday to Thursday. Every demo gets one thing that convinces and one thing to challenge.
 - A daily card at 17:30: one thing you would do differently on a real site.
-- Friday: the FDE Certification exam. 240 questions, 120 minutes, 75% to pass, closed book.
+- Friday: the FDE Certification exam. 240 questions, 120 minutes, 65% to pass, closed book.
 - What prepares you for the exam is the labs, not the slides.
 
 ---

@@ -21,7 +21,7 @@ Everything except this page, certificate verification and the privacy notice sit
 |---|---|---|---|
 | Exco Fundamentals | Executive committee members who decide where AI goes in the P&L | 60 questions, 30 minutes | 70% |
 | Manager Kit | Managers who sponsor or run AI deployments and the change around them | 120 questions, 60 minutes | 70% |
-| FDE Certification | Engineers who build, deploy and run AI in industrial operations | 240 questions, 120 minutes | 75% |
+| FDE Certification | Engineers who build, deploy and run AI in industrial operations | 240 questions, 120 minutes | 65% |
 
 The exams cover nine domains: generative AI and what it changes; how models work, from tokens to agents; ontology and knowledge graphs; data and enterprise systems; value, validated gains and capture; deployment and the FDE way; change and adoption; operations science; risk, security and governance.
 
