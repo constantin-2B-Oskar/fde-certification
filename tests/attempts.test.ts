@@ -48,6 +48,26 @@ describe.skipIf(!hasDb)('attempt lifecycle (database)', async () => {
     expect(JSON.stringify(await A.getAttempt(attemptId))).toBe(before);
   });
 
+  it('reopens a submitted attempt that did not pass, keeps its answers, and grades it again', async () => {
+    const e3 = `reopen-${Date.now()}@example.com`;
+    const r = await A.startAttempt({ ...base, email: e3 }, () => false);
+    if (r.kind !== 'started') throw new Error(r.kind);
+    const { getQuestion } = await import('@/lib/bank/load');
+    const { questions } = await A.runnerData((await A.getAttempt(r.attemptId))!);
+    await A.submitAttempt(r.attemptId, { [questions[0].id]: { o: getQuestion(questions[0].id)!.answer, f: false } });
+    expect((await A.getAttempt(r.attemptId))?.passed).toBe(false);
+    expect(await A.reopenAttempt(r.attemptId)).toBe(true);
+    const reopened = await A.getAttempt(r.attemptId);
+    expect([reopened?.status, reopened?.scorePct, reopened?.passed]).toEqual(['in_progress', null, null]);
+    const kept = await A.runnerData(reopened!);
+    expect(kept.answers[questions[0].id]?.o).toBe(getQuestion(questions[0].id)!.answer); // answers kept
+    const all = Object.fromEntries(questions.map((q) => [q.id, { o: getQuestion(q.id)!.answer, f: false }]));
+    await A.submitAttempt(r.attemptId, all);
+    const a = await A.getAttempt(r.attemptId);
+    expect([a?.status, a?.passed]).toEqual(['submitted', true]);
+    expect(await A.reopenAttempt(r.attemptId)).toBe(false); // a pass is never reopened
+  });
+
   it('a pass issues exactly one certificate and blocks new attempts', async () => {
     const e2 = `pass-${Date.now()}@example.com`;
     const r = await A.startAttempt({ ...base, email: e2 }, () => false);

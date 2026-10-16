@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound, redirect } from 'next/navigation';
 import { getTrack, trackName as nameOf, DOMAIN_NAMES, type Domain } from '@/lib/config/tracks';
-import { certificateForAttempt, getAttemptFresh } from '@/lib/exam/attempts';
+import { canReopen, certificateForAttempt, getAttemptFresh, reopenUntil } from '@/lib/exam/attempts';
+import { reopenAction } from './actions';
 import { holdsAttempt } from '@/lib/exam/guard';
 import { linkedInAddUrl, verifyUrl } from '@/lib/certs/linkedin';
 import { sessionsForDomain } from '@/lib/content/resources';
@@ -55,6 +56,14 @@ export default async function ResultPage({ params }: { params: Promise<{ attempt
           <h1 className="mt-4 text-27 font-semibold">You scored {pct}%. The pass mark is {Math.round(passMark * 100)}%.</h1>
         )}
         {a.status === 'expired' && <p className="mt-2 text-steel">Time ran out, so we graded the answers you had saved.</p>}
+        {canReopen(a) && (
+          <form action={reopenAction} className="mt-6 max-w-xl border border-ink p-5">
+            <input type="hidden" name="attemptId" value={a.id} />
+            <p className="font-semibold">Not finished? Go back to your answers.</p>
+            <p className="mt-1 text-15 text-steel">Your answers are kept. Change or complete them, then submit again: the exam is graded again. Possible until <LocalTime iso={reopenUntil(a)!.toISOString()} />.</p>
+            <button type="submit" className="btn mt-3">Go back to my answers</button>
+          </form>
+        )}
       </section>
 
       {cert && (

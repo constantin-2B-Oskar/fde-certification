@@ -173,6 +173,36 @@ export async function regradeTrack(trackId: string): Promise<{ upgraded: number 
   return { upgraded: certs.length };
 }
 
+/** How long after submitting a candidate who did not pass may go back to their answers (the retake wait, at least 24 h). */
+export function reopenUntil(a: Pick<Attempt, 'trackId' | 'finishedAt'>): Date | null {
+  if (!a.finishedAt) return null;
+  const hours = Math.max(getTrack(a.trackId)?.cooldownHours ?? 0, 24);
+  return new Date(a.finishedAt.getTime() + hours * 3600_000);
+}
+
+/** A finished attempt that did not pass can be reopened within its window. A pass is never reopened: it has a certificate. */
+export function canReopen(a: Attempt, now = new Date()): boolean {
+  const until = reopenUntil(a);
+  return (a.status === 'submitted' || a.status === 'expired') && a.passed === false && until != null && now < until;
+}
+
+/**
+ * Puts a submitted attempt that did not pass back in progress, answers kept, so the candidate can change them and
+ * submit again (Renan, 16 October: catch up candidates cut off by the old timer). Returns true when it reopened.
+ */
+export async function reopenAttempt(attemptId: string): Promise<boolean> {
+  return db().transaction(async (tx) => {
+    const [a] = await tx.select().from(attempts).where(eq(attempts.id, attemptId)).for('update');
+    if (!a || !canReopen(a)) return false;
+    const [cert] = await tx.select({ id: certificates.id }).from(certificates).where(eq(certificates.attemptId, attemptId));
+    if (cert) return false;
+    await tx.update(attempts).set({ status: 'in_progress', finishedAt: null, correctCount: null, scorePct: null, passed: null, domainScores: null })
+      .where(eq(attempts.id, attemptId));
+    await tx.update(attemptItems).set({ isCorrect: null }).where(eq(attemptItems.attemptId, attemptId));
+    return true;
+  });
+}
+
 function fallbackTrack(trackId: string): Track {
   // A track that was disabled after the attempt started (e.g. the rehearsal track): score at 100% pass mark, never certify.
   return { id: trackId, name: trackName(trackId), certPrefix: 'X', audience: '', scope: '', durationMinutes: 0,
