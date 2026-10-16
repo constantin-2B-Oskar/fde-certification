@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { FEEDBACK_QUESTIONS, FEEDBACK_TRACKS } from '@/lib/feedback';
+import { FEEDBACK_QUESTIONS, FEEDBACK_SCALES, FEEDBACK_TRACKS, IMPACT_QUESTION } from '@/lib/feedback';
 import { FeedbackForm } from './FeedbackForm';
 import { submitFeedback } from './actions';
 
@@ -20,8 +20,9 @@ export default async function FeedbackPage({ searchParams }: { searchParams: Pro
   return (
     <div>
       <h1 className="display text-44">Your feedback on the week</h1>
-      <p className="prose-width mt-3">Ten minutes, honest and specific. Your name is optional; only the trainers read the answers.</p>
-      <FeedbackForm action={submitFeedback} questions={FEEDBACK_QUESTIONS.map((q) => ({ ...q }))} tracks={FEEDBACK_TRACKS.map((t) => ({ ...t }))} />
+      <p className="prose-width mt-3">About ten minutes: eight ratings, a few questions in your own words, and one last question. Honest and specific. Your name is optional; only the trainers read the answers.</p>
+      <FeedbackForm action={submitFeedback} scales={FEEDBACK_SCALES.map((s) => ({ ...s }))} questions={FEEDBACK_QUESTIONS.map((q) => ({ ...q }))}
+        impact={{ ...IMPACT_QUESTION }} tracks={FEEDBACK_TRACKS.map((t) => ({ ...t }))} />
     </div>
   );
 }
