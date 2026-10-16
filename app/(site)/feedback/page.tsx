@@ -13,7 +13,7 @@ export default async function FeedbackPage({ searchParams }: { searchParams: Pro
       <div>
         <h1 className="display text-44">Thank you</h1>
         <p className="prose-width mt-3">Your feedback is recorded. The trainers read every answer, and the next session changes because of it.</p>
-        <p className="mt-6"><Link href="/resources" className="link font-semibold">Back to the course material</Link></p>
+        <p className="mt-6 flex flex-wrap gap-x-6 gap-y-2"><Link href="/feedback/results" className="link font-semibold">See the results so far</Link><Link href="/resources" className="link">Back to the course material</Link></p>
       </div>
     );
   }

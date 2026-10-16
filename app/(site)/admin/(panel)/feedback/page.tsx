@@ -1,28 +1,17 @@
 import type { Metadata } from 'next';
-import { FEEDBACK_QUESTIONS, FEEDBACK_SCALES, IMPACT_QUESTION, listFeedback } from '@/lib/feedback';
+import { FEEDBACK_QUESTIONS, FEEDBACK_SCALES, IMPACT_QUESTION, listFeedback, summarizeFeedback } from '@/lib/feedback';
 import { deleteFeedbackAdmin } from '@/lib/admin/actions';
 
 export const metadata: Metadata = { title: 'Feedback' };
 
-/** Average of the numeric answers to one question, or null when nobody answered it (older responses lack newer questions). */
-function average(values: (string | number | null | undefined)[]): { avg: number; n: number } | null {
-  const nums = values.map(Number).filter((v) => Number.isFinite(v) && v >= 1 && v <= 5);
-  return nums.length ? { avg: nums.reduce((a, b) => a + b, 0) / nums.length, n: nums.length } : null;
-}
-
 export default async function AdminFeedback() {
   const rows = await listFeedback();
-  const scales = [
-    ...FEEDBACK_SCALES.map((s) => ({ label: s.label, stat: average(rows.map((r) => r.answers[s.id])) })),
-    { label: 'Readiness for a first deployment', stat: average(rows.map((r) => r.readiness)) },
-  ];
-  const impact = rows.map((r) => r.answers[IMPACT_QUESTION.id]).filter((v) => v === 'yes' || v === 'no');
-  const yes = impact.filter((v) => v === 'yes').length;
+  const { scales, impact } = summarizeFeedback(rows);
   return (
     <div>
       <h1 className="display text-44">Feedback</h1>
       <p className="mt-3 text-15 text-steel">
-        {rows.length} {rows.length === 1 ? 'response' : 'responses'} from <a className="link" href="/feedback">the feedback page</a>.
+        {rows.length} {rows.length === 1 ? 'response' : 'responses'} from <a className="link" href="/feedback">the feedback page</a>. Participants see the scores, without names or comments, on <a className="link" href="/feedback/results">the results page</a>.
       </p>
 
       {rows.length > 0 && (
@@ -30,12 +19,12 @@ export default async function AdminFeedback() {
           <thead><tr><th>Question</th><th>Average, 1 to 5</th><th>Answers</th></tr></thead>
           <tbody>
             {scales.map((s) => (
-              <tr key={s.label}><td>{s.label}</td><td className="tnum font-semibold">{s.stat ? s.stat.avg.toFixed(1) : '–'}</td><td className="tnum">{s.stat?.n ?? 0}</td></tr>
+              <tr key={s.id}><td>{s.label}</td><td className="tnum font-semibold">{s.avg != null ? s.avg.toFixed(1) : '–'}</td><td className="tnum">{s.n}</td></tr>
             ))}
             <tr>
               <td>{IMPACT_QUESTION.label}</td>
-              <td className="tnum font-semibold">{impact.length ? `${Math.round((yes / impact.length) * 100)}% yes` : '–'}</td>
-              <td className="tnum">{impact.length}</td>
+              <td className="tnum font-semibold">{impact.n ? `${Math.round((impact.yes / impact.n) * 100)}% yes` : '–'}</td>
+              <td className="tnum">{impact.n}</td>
             </tr>
           </tbody>
         </table>

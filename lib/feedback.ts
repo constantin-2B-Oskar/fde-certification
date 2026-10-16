@@ -72,3 +72,24 @@ export async function listFeedback(): Promise<FeedbackRow[]> {
 export async function deleteFeedback(id: string) {
   await db().delete(feedback).where(eq(feedback.id, id));
 }
+
+export type ScaleSummary = { id: string; label: string; low: string; high: string; avg: number | null; n: number; counts: number[] };
+export type FeedbackSummary = { responses: number; scales: ScaleSummary[]; impact: { yes: number; n: number } };
+
+/** Aggregates for the results page and Admin: per rating, the average and how many gave 1, 2, 3, 4 and 5. */
+export function summarizeFeedback(rows: FeedbackRow[]): FeedbackSummary {
+  const all = [...FEEDBACK_SCALES, { id: 'readiness', label: 'How ready do you feel for a first deployment?', low: 'not at all', high: 'I could start on Monday' }];
+  const scales = all.map((s) => {
+    const values = rows
+      .map((r) => Number(s.id === 'readiness' ? r.readiness : r.answers[s.id])) // older responses lack newer ratings
+      .filter((v) => Number.isInteger(v) && v >= 1 && v <= 5);
+    const counts = [1, 2, 3, 4, 5].map((k) => values.filter((v) => v === k).length);
+    return { id: s.id, label: s.label, low: s.low, high: s.high, n: values.length, counts,
+      avg: values.length ? values.reduce((a, b) => a + b, 0) / values.length : null };
+  });
+  const impact = rows.map((r) => r.answers[IMPACT_QUESTION.id]).filter((v) => v === 'yes' || v === 'no');
+  return { responses: rows.length, scales, impact: { yes: impact.filter((v) => v === 'yes').length, n: impact.length } };
+}
+
+/** The results page stays empty below this many responses, so no one's scores can be guessed. */
+export const RESULTS_MIN_RESPONSES = 3;
