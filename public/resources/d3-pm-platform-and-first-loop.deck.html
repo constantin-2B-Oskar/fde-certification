@@ -25,6 +25,7 @@ body:hover #bar,#bar:focus-within{opacity:1}
 @media print{html,body{height:auto;overflow:visible}#bar{display:none}#stage{position:static;transform:none!important}
 #stage>section{position:relative;visibility:visible;break-after:page}@page{size:1920px 1080px;margin:0}}
 </style>
+<style id="fde-watermark">#stage>section::after{content:"";position:absolute;inset:0;z-index:50;opacity:.5;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='760' height='440'><text x='380' y='220' text-anchor='middle' dominant-baseline='middle' transform='rotate(-30 380 220)' font-family='Inter,Arial,sans-serif' font-size='34' font-weight='600' fill='%230D0D0D' fill-opacity='0.1'>%C2%A9 OSS Ventures · FDE School</text></svg>");pointer-events:none;background-repeat:repeat;-webkit-print-color-adjust:exact;print-color-adjust:exact}@media print{#stage>section::after{opacity:.85}}</style>
 </head>
 <body>
 <div id="stage">

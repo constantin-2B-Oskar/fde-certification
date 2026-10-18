@@ -45,6 +45,7 @@ ${style}
 html,body{height:100%;overflow:hidden}
 #stage{position:absolute;top:0;left:0;width:1920px;height:1080px;transform-origin:0 0}
 #stage>section{position:absolute;top:0;left:0;width:1920px;height:1080px;box-sizing:border-box;visibility:hidden}
+#stage>section::after{content:"";position:absolute;inset:0;z-index:50;opacity:.5;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='760' height='440'><text x='380' y='220' text-anchor='middle' dominant-baseline='middle' transform='rotate(-30 380 220)' font-family='Inter,Arial,sans-serif' font-size='34' font-weight='600' fill='%230D0D0D' fill-opacity='0.1'>%C2%A9 OSS Ventures · FDE School</text></svg>");pointer-events:none;background-repeat:repeat;-webkit-print-color-adjust:exact;print-color-adjust:exact}@media print{#stage>section::after{opacity:.85}}
 #stage>section.on{visibility:visible}
 #bar{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 16px;font:13px/1.2 Inter,sans-serif;color:#C6C9CC;background:rgba(13,13,13,.85);opacity:0;transition:opacity .2s}
 body:hover #bar,#bar:focus-within{opacity:1}
