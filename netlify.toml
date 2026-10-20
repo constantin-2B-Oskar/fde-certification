@@ -1,0 +1,8 @@
+# Secrets scanning (https://ntl.fyi/configure-secrets-scanning):
+# - SITE_PASSWORD is the shared participant password, published on purpose in the week's
+#   handout (public/resources/, which proxy.ts keeps behind the password gate).
+# - Turbopack's persistent build cache snapshots env values; it is never deployed.
+# ADMIN_PASSWORD and SESSION_SECRET are still scanned everywhere in the deployed output.
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "SITE_PASSWORD"
+  SECRETS_SCAN_OMIT_PATHS = ".netlify/.next/cache/**,.next/cache/**"
