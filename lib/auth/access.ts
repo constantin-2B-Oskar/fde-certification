@@ -35,15 +35,21 @@ export function passwordMatches(typed: string, expected: string | undefined): bo
   return safeEqual(hmac(`pw:${typed}`), hmac(`pw:${expected}`));
 }
 
+/** The admin password, or undefined when unset or equal to the (published) site password. */
+export function adminPassword(): string | undefined {
+  const p = process.env.ADMIN_PASSWORD;
+  return p && p !== process.env.SITE_PASSWORD ? p : undefined;
+}
+
 export const accessToken = () => hmac(`site:${process.env.SITE_PASSWORD ?? ''}`);
-export const adminToken = () => hmac(`admin:${process.env.ADMIN_PASSWORD ?? ''}`);
+export const adminToken = () => hmac(`admin:${adminPassword() ?? ''}`);
 export const attemptToken = (attemptId: string) => hmac(`attempt:${attemptId}`);
 
 export function hasAccess(cookie: string | undefined): boolean {
   return Boolean(process.env.SITE_PASSWORD) && safeEqual(cookie, accessToken());
 }
 export function isAdmin(cookie: string | undefined): boolean {
-  return Boolean(process.env.ADMIN_PASSWORD) && safeEqual(cookie, adminToken());
+  return Boolean(adminPassword()) && safeEqual(cookie, adminToken());
 }
 
 export const cookieFlags = (maxAge: number) => ({

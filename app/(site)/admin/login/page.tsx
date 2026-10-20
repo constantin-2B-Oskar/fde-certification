@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-import { ADMIN_COOKIE, ADMIN_MAX_AGE, adminToken, cookieFlags, passwordMatches } from '@/lib/auth/access';
+import { ADMIN_COOKIE, ADMIN_MAX_AGE, adminPassword, adminToken, cookieFlags, passwordMatches } from '@/lib/auth/access';
 
 export const metadata: Metadata = { title: 'Admin sign-in' };
 
 async function login(form: FormData) {
   'use server';
-  if (!passwordMatches(String(form.get('password') ?? ''), process.env.ADMIN_PASSWORD)) {
+  if (!passwordMatches(String(form.get('password') ?? ''), adminPassword())) {
     await new Promise((r) => setTimeout(r, 600));
     redirect('/admin/login?error=1');
   }
